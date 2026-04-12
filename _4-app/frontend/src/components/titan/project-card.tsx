@@ -15,7 +15,7 @@ export function ProjectCard({ title, description, category, icon, className }: P
   return (
     <div
       className={cn(
-        'border border-border bg-white cursor-pointer',
+        'border border-border bg-white cursor-pointer transition-colors hover:border-orange-500',
         className
       )}
     >
