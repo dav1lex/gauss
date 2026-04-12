@@ -90,7 +90,22 @@ const nextConfig: NextConfig = {
       // Old redirects - now simplified
       {
         source: '/pricing',
-        destination: '/pl/calculate-estimate',
+        destination: '/pl/contact',
+        permanent: true,
+      },
+      {
+        source: '/calculate-estimate',
+        destination: '/pl/contact',
+        permanent: true,
+      },
+      {
+        source: '/pl/calculate-estimate',
+        destination: '/pl/contact',
+        permanent: true,
+      },
+      {
+        source: '/en/calculate-estimate',
+        destination: '/en/contact',
         permanent: true,
       },
       {

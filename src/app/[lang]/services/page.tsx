@@ -98,18 +98,6 @@ export default function ServicesPage() {
 
       <FaqSection />
 
-      {/* CTA Section */}
-      <section className="bg-gray-100 dark:bg-zinc-900 py-20 sm:py-24">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            {t("calculateEstimate.title")}
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400 ">
-            {t("calculateEstimate.subtitle")}
-          </p>
-        </div>
-      </section>
-
       </div>
     </>
   );

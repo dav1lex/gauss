@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services',           // Services
     '/portfolio',          // Portfolio
     '/contact',            // Contact
-    '/calculate-estimate', // Pricing
   ];
 
   const staticRoutes = routes.flatMap((route) =>

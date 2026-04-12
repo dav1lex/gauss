@@ -31,7 +31,7 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const estimatePath = `/${language}/calculate-estimate`;
+  const contactPath = `/${language}/contact`;
   const servicesPath = `/${language}/services`;
 
   return (
@@ -100,7 +100,7 @@ export default function Header() {
             {/* Primary CTA (desktop) */}
             <div className="hidden lg:flex items-center gap-3">
               <Button asChild className="font-['Space_Grotesk']">
-                <Link href={estimatePath}>{t('header.primaryCta')}</Link>
+                <Link href={contactPath}>{t('header.primaryCta')}</Link>
               </Button>
             </div>
 
@@ -192,7 +192,6 @@ export default function Header() {
                   { name: t("nav.services"), path: `/${language}/services` },
                   { name: t("nav.portfolio"), path: `/${language}/portfolio` },
                   { name: t("nav.contact"), path: `/${language}/contact` },
-                  { name: t("nav.calculate_estimate"), path: `/${language}/calculate-estimate` },
                 ].map((item, i) => {
                   const isActive = item.name === t("nav.home") ? pathname === item.path : pathname.startsWith(item.path);
                   return (
