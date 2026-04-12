@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITANCODE v2 - Direction E: Brutalist Clean</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            body: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              orange: '#EA580C',
+              cream: '#F8F5F0',
+              dark: '#0F0F0F',
+              skin: '#E8DCD1',
+              clay: '#C9B8A9',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .sharp { border-radius: 0 !important; }
+    .hard-shadow {
+      box-shadow: 8px 8px 0px 0px #0F0F0F;
+    }
+    .hard-shadow-hover:hover {
+      box-shadow: 12px 12px 0px 0px #0F0F0F;
+      transform: translate(-4px, -4px);
+    }
+    .text-massive {
+      font-size: clamp(4rem, 12vw, 10rem);
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+    }
+    .text-large {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .grid-lines {
+      background-image: 
+        linear-gradient(rgba(15,15,15,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15,15,15,0.06) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+  </style>
+</head>
+<body class="bg-brand-cream font-body text-brand-dark">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-brand-cream border-b-2 border-brand-dark z-50">
+    <div class="max-w-[1800px] mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
+      <div class="text-2xl font-display font-extrabold tracking-tighter">TITAN<span class="text-brand-orange">CODE</span></div>
+      <div class="hidden md:flex gap-10 font-display font-medium">
+        <a href="#services" class="hover:text-brand-orange transition-colors">Services</a>
+        <a href="#work" class="hover:text-brand-orange transition-colors">Work</a>
+        <a href="#process" class="hover:text-brand-orange transition-colors">Process</a>
+        <a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a>
+      </div>
+      <button class="bg-brand-orange text-white px-8 py-3 font-display font-bold hard-shadow hard-shadow-hover transition-all">
+        START PROJECT
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center pt-24 grid-lines">
+    <div class="max-w-[1800px] mx-auto px-6 lg:px-12 w-full py-20">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-8">
+          <div class="inline-block bg-brand-dark text-white px-4 py-2 font-display text-sm font-bold mb-8">
+            WARSAW • CUSTOM WEB DEVELOPMENT
+          </div>
+          
+          <h1 class="text-massive font-display font-black mb-8 leading-none">
+            BUILT<br>
+            <span class="text-brand-orange">DIFFERENT</span>
+          </h1>
+          
+          <p class="text-xl lg:text-2xl text-gray-600 mb-10 max-w-2xl font-body leading-relaxed">
+            No templates. No WordPress. Just clean code built from scratch for businesses that demand more.
+          </p>
+          
+          <div class="flex flex-wrap gap-4">
+            <button class="bg-brand-dark text-white px-10 py-5 font-display font-bold hard-shadow hard-shadow-hover transition-all">
+              START YOUR PROJECT
+            </button>
+            <button class="bg-transparent text-brand-dark px-10 py-5 font-display font-bold border-2 border-brand-dark hover:bg-brand-dark hover:text-white transition-all">
+              VIEW PORTFOLIO
+            </button>
+          </div>
+        </div>
+        
+        <!-- Stats Panel -->
+        <div class="lg:col-span-4">
+          <div class="bg-white border-2 border-brand-dark p-8 hard-shadow">
+            <div class="space-y-6">
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="font-display font-medium">Projects</span>
+                <span class="font-display font-black text-2xl">50+</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="font-display font-medium">Custom Code</span>
+                <span class="font-display font-black text-2xl">100%</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="font-display font-medium">WordPress</span>
+                <span class="font-display font-black text-2xl text-brand-orange">0%</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="font-display font-medium">Support</span>
+                <span class="font-display font-black text-2xl">24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="bg-brand-orange border-y-2 border-brand-dark py-4 overflow-hidden">
+    <div class="flex whitespace-nowrap animate-[marquee_20s_linear_infinite]">
+      <span class="text-2xl font-display font-bold mx-8">• WEBSITES</span>
+      <span class="text-2xl font-display font-bold mx-8">• AUTOMATION</span>
+      <span class="text-2xl font-display font-bold mx-8">• E-COMMERCE</span>
+      <span class="text-2xl font-display font-bold mx-8">• SEO</span>
+      <span class="text-2xl font-display font-bold mx-8">• CONSULTING</span>
+      <span class="text-2xl font-display font-bold mx-8">• SUPPORT</span>
+      <span class="text-2xl font-display font-bold mx-8">• WEBSITES</span>
+      <span class="text-2xl font-display font-bold mx-8">• AUTOMATION</span>
+      <span class="text-2xl font-display font-bold mx-8">• E-COMMERCE</span>
+      <span class="text-2xl font-display font-bold mx-8">• SEO</span>
+    </div>
+  </div>
+  <style>@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }</style>
+
+  <!-- Services -->
+  <section id="services" class="py-24">
+    <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
+      <div class="mb-16">
+        <h2 class="text-large font-display font-black mb-4">What We Build</h2>
+        <p class="text-xl text-gray-600 max-w-2xl">From scratch. For you. No shortcuts.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 border-2 border-brand-dark">
+        <!-- Service 1 -->
+        <div class="border-r-2 border-b-2 border-brand-dark p-8 hover:bg-brand-orange hover:text-white transition-colors group">
+          <div class="text-brand-orange group-hover:text-white font-display font-black text-5xl mb-4">01</div>
+          <h3 class="text-2xl font-display font-bold mb-3">Websites & Apps</h3>
+          <p class="text-gray-700 group-hover:text-white font-body leading-relaxed">
+            Fast. Secure. Custom-built. Every line of code written by hand for your exact needs.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="border-r-2 border-b-2 border-brand-dark p-8 hover:bg-brand-orange hover:text-white transition-colors group">
+          <div class="text-brand-orange group-hover:text-white font-display font-black text-5xl mb-4">02</div>
+          <h3 class="text-2xl font-display font-bold mb-3">Automation</h3>
+          <p class="text-gray-700 group-hover:text-white font-body leading-relaxed">
+            Stop doing the same task twice. Scripts that save hours each week.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="border-r-2 border-b-2 border-brand-dark p-8 hover:bg-brand-orange hover:text-white transition-colors group">
+          <div class="text-brand-orange group-hover:text-white font-display font-black text-5xl mb-4">03</div>
+          <h3 class="text-2xl font-display font-bold mb-3">E-commerce</h3>
+          <p class="text-gray-700 group-hover:text-white font-body leading-relaxed">
+            Sell more with secure payments, simple checkout, and inventory that updates automatically.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="border-r-2 border-b-2 border-brand-dark p-8 hover:bg-brand-orange hover:text-white transition-colors group">
+          <div class="text-brand-orange group-hover:text-white font-display font-black text-5xl mb-4">04</div>
+          <h3 class="text-2xl font-display font-bold mb-3">SEO</h3>
+          <p class="text-gray-700 group-hover:text-white font-body leading-relaxed">
+            Get found when people search. Built into every project from day one.
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="border-r-2 border-b-2 border-brand-dark p-8 hover:bg-brand-orange hover:text-white transition-colors group">
+          <div class="text-brand-orange group-hover:text-white font-display font-black text-5xl mb-4">05</div>
+          <h3 class="text-2xl font-display font-bold mb-3">Consulting</h3>
+          <p class="text-gray-700 group-hover:text-white font-body leading-relaxed">
+            Not sure what you need? We'll help you figure it out. No tech jargon.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="border-r-2 border-b-2 border-brand-dark p-8 hover:bg-brand-orange hover:text-white transition-colors group">
+          <div class="text-brand-orange group-hover:text-white font-display font-black text-5xl mb-4">06</div>
+          <h3 class="text-2xl font-display font-bold mb-3">Support</h3>
+          <p class="text-gray-700 group-hover:text-white font-body leading-relaxed">
+            We stick around. Updates, fixes, changes when you need them. No contracts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="work" class="py-24 bg-brand-dark text-white">
+    <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
+      <div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-6">
+        <div>
+          <h2 class="text-large font-display font-black mb-4">Recent Work</h2>
+          <p class="text-xl text-gray-400 max-w-2xl">Real projects. Real results.</p>
+        </div>
+        <button class="font-display font-bold border-2 border-white px-8 py-4 hover:bg-white hover:text-brand-dark transition-colors">
+          VIEW ALL →
+        </button>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Project 1 -->
+        <div class="grid lg:grid-cols-2 gap-8 border-2 border-gray-800 p-8 hover:border-brand-orange transition-colors">
+          <div class="aspect-video bg-gray-800 flex items-center justify-center">
+            <span class="text-brand-orange font-display font-black text-6xl">NB</span>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="font-display font-bold text-brand-orange mb-2">AUCTION PLATFORM</div>
+            <h3 class="text-4xl font-display font-black mb-4">NanoBid</h3>
+            <p class="text-gray-400 mb-6 font-body leading-relaxed">
+              Complete auction system with timed bidding, payments, and user management. Built on custom PHP framework.
+            </p>
+            <div class="flex gap-2 font-display text-sm">
+              <span class="px-4 py-2 border border-gray-700">PHP</span>
+              <span class="px-4 py-2 border border-gray-700">MySQL</span>
+              <span class="px-4 py-2 border border-gray-700">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="grid lg:grid-cols-2 gap-8 border-2 border-gray-800 p-8 hover:border-brand-orange transition-colors">
+          <div class="aspect-video bg-gray-800 flex items-center justify-center">
+            <span class="text-brand-orange font-display font-black text-6xl">CF</span>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="font-display font-bold text-brand-orange mb-2">AI JOB SEARCH</div>
+            <h3 class="text-4xl font-display font-black mb-4">CareerFlex</h3>
+            <p class="text-gray-400 mb-6 font-body leading-relaxed">
+              AI-powered job matching platform. CV analysis, automatic applications, clean SaaS interface.
+            </p>
+            <div class="flex gap-2 font-display text-sm">
+              <span class="px-4 py-2 border border-gray-700">Next.js</span>
+              <span class="px-4 py-2 border border-gray-700">AI</span>
+              <span class="px-4 py-2 border border-gray-700">Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="grid lg:grid-cols-2 gap-8 border-2 border-gray-800 p-8 hover:border-brand-orange transition-colors">
+          <div class="aspect-video bg-gray-800 flex items-center justify-center">
+            <span class="text-brand-orange font-display font-black text-6xl">K8</span>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="font-display font-bold text-brand-orange mb-2">E-LEARNING</div>
+            <h3 class="text-4xl font-display font-black mb-4">Kurs8Klasisty</h3>
+            <p class="text-gray-400 mb-6 font-body leading-relaxed">
+              Course platform for English tutor. Student management, progress tracking, mobile-first design.
+            </p>
+            <div class="flex gap-2 font-display text-sm">
+              <span class="px-4 py-2 border border-gray-700">PHP</span>
+              <span class="px-4 py-2 border border-gray-700">MySQL</span>
+              <span class="px-4 py-2 border border-gray-700">Responsive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-32">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-massive font-display font-black mb-8">LET'S BUILD.</h2>
+      <p class="text-xl text-gray-600 mb-10 font-body">
+        Tell us what you need. We'll tell you if we can help.
+      </p>
+      <button class="bg-brand-orange text-white px-12 py-5 text-xl font-display font-bold hard-shadow hard-shadow-hover transition-all">
+        GET IN TOUCH
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-white py-16 border-t-2 border-gray-800">
+    <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 font-display">
+        <div class="text-2xl font-black">TITAN<span class="text-brand-orange">CODE</span></div>
+        <div class="flex gap-8 text-sm">
+          <a href="#" class="hover:text-brand-orange transition-colors">Services</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Work</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">About</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Contact</a>
+        </div>
+        <div class="text-gray-500">© 2025 Warsaw, Poland</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
