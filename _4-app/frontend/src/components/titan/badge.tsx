@@ -14,7 +14,7 @@ export function Badge({ children, variant = 'default', className, showPulse = fa
     <span
       className={cn(
         'inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono',
-        variant === 'default' && 'border border-border bg-white text-muted-foreground',
+        variant === 'default' && 'border border-border bg-card text-muted-foreground',
         variant === 'outline' && 'border border-border bg-transparent text-muted-foreground',
         className
       )}

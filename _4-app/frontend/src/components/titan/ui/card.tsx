@@ -12,7 +12,7 @@ export function Card({ children, className, hover = false }: CardProps) {
   return (
     <div
       className={cn(
-        'border border-border bg-white',
+        'border border-border bg-card',
         hover && 'cursor-pointer hover:-translate-y-1 hover:shadow-lg transition-all duration-300',
         className
       )}
@@ -49,7 +49,7 @@ export function CardFooter({ children, className }: { children: React.ReactNode,
 // Simple stat card
 export function StatCard({ value, label, className }: { value: string, label: string, className?: string }) {
   return (
-    <div className={cn('p-6 border border-border bg-white', className)}>
+    <div className={cn('p-6 border border-border bg-card', className)}>
       <span className="text-4xl font-bold">
         <span className="bg-gradient-to-r from-[var(--titan-accent-secondary)] via-[var(--titan-accent-primary)] to-[var(--titan-accent-primary)] bg-clip-text text-transparent">
           {value}
@@ -80,7 +80,7 @@ export function CardWithImage({
   image?: boolean 
 }) {
   return (
-    <div className={cn('border border-border bg-white', className)}>
+    <div className={cn('border border-border bg-card', className)}>
       {image && (
         <div className="aspect-video bg-muted flex items-center justify-center">
           <span className="text-muted-foreground">Image placeholder</span>

@@ -9,7 +9,7 @@ interface ServicesProps {
 
 export function Services({ className }: ServicesProps) {
   return (
-    <section id="services" className={cn('py-24 border-t border-border bg-white', className)}>
+    <section id="services" className={cn('py-24 border-t border-border bg-background', className)}>
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-16">

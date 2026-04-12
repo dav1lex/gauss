@@ -9,12 +9,12 @@ interface FooterProps {
 
 export function Footer({ className }: FooterProps) {
   return (
-    <footer className={cn('py-12 border-t border-border bg-white', className)}>
+    <footer className={cn('py-12 border-t border-border bg-background', className)}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-6 h-6 bg-[var(--titan-accent-primary)] rounded flex items-center justify-center font-mono font-bold text-white text-xs">
+            <div className="w-6 h-6 bg-[var(--titan-accent-primary)] rounded flex items-center justify-center font-mono font-bold text-primary-foreground text-xs">
               T
             </div>
             <span className="font-semibold">TITANCODE</span>

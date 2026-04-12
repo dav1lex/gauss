@@ -23,7 +23,7 @@ export function Contact({ className }: ContactProps) {
           {/* Email Button */}
             <Link
               href="mailto:info@titancode.pl"
-              className="inline-flex items-center gap-3 bg-[var(--titan-accent-primary)] text-white px-10 py-5 text-lg font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
+              className="inline-flex items-center gap-3 bg-[var(--titan-accent-primary)] text-primary-foreground px-10 py-5 text-lg font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
             >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

@@ -17,11 +17,11 @@ const navLinks = [
 
 export function Navbar({ className }: NavbarProps) {
   return (
-    <nav className={cn('fixed top-0 left-0 right-0 z-50 border-b border-border bg-white/80 backdrop-blur-xl', className)}>
+    <nav className={cn('fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl', className)}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-[var(--titan-accent-primary)] rounded flex items-center justify-center font-mono font-bold text-white text-sm">
+          <div className="w-8 h-8 bg-[var(--titan-accent-primary)] rounded flex items-center justify-center font-mono font-bold text-primary-foreground text-sm">
             T
           </div>
           <span className="text-lg font-semibold tracking-tight">TITANCODE</span>
@@ -48,7 +48,7 @@ export function Navbar({ className }: NavbarProps) {
           </span>
           <Link
             href="#contact"
-            className="bg-foreground text-white px-5 py-2 text-sm font-semibold hover:bg-[var(--titan-accent-primary)] transition-colors"
+            className="bg-foreground text-primary-foreground px-5 py-2 text-sm font-semibold hover:bg-[var(--titan-accent-primary)] transition-colors"
           >
             Get Started
           </Link>

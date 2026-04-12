@@ -57,7 +57,7 @@ export function HeroParallax({
           <div className="flex flex-wrap gap-4">
             <Link
               href="#contact"
-              className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-white px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
+              className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-primary-foreground px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
             >
               Start a Project
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ export function HeroParallax({
             </Link>
             <Link
               href="#projects"
-              className="inline-flex items-center gap-2 border border-border px-8 py-4 text-sm font-medium hover:border-muted-foreground transition-colors bg-white/80 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 border border-border px-8 py-4 text-sm font-medium hover:border-muted-foreground transition-colors bg-background/80 backdrop-blur-sm"
             >
               View Work
             </Link>
@@ -115,7 +115,7 @@ export function HeroParallaxAnimated({
           <div className="flex flex-wrap gap-4">
             <Link
               href="#contact"
-              className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-white px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
+              className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-primary-foreground px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
             >
               Start a Project
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@ export function HeroParallaxAnimated({
             </Link>
             <Link
               href="#projects"
-              className="inline-flex items-center gap-2 border border-border px-8 py-4 text-sm font-medium hover:border-muted-foreground transition-colors bg-white/80 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 border border-border px-8 py-4 text-sm font-medium hover:border-muted-foreground transition-colors bg-background/80 backdrop-blur-sm"
             >
               View Work
             </Link>

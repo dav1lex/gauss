@@ -11,7 +11,7 @@ interface StatsCardProps {
 
 function StatsCard({ value, label, className }: StatsCardProps) {
   return (
-    <div className={cn('p-6 border border-border bg-white', className)}>
+    <div className={cn('p-6 border border-border bg-card', className)}>
       <span className="text-4xl font-bold">
         <CodeGradient>{value}</CodeGradient>
       </span>
@@ -30,7 +30,7 @@ interface AboutProps {
 
 export function About({ className }: AboutProps) {
   return (
-    <section id="about" className={cn('py-24 border-t border-border bg-white', className)}>
+    <section id="about" className={cn('py-24 border-t border-border bg-background', className)}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Left side - Text */}
