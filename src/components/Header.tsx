@@ -70,8 +70,6 @@ export default function Header() {
               { key: 'home', href: `/${language}` },
               { key: 'services', href: servicesPath },
               { key: 'portfolio', href: `/${language}/portfolio` },
-              { key: 'blog', href: '/blog' },
-              { key: 'about', href: `/${language}/about` },
               { key: 'contact', href: `/${language}/contact` },
             ].map((item) => {
               const isActive = item.key === 'home' ? pathname === item.href : pathname.startsWith(item.href);
@@ -192,11 +190,9 @@ export default function Header() {
                 {[
                   { name: t("nav.home"), path: `/${language}` },
                   { name: t("nav.services"), path: `/${language}/services` },
-                  { name: t("nav.calculate_estimate"), path: `/${language}/calculate-estimate` },
                   { name: t("nav.portfolio"), path: `/${language}/portfolio` },
-                  { name: t("nav.blog"), path: "/blog" },
-                  { name: t("nav.about"), path: `/${language}/about` },
                   { name: t("nav.contact"), path: `/${language}/contact` },
+                  { name: t("nav.calculate_estimate"), path: `/${language}/calculate-estimate` },
                 ].map((item, i) => {
                   const isActive = item.name === t("nav.home") ? pathname === item.path : pathname.startsWith(item.path);
                   return (

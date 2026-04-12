@@ -2,19 +2,13 @@
 
 import { useLanguage } from "@/app/language-context";
 import { FaqSection } from "@/components/sections/FaqSection";
-import { Button } from "@/components/ui/button";
 import { SERVICE_TIERS, ServiceTierKey } from "@/lib/services";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-import Link from "next/link";
+import { CheckCircle2 } from "lucide-react";
 
 export default function ServicesPage() {
   const { t, tArray, language } = useLanguage();
   const servicesOrder: ServiceTierKey[] = ["starter", "custom", "ecommerce", "enterprise"];
-
-  // Service structured data removed to simplify SEO and avoid unused variables
-
-  /* removed duplicate breadcrumbSchema */
-
+  
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -61,19 +55,6 @@ export default function ServicesPage() {
           <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-400">
             {t("services.customSolutions.description")}
           </p>
-
-          {/* SEO: internal links to key landing pages */}
-          <div className="mt-8 flex flex-wrap gap-3 justify-center">
-            <Button asChild variant="outline">
-              <Link href={`/${language}/strony-internetowe-warszawa`}>{t("landingWarsaw.kicker")}</Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href={`/${language}/landing-page-dla-kursu-online`}>{t("landingCourse.kicker")}</Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href={`/${language}/panel-administracyjny-na-zamowienie`}>{t("landingAdminPanel.kicker")}</Link>
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -107,12 +88,6 @@ export default function ServicesPage() {
                     <p className="text-sm font-semibold uppercase text-gray-500 dark:text-gray-400">{t('services.startingFrom')}</p>
                     <p className="text-5xl font-extrabold mt-2">{service.basePrice} {t("currency.pln")}</p>
                     <p className="mt-4 text-gray-600 dark:text-gray-300">{t(`estimatePage.tiers.${key}.description`)}</p>
-                    <Button asChild size="lg" className="mt-8 w-full">
-                      <Link href="/calculate-estimate">
-                        {t("calculateEstimate.cta")}
-                        <ArrowRight className="ml-2 h-5 w-5" />
-                      </Link>
-                    </Button>
                   </div>
                 </div>
               );
@@ -132,14 +107,6 @@ export default function ServicesPage() {
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400 ">
             {t("calculateEstimate.subtitle")}
           </p>
-          <div className="mt-8">
-            <Button asChild size="lg">
-              <Link href="/calculate-estimate">
-                {t("calculateEstimate.cta")}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
         </div>
       </section>
 

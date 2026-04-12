@@ -26,9 +26,8 @@ const Footer = () => {
     { name: t("nav.home"), href: `/${language}` },
     { name: t("nav.services"), href: `/${language}/services` },
     { name: t("nav.portfolio"), href: `/${language}/portfolio` },
-    { name: t("nav.blog"), href: "/blog" },
-    { name: t("nav.about"), href: `/${language}/about` },
     { name: t("nav.contact"), href: `/${language}/contact` },
+    { name: t("nav.calculate_estimate"), href: `/${language}/calculate-estimate` },
   ];
 
   return (

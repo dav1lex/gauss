@@ -4,72 +4,84 @@ import { useLanguage } from "@/app/language-context";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { ExternalLink } from "lucide-react";
 
 export default function Portfolio() {
   const { t, language } = useLanguage();
+  const isPl = language === 'pl';
 
   const projects = [
     {
-      slug: "nanobid",
+      key: "nanobid",
       imageUrl: "/images/portfolio/nanobid/n1.png",
+      liveUrl: "https://nanobid.pl",
     },
     {
-      slug: "kurs8klasisty",
+      key: "kurs8klasisty",
       imageUrl: "/images/portfolio/english-tutor/main.png",
+      liveUrl: "https://kurs8klasisty.pl",
     },
     {
-      slug: "careerflex",
+      key: "careerflex",
       imageUrl: "/images/portfolio/careerflex/cfx1.jpg",
-    }
+      liveUrl: "https://careerflex.pl",
+    },
   ];
 
   return (
     <div className="pb-16">
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 pt-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{t("portfolio.title")}</h1>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
           {t("portfolio.subtitle")}
         </p>
       </div>
-      <div className="border-t container mx-auto px-4">
-        {projects.map((project) => (
-          <Link href={`/${language}/portfolio/${project.slug}`} key={project.slug}>
-            <div className="border-b p-6 md:p-8 transition-colors hover:bg-gray-50/50 dark:hover:bg-gray-900/50 flex flex-col md:flex-row items-center gap-6 md:gap-8">
-              <div className="relative w-full md:w-48 h-48 md:h-32 flex-shrink-0">
+
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {projects.map((project) => (
+            <Card key={project.key} className="overflow-hidden bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 group">
+              <div className="relative aspect-video overflow-hidden">
                 <Image
                   src={project.imageUrl}
-                  alt={t(`portfolio.projects.${project.slug}.title`)}
+                  alt={t(`portfolio.projects.${project.key}.title`)}
                   fill
-                  style={{ objectFit: "cover" }}
-                  className="rounded-lg"
+                  className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
-              <div className="flex-grow">
-                <h2 className="text-xl font-semibold">
-                  {t(`portfolio.projects.${project.slug}.title`)}
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300 mt-1">
-                  {t(`portfolio.projects.${project.slug}.description`)}
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-lg mb-1">
+                  {t(`portfolio.projects.${project.key}.title`)}
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                  {t(`portfolio.projects.${project.key}.description`)}
                 </p>
-              </div>
-              <ArrowRight className="h-6 w-6 text-gray-400 dark:text-gray-500 hidden md:block" />
-            </div>
-          </Link>
-        ))}
-        <Link href={`/${language}/contact`}>
-          <div className="border-b p-6 md:p-8 transition-colors hover:bg-gray-50/50 dark:hover:bg-gray-900/50 flex items-center justify-between">
-            <div>
-              <h2 className="text-xl font-semibold">
-                {t("portfolio.projects.dreamProject.title")}
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 mt-1">
-                {t("portfolio.projects.dreamProject.description")}
-              </p>
-            </div>
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  {isPl ? 'Zobacz na żywo' : 'View live site'}
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <div className="text-center border-t pt-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            {t("portfolio.projects.dreamProject.title")}
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-xl mx-auto">
+            {t("portfolio.projects.dreamProject.description")}
+          </p>
+          <Link href={`/${language}/contact`}>
             <Button>{t("portfolio.projects.dreamProject.cta")}</Button>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </div>
   );
