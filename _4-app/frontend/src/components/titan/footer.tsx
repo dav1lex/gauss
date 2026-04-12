@@ -14,7 +14,7 @@ export function Footer({ className }: FooterProps) {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center font-mono font-bold text-white text-xs">
+            <div className="w-6 h-6 bg-[var(--titan-accent-primary)] rounded flex items-center justify-center font-mono font-bold text-white text-xs">
               T
             </div>
             <span className="font-semibold">TITANCODE</span>

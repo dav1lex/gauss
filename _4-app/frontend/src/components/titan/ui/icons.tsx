@@ -92,7 +92,7 @@ export function IconBox({ icon, className }: { icon: React.ReactNode, className?
 
 export function IconBoxLarge({ icon, className }: { icon: React.ReactNode, className?: string }) {
   return (
-    <div className={cn('w-16 h-16 border-2 border-orange-500 rounded-lg flex items-center justify-center', className)}>
+    <div className={cn('w-16 h-16 border-2 border-[var(--titan-accent-primary)] rounded-lg flex items-center justify-center', className)}>
       {icon}
     </div>
   )

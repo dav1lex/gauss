@@ -13,7 +13,7 @@ export function Services({ className }: ServicesProps) {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-16">
-          <span className="font-mono text-xs text-orange-500 mb-4 block">01 / SERVICES</span>
+          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">01 / SERVICES</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">What we do</h2>
           <p className="text-muted-foreground max-w-xl">
             Full-cycle development from concept to deployment and beyond.

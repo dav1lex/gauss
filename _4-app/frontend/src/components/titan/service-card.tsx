@@ -13,7 +13,7 @@ export function ServiceCard({ title, description, icon, className }: ServiceCard
   return (
     <div
       className={cn(
-        'p-6 border border-border bg-white cursor-pointer transition-colors hover:border-orange-500',
+        'p-6 border border-border bg-white cursor-pointer transition-colors hover:border-[var(--titan-accent-primary)]',
         className
       )}
     >

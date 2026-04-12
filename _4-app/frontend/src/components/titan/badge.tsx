@@ -20,7 +20,7 @@ export function Badge({ children, variant = 'default', className, showPulse = fa
       )}
     >
       {showPulse && (
-        <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
+        <span className="w-2 h-2 rounded-full bg-[var(--titan-accent-primary)] animate-pulse" />
       )}
       {children}
     </span>

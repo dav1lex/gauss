@@ -21,11 +21,11 @@ export function Button({
   const baseStyles = 'inline-flex items-center justify-center font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50'
   
   const variants = {
-    primary: 'bg-orange-500 text-white hover:bg-orange-400',
+    primary: 'bg-[var(--titan-accent-primary)] text-white hover:bg-[var(--titan-accent-secondary)]',
     secondary: 'bg-foreground text-white hover:bg-foreground/90',
     outline: 'border border-border hover:border-muted-foreground',
     ghost: 'hover:bg-secondary',
-    link: 'text-orange-500 underline-offset-4 hover:underline'
+    link: 'text-[var(--titan-accent-primary)] underline-offset-4 hover:underline'
   }
   
   const sizes = {

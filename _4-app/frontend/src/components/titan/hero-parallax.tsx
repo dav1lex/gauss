@@ -35,7 +35,7 @@ export function HeroParallax({
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/50" />
       
       {/* Orange accent glow */}
-      <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[var(--titan-accent-primary)]/10 rounded-full blur-3xl" />
       
       {/* Content - Left aligned */}
       <div className="relative max-w-7xl mx-auto px-6 py-32 w-full">
@@ -57,7 +57,7 @@ export function HeroParallax({
           <div className="flex flex-wrap gap-4">
             <Link
               href="#contact"
-              className="inline-flex items-center gap-2 bg-orange-500 text-white px-8 py-4 text-sm font-semibold hover:bg-orange-400 transition-colors"
+              className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-white px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
             >
               Start a Project
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,7 +115,7 @@ export function HeroParallaxAnimated({
           <div className="flex flex-wrap gap-4">
             <Link
               href="#contact"
-              className="inline-flex items-center gap-2 bg-orange-500 text-white px-8 py-4 text-sm font-semibold hover:bg-orange-400 transition-colors"
+              className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-white px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
             >
               Start a Project
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

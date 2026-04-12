@@ -21,7 +21,7 @@ export function Navbar({ className }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center font-mono font-bold text-white text-sm">
+          <div className="w-8 h-8 bg-[var(--titan-accent-primary)] rounded flex items-center justify-center font-mono font-bold text-white text-sm">
             T
           </div>
           <span className="text-lg font-semibold tracking-tight">TITANCODE</span>
@@ -48,7 +48,7 @@ export function Navbar({ className }: NavbarProps) {
           </span>
           <Link
             href="#contact"
-            className="bg-foreground text-white px-5 py-2 text-sm font-semibold hover:bg-orange-500 transition-colors"
+            className="bg-foreground text-white px-5 py-2 text-sm font-semibold hover:bg-[var(--titan-accent-primary)] transition-colors"
           >
             Get Started
           </Link>

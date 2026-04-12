@@ -1,9 +1,7 @@
 // Landing Page Components
 export { Badge } from './badge'
 export { CodeGradient } from './code-gradient'
-export { Terminal, TerminalDefault } from './terminal'
 export { Navbar } from './navbar'
-export { Hero } from './hero'
 export { HeroParallax, HeroParallaxAnimated } from './hero-parallax'
 export { ServiceCard, ServiceIcons, services } from './service-card'
 export { Services } from './services'

@@ -15,7 +15,7 @@ export function ProjectCard({ title, description, category, icon, className }: P
   return (
     <div
       className={cn(
-        'border border-border bg-white cursor-pointer transition-colors hover:border-orange-500',
+        'border border-border bg-white cursor-pointer transition-colors hover:border-[var(--titan-accent-primary)]',
         className
       )}
     >
@@ -23,8 +23,8 @@ export function ProjectCard({ title, description, category, icon, className }: P
       <div className="aspect-video bg-muted relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
-            <div className="w-16 h-16 mx-auto mb-3 border-2 border-orange-500 rounded-lg flex items-center justify-center">
-              <div className="text-orange-500">{icon}</div>
+            <div className="w-16 h-16 mx-auto mb-3 border-2 border-[var(--titan-accent-primary)] rounded-lg flex items-center justify-center">
+              <div className="text-[var(--titan-accent-primary)]">{icon}</div>
             </div>
             <span className="text-2xl font-bold">
               <CodeGradient>{title}</CodeGradient>
@@ -36,7 +36,7 @@ export function ProjectCard({ title, description, category, icon, className }: P
       
       {/* Content */}
       <div className="p-6">
-        <span className="font-mono text-xs text-orange-500 mb-2 block">{category}</span>
+        <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-2 block">{category}</span>
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-sm text-muted-foreground">{description}</p>
       </div>

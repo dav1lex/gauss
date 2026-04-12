@@ -10,7 +10,7 @@ interface SectionLabelProps {
 
 export function SectionLabel({ children, number, className }: SectionLabelProps) {
   return (
-    <span className={cn('font-mono text-xs text-orange-500 mb-4 block', className)}>
+    <span className={cn('font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block', className)}>
       {number && `${number} / `}{children}
     </span>
   )

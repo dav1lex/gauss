@@ -35,7 +35,7 @@ export function About({ className }: AboutProps) {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Left side - Text */}
           <div>
-            <span className="font-mono text-xs text-orange-500 mb-4 block">03 / ABOUT</span>
+            <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">03 / ABOUT</span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Engineers who<br />ship code.
             </h2>

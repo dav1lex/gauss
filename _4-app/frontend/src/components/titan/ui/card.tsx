@@ -51,7 +51,7 @@ export function StatCard({ value, label, className }: { value: string, label: st
   return (
     <div className={cn('p-6 border border-border bg-white', className)}>
       <span className="text-4xl font-bold">
-        <span className="bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[var(--titan-accent-secondary)] via-[var(--titan-accent-primary)] to-[var(--titan-accent-primary)] bg-clip-text text-transparent">
           {value}
         </span>
       </span>

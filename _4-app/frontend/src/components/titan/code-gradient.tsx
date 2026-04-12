@@ -11,7 +11,7 @@ export function CodeGradient({ children, className }: CodeGradientProps) {
   return (
     <span
       className={cn(
-        'bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 bg-clip-text text-transparent',
+        'bg-gradient-to-r from-[var(--titan-accent-secondary)] via-[var(--titan-accent-primary)] to-[var(--titan-accent-primary)] bg-clip-text text-transparent',
         className
       )}
     >
