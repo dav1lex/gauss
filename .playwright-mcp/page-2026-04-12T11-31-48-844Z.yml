@@ -1,0 +1,771 @@
+- generic [active] [ref=e1]:
+  - complementary "Choose country or region" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Wybierz inny kraj lub region, aby zobaczyć treść właściwą dla swojej lokalizacji i zrobić zakupy przez internet.
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - button " Polska " [ref=e7]:
+            - generic [ref=e8]:
+              - generic [ref=e9]: 
+              - generic [ref=e10]: Polska
+            - text: 
+          - text: 
+        - button "Kontynuuj" [ref=e11] [cursor=pointer]
+        - button "Zamknij narzędzie wyboru kraju lub regionu" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+  - heading "Apple" [level=1] [ref=e16]
+  - navigation "Global" [ref=e17]:
+    - list [ref=e19]:
+      - listitem [ref=e20]:
+        - link "Apple" [ref=e21] [cursor=pointer]:
+          - /url: /
+          - generic:
+            - img
+          - generic: Apple
+      - listitem [ref=e22]:
+        - generic [ref=e24]:
+          - list [ref=e26]:
+            - listitem [ref=e27]:
+              - link "Store" [ref=e28] [cursor=pointer]:
+                - /url: /us/shop/goto/store
+                - generic [ref=e29]:
+                  - generic:
+                    - img
+                  - generic: Store
+            - listitem:
+              - button "Store menu":
+                - generic:
+                  - img
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Mac" [ref=e33] [cursor=pointer]:
+                - /url: /mac/
+                - generic [ref=e34]:
+                  - generic:
+                    - img
+                  - generic: Mac
+            - listitem:
+              - button "Mac menu":
+                - generic:
+                  - img
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - link "iPad" [ref=e38] [cursor=pointer]:
+                - /url: /ipad/
+                - generic [ref=e39]:
+                  - generic:
+                    - img
+                  - generic: iPad
+            - listitem:
+              - button "iPad menu":
+                - generic:
+                  - img
+          - list [ref=e41]:
+            - listitem [ref=e42]:
+              - link "iPhone" [ref=e43] [cursor=pointer]:
+                - /url: /iphone/
+                - generic [ref=e44]:
+                  - generic:
+                    - img
+                  - generic: iPhone
+            - listitem:
+              - button "iPhone menu":
+                - generic:
+                  - img
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Watch" [ref=e48] [cursor=pointer]:
+                - /url: /watch/
+                - generic [ref=e49]:
+                  - generic:
+                    - img
+                  - generic: Watch
+            - listitem:
+              - button "Watch menu":
+                - generic:
+                  - img
+          - list [ref=e51]:
+            - listitem [ref=e52]:
+              - link "Vision" [ref=e53] [cursor=pointer]:
+                - /url: /apple-vision-pro/
+                - generic [ref=e54]:
+                  - generic:
+                    - img
+                  - generic: Vision
+            - listitem:
+              - button "Vision menu":
+                - generic:
+                  - img
+          - list [ref=e56]:
+            - listitem [ref=e57]:
+              - link "AirPods" [ref=e58] [cursor=pointer]:
+                - /url: /airpods/
+                - generic [ref=e59]:
+                  - generic:
+                    - img
+                  - generic: AirPods
+            - listitem:
+              - button "AirPods menu":
+                - generic:
+                  - img
+          - list [ref=e61]:
+            - listitem [ref=e62]:
+              - link "TV and Home" [ref=e63] [cursor=pointer]:
+                - /url: /tv-home/
+                - generic [ref=e64]:
+                  - generic:
+                    - img
+                  - generic: TV & Home
+            - listitem:
+              - button "TV and Home menu":
+                - generic:
+                  - img
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - link "Entertainment" [ref=e68] [cursor=pointer]:
+                - /url: /entertainment/
+                - generic [ref=e69]:
+                  - generic:
+                    - img
+                  - generic: Entertainment
+            - listitem:
+              - button "Entertainment menu":
+                - generic:
+                  - img
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Accessories" [ref=e73] [cursor=pointer]:
+                - /url: /us/shop/goto/buy_accessories
+                - generic [ref=e74]:
+                  - generic:
+                    - img
+                  - generic: Accessories
+            - listitem:
+              - button "Accessories menu":
+                - generic:
+                  - img
+          - list [ref=e76]:
+            - listitem [ref=e77]:
+              - link "Support" [ref=e78] [cursor=pointer]:
+                - /url: https://support.apple.com/?cid=gn-ols-home-hp-tab
+                - generic [ref=e79]:
+                  - generic:
+                    - img
+                  - generic: Support
+            - listitem:
+              - button "Support menu":
+                - generic:
+                  - img
+      - listitem [ref=e80]:
+        - button "Search apple.com" [ref=e81] [cursor=pointer]:
+          - generic:
+            - img
+      - listitem [ref=e82]:
+        - button "Shopping Bag" [ref=e84] [cursor=pointer]:
+          - generic:
+            - img
+  - main [ref=e85]:
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - link [ref=e88] [cursor=pointer]:
+          - /url: /iphone/
+        - generic [ref=e89]:
+          - generic:
+            - heading "iPhone" [level=2]
+            - paragraph: Meet the latest iPhone lineup.
+          - generic [ref=e90]:
+            - link "Learn more, iPhone" [ref=e91] [cursor=pointer]:
+              - /url: /iphone/
+              - text: Learn more
+            - link "Shop iPhone" [ref=e92] [cursor=pointer]:
+              - /url: /us/shop/goto/buy_iphone
+        - img "iPhone 17 Pro, back exterior, deep blue color, Pro Fusion camera system in top left corner, Apple logo in center, iPhone 17, back exterior, white color, Dual Fusion camera system in top left corner, Apple logo in center, iPhone 17e, back exterior, soft pink color, Fusion camera system in top left corner, Apple logo in center, iPhone Air, side, titanium frame profile, Fusion camera system in top left corner" [ref=e95]
+      - generic [ref=e96]:
+        - link [ref=e97] [cursor=pointer]:
+          - /url: /macbook-neo/
+        - generic [ref=e98]:
+          - generic:
+            - heading "MacBook Neo" [level=2]
+            - paragraph: Amazing Mac. Surprising price.
+          - generic [ref=e99]:
+            - link "Learn more, MacBook Neo 13-inch" [ref=e100] [cursor=pointer]:
+              - /url: /macbook-neo/
+              - text: Learn more
+            - link "Buy, MacBook Neo 13-inch" [ref=e101] [cursor=pointer]:
+              - /url: /us/shop/goto/buy_mac/macbook_neo
+              - text: Buy
+        - img "MacBook Neo in bright citrus color, balanced on fingertips of open hand, screen displaying colorful abstract pattern" [ref=e104]
+      - generic [ref=e105]:
+        - link [ref=e106] [cursor=pointer]:
+          - /url: /ipad-air/
+        - generic [ref=e107]:
+          - generic:
+            - heading "iPad Air" [level=2]:
+              - generic: iPad Air
+            - paragraph: Now supercharged by M4.
+          - generic [ref=e108]:
+            - link "Learn more, iPad Air" [ref=e109] [cursor=pointer]:
+              - /url: /ipad-air/
+              - text: Learn more
+            - link "Buy, iPad Air" [ref=e110] [cursor=pointer]:
+              - /url: /us/shop/goto/buy_ipad/ipad_air
+              - text: Buy
+        - img "iPad Air models floating, back exterior, single-lens camera, front exterior, rounded corners, black display bezel" [ref=e113]
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - link [ref=e116] [cursor=pointer]:
+          - /url: https://developer.apple.com/wwdc26/
+        - generic [ref=e117]:
+          - generic:
+            - heading "WWDC 26" [level=3]:
+              - generic: WWDC 26
+            - paragraph: Apple Worldwide Developers Conference. Join us online June 8–12.
+          - link "Learn more, Apple Worldwide Developers Conference 2026" [ref=e119] [cursor=pointer]:
+            - /url: https://developer.apple.com/wwdc26/
+            - text: Learn more
+        - img "Text on image, W W D C 26. June 8 through 12. Learn More, Apple Worldwide Developers Conference." [ref=e122]
+      - generic [ref=e123]:
+        - link [ref=e124] [cursor=pointer]:
+          - /url: /apple-watch-series-11/
+        - generic [ref=e125]:
+          - generic:
+            - heading "Apple Watch Series 11" [level=3]:
+              - generic: Apple Watch Series 11
+            - paragraph: The ultimate way to watch your health.
+          - generic [ref=e126]:
+            - link "Learn more, Apple Watch Series 11" [ref=e127] [cursor=pointer]:
+              - /url: /apple-watch-series-11/
+              - text: Learn more
+            - link "Buy, Apple Watch Series 11" [ref=e128] [cursor=pointer]:
+              - /url: /us/shop/goto/buy_watch/apple_watch_series_11
+              - text: Buy
+        - img "Apple Watch Series 11, rose gold color, aluminum case, sleep score, right side exterior, Digital Crown, microphone, side button, starlight Sport Band" [ref=e131]
+      - generic [ref=e132]:
+        - link [ref=e133] [cursor=pointer]:
+          - /url: /macbook-pro/
+        - generic [ref=e134]:
+          - generic:
+            - heading "MacBook Pro" [level=3]
+            - paragraph: Now with M5, M5 Pro, and M5 Max.
+          - generic [ref=e135]:
+            - link "Learn more, MacBook Pro" [ref=e136] [cursor=pointer]:
+              - /url: /macbook-pro/
+              - text: Learn more
+            - link "Buy, MacBook Pro" [ref=e137] [cursor=pointer]:
+              - /url: /us/shop/goto/buy_mac/macbook_pro
+              - text: Buy
+        - img "MacBook Pro positioned into the shape of a V, referencing the M5 chip family" [ref=e140]
+      - generic [ref=e141]:
+        - link [ref=e142] [cursor=pointer]:
+          - /url: /airpods-pro/
+        - generic [ref=e143]:
+          - generic:
+            - heading "AirPods Pro 3" [level=3]
+            - paragraph: The world’s best in-ear Active Noise Cancellation.
+          - generic [ref=e144]:
+            - link "Learn more, AirPods Pro 3" [ref=e145] [cursor=pointer]:
+              - /url: /airpods-pro/
+              - text: Learn more
+            - link "Buy, AirPods Pro 3" [ref=e146] [cursor=pointer]:
+              - /url: /us/shop/goto/buy_airpods/airpods_pro_3
+              - text: Buy
+        - img "AirPods Pro 3, wireless headphones, white color, silicone tips" [ref=e149]
+      - generic [ref=e150]:
+        - link [ref=e151] [cursor=pointer]:
+          - /url: /us/shop/goto/trade_in
+        - generic [ref=e152]:
+          - generic:
+            - heading "Apple Trade In" [level=3]:
+              - generic: Apple Trade In
+            - paragraph:
+              - text: Get up to $195–$685 in credit when you trade in iPhone 13 or higher.
+              - superscript: "1"
+          - link "Get your estimate" [ref=e154] [cursor=pointer]:
+            - /url: /us/shop/goto/trade_in
+        - img "Side-by-side, hand holding iPhone 13 in silicon case with stickers on back exterior, trade-in with hand holding new iPhone box for iPhone 17 Pro" [ref=e157]
+      - generic [ref=e158]:
+        - link [ref=e159] [cursor=pointer]:
+          - /url: /apple-card/
+        - generic [ref=e160]:
+          - generic:
+            - heading "Apple Card" [level=3]:
+              - generic: Apple Card
+            - paragraph: Get up to 3% Daily Cash back with every purchase.
+          - generic [ref=e161]:
+            - link "Learn more, Apple Card" [ref=e162] [cursor=pointer]:
+              - /url: /apple-card/
+              - text: Learn more
+            - link "Apply now, Apple Card" [ref=e163] [cursor=pointer]:
+              - /url: https://card.apple.com/apply/application?referrer=cid%3Dapy-200-10000036&start=false
+              - text: Apply now
+        - img "Apple Card, front, Apple logo in top left, cardholder name in middle left Marisa Robertson, card chip in middle right." [ref=e166]
+    - generic [ref=e168]:
+      - heading "Endless entertainment." [level=2] [ref=e170]
+      - generic [ref=e171]:
+        - tablist [ref=e172]:
+          - tab "Item 1" [selected]:
+            - generic: Item 1
+          - tab "Item 2" [ref=e173] [cursor=pointer]:
+            - generic [ref=e174]: Item 2
+          - tab "Item 3" [ref=e175] [cursor=pointer]:
+            - generic [ref=e176]: Item 3
+          - tab "Item 4" [ref=e177] [cursor=pointer]:
+            - generic [ref=e178]: Item 4
+          - tab "Item 5" [ref=e179] [cursor=pointer]:
+            - generic [ref=e180]: Item 5
+          - tab "Item 6" [ref=e181] [cursor=pointer]:
+            - generic [ref=e182]: Item 6
+          - tab "Item 7" [ref=e183] [cursor=pointer]:
+            - generic [ref=e184]: Item 7
+          - tab "Item 8" [ref=e185] [cursor=pointer]:
+            - generic [ref=e186]: Item 8
+          - tab "Item 9" [ref=e187] [cursor=pointer]:
+            - generic [ref=e188]: Item 9
+        - button "Play endless entertainment gallery" [ref=e189] [cursor=pointer]:
+          - img [ref=e191]
+      - group "Gallery of Apple TV shows, movies, and sports." [ref=e193]:
+        - list [ref=e194]:
+          - tabpanel "Item 1" [ref=e195]:
+            - link "Stream now, Outcome - Comedy - Keanu Reeves stars in the new dark comedy directed by Jonah Hill." [ref=e196] [cursor=pointer]:
+              - /url: https://tv.apple.com/us/movie/outcome/umc.cmc.3uvjztuy2y8ve2rj6nvgyop89?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic [ref=e200]:
+                - generic [ref=e201]: Stream now
+                - paragraph [ref=e202]: Comedy•Keanu Reeves stars in the new dark comedy directed by Jonah Hill.
+          - tabpanel [ref=e203]:
+            - link:
+              - /url: https://tv.apple.com/us/show/your-friends--neighbors/umc.cmc.74o37kzay0yuuub8iumddjsg?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic:
+                - generic:
+                  - generic: Stream now
+                  - paragraph: Drama•New season.
+          - tabpanel [ref=e204]:
+            - link:
+              - /url: https://tv.apple.com/us/room/formula-1/uts.room.formula-1?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic:
+                - generic:
+                  - generic: F1 on Apple TV
+                  - paragraph: Every Grand Prix™, live and on demand—all in one place, all year long.
+          - tabpanel [ref=e205]:
+            - link:
+              - /url: https://tv.apple.com/us/show/imperfect-women/umc.cmc.1w2rmpbqzt24879bt7109zgi6?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic:
+                - generic:
+                  - generic: Stream now
+                  - paragraph: Thriller•They shared everything but the truth.
+          - tabpanel [ref=e206]:
+            - link:
+              - /url: https://tv.apple.com/us/channel/mls/tvs.sbd.7000?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic:
+                - generic:
+                  - generic: MLS on Apple TV
+                  - paragraph: Watch every club, every match, live—all season long.
+          - tabpanel [ref=e207]:
+            - link:
+              - /url: https://tv.apple.com/us/show/shrinking/umc.cmc.apzybj6eqf6pzccd97kev7bs?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic:
+                - generic:
+                  - generic: Stream now
+                  - paragraph: Comedy•Getting it together. Together.
+          - tabpanel [ref=e208]:
+            - link:
+              - /url: https://tv.apple.com/us/room/friday-night-baseball/edt.item.62327df1-6874-470e-98b2-a5bbeac509a2?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic:
+                - generic:
+                  - generic: See the schedule
+                  - paragraph: Live MLB games, every Friday.
+          - tabpanel [ref=e209]:
+            - link:
+              - /url: https://tv.apple.com/us/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic:
+                - generic:
+                  - generic: Stream now
+                  - paragraph: Drama•A new gold rush begins.
+          - tabpanel [ref=e210]:
+            - link:
+              - /url: https://tv.apple.com/us/show/monarch-legacy-of-monsters/umc.cmc.62l8x0ixrhyq3yaqa5y8yo7ew?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622
+              - generic:
+                - generic:
+                  - generic: Stream now
+                  - paragraph: Adventure•A new threat will surface.
+      - group "Gallery of Apple services, including Fitness Plus, Apple Arcade, and Apple Music" [ref=e211]:
+        - list [ref=e212]:
+          - tabpanel "Item 1" [ref=e213]:
+            - link "Watch now, Yoga with Molly" [ref=e214] [cursor=pointer]:
+              - /url: https://fitness.apple.com/us/workout/yoga-with-molly/1878230640?itscg=10000&itsct=afp-apl_hp-watch_now--240326
+              - generic [ref=e217]:
+                - img [ref=e220]
+                - generic [ref=e222]:
+                  - generic [ref=e223]: Watch now
+                  - paragraph [ref=e224]: Yoga with Molly
+          - tabpanel [ref=e225]:
+            - link [ref=e226] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/hello-kitty-island-adventure/id1553505132?itscg=10000&itsct=aa-apl_hp-play_now--240326
+              - generic [ref=e229]:
+                - img [ref=e232]
+                - generic [ref=e234]:
+                  - generic [ref=e235]: Play now
+                  - paragraph [ref=e236]: Hello Kitty Island Adventure
+          - tabpanel [ref=e237]:
+            - link:
+              - /url: https://music.apple.com/us/station/sabrina-carpenter-the-zane-lowe-interview/ra.1837392419?itscg=10000&itsct=am-apl_hp-listen_now--240326
+              - generic:
+                - paragraph: "Sabrina Carpenter: The Zane Lowe Interview"
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Listen now
+          - tabpanel [ref=e238]:
+            - link:
+              - /url: https://fitness.apple.com/us/studio-collection/f1-the-movie/1819769713?itscg=10000&itsct=afp-apl_hp-watch_now--240326
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Watch now
+                  - paragraph: “F1® The Movie”
+          - tabpanel [ref=e239]:
+            - link:
+              - /url: https://apps.apple.com/us/app/powerwash-simulator/id6477445344?itscg=10000&itsct=aa-apl_hp-play_now--240326
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Play now
+                  - paragraph: PowerWash Simulator
+          - tabpanel [ref=e240]:
+            - link:
+              - /url: https://music.apple.com/us/playlist/a-list-pop/pl.5ee8333dbe944d9f9151e97d92d1ead9?itscg=10000&itsct=am-apl_hp-listen_now--240326
+              - generic:
+                - paragraph: A-List Pop
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Listen now
+          - tabpanel [ref=e241]:
+            - link:
+              - /url: https://fitness.apple.com/us/studio-collection/get-your-glutes-in-great-shape/1710038259?itscg=10000&itsct=afp-apl_hp-watch_now--240326
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Watch now
+                  - paragraph: Get Your Glutes in Great Shape
+          - tabpanel [ref=e242]:
+            - link:
+              - /url: https://apps.apple.com/us/app/spongebob-patty-pursuit-2/id6472008605?itscg=10000&itsct=aa-apl_hp-play_now--240326
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Play now
+                  - paragraph: "SpongeBob: Patty Pursuit 2"
+          - tabpanel [ref=e243]:
+            - link [ref=e244] [cursor=pointer]:
+              - /url: https://music.apple.com/us/playlist/new-music-daily/pl.2b0e6e332fdf4b7a91164da3162127b5?itscg=10000&itsct=am-apl_hp-listen_now--240326
+              - paragraph [ref=e247]: New Music Daily
+              - generic [ref=e248]:
+                - img [ref=e251]
+                - generic [ref=e254]: Listen now
+  - contentinfo "Apple Footer" [ref=e255]:
+    - generic [ref=e256]:
+      - heading "Apple Footer" [level=2] [ref=e257]
+      - region "Footnotes" [ref=e258]:
+        - list [ref=e259]:
+          - listitem [ref=e260]: Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In‑store trade‑in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores and may vary between in‑store and online trade‑in. Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse, cancel, or limit quantity of any trade‑in transaction for any reason. More details are available from Apple’s trade-in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may apply.
+        - list [ref=e261]:
+          - listitem [ref=e262]:
+            - generic [ref=e263]:
+              - paragraph [ref=e264]: To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+              - paragraph [ref=e265]: Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.
+              - paragraph [ref=e266]: All communications from Apple and Goldman Sachs Bank USA about Apple Card (including transactional and marketing communications) and customer service support are available in English. Certain communications about Apple Card can be viewed in another language depending on your device language settings. If you reside in the U.S. Virgin Islands, American Samoa, Guam, Northern Mariana Islands, or U.S. Minor Outlying Islands, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+          - listitem [ref=e267]:
+            - generic [ref=e268]:
+              - text: Learn more about how Apple Card applications are evaluated at
+              - link "support.apple.com/kb/HT209218" [ref=e269] [cursor=pointer]:
+                - /url: https://support.apple.com/kb/HT209218
+              - text: .
+          - listitem [ref=e270]: A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV.
+          - listitem [ref=e271]: Features are subject to change. Some features, applications, and services may not be available in all regions or all languages.
+      - navigation "Apple Directory" [ref=e272]:
+        - generic [ref=e273]:
+          - generic:
+            - heading "Shop and Learn" [level=3] [ref=e274]:
+              - generic [ref=e275]: Shop and Learn
+            - list [ref=e276]:
+              - listitem [ref=e277]:
+                - link "Store" [ref=e278] [cursor=pointer]:
+                  - /url: /us/shop/goto/store
+              - listitem [ref=e279]:
+                - link "Mac" [ref=e280] [cursor=pointer]:
+                  - /url: /mac/
+              - listitem [ref=e281]:
+                - link "iPad" [ref=e282] [cursor=pointer]:
+                  - /url: /ipad/
+              - listitem [ref=e283]:
+                - link "iPhone" [ref=e284] [cursor=pointer]:
+                  - /url: /iphone/
+              - listitem [ref=e285]:
+                - link "Watch" [ref=e286] [cursor=pointer]:
+                  - /url: /watch/
+              - listitem [ref=e287]:
+                - link "Vision" [ref=e288] [cursor=pointer]:
+                  - /url: /apple-vision-pro/
+              - listitem [ref=e289]:
+                - link "AirPods" [ref=e290] [cursor=pointer]:
+                  - /url: /airpods/
+              - listitem [ref=e291]:
+                - link "TV & Home" [ref=e292] [cursor=pointer]:
+                  - /url: /tv-home/
+              - listitem [ref=e293]:
+                - link "AirTag" [ref=e294] [cursor=pointer]:
+                  - /url: /airtag/
+              - listitem [ref=e295]:
+                - link "Accessories" [ref=e296] [cursor=pointer]:
+                  - /url: /us/shop/goto/buy_accessories
+              - listitem [ref=e297]:
+                - link "Gift Cards" [ref=e298] [cursor=pointer]:
+                  - /url: /us/shop/goto/giftcards
+          - generic:
+            - heading "Apple Wallet" [level=3] [ref=e299]:
+              - generic [ref=e300]: Apple Wallet
+            - list [ref=e301]:
+              - listitem [ref=e302]:
+                - link "Wallet" [ref=e303] [cursor=pointer]:
+                  - /url: /wallet/
+              - listitem [ref=e304]:
+                - link "Apple Card" [ref=e305] [cursor=pointer]:
+                  - /url: /apple-card/
+              - listitem [ref=e306]:
+                - link "Apple Pay" [ref=e307] [cursor=pointer]:
+                  - /url: /apple-pay/
+              - listitem [ref=e308]:
+                - link "Apple Cash" [ref=e309] [cursor=pointer]:
+                  - /url: /apple-cash/
+        - generic [ref=e310]:
+          - generic:
+            - heading "Account" [level=3] [ref=e311]:
+              - generic [ref=e312]: Account
+            - list [ref=e313]:
+              - listitem [ref=e314]:
+                - link "Manage Your Apple Account" [ref=e315] [cursor=pointer]:
+                  - /url: https://account.apple.com/
+              - listitem [ref=e316]:
+                - link "Apple Store Account" [ref=e317] [cursor=pointer]:
+                  - /url: /us/shop/goto/account
+              - listitem [ref=e318]:
+                - link "iCloud.com" [ref=e319] [cursor=pointer]:
+                  - /url: https://www.icloud.com
+          - generic:
+            - heading "Entertainment" [level=3] [ref=e320]:
+              - generic [ref=e321]: Entertainment
+            - list [ref=e322]:
+              - listitem [ref=e323]:
+                - link "Apple One" [ref=e324] [cursor=pointer]:
+                  - /url: /apple-one/
+              - listitem [ref=e325]:
+                - link "Apple TV" [ref=e326] [cursor=pointer]:
+                  - /url: /apple-tv/
+              - listitem [ref=e327]:
+                - link "Apple Music" [ref=e328] [cursor=pointer]:
+                  - /url: /apple-music/
+              - listitem [ref=e329]:
+                - link "Apple Arcade" [ref=e330] [cursor=pointer]:
+                  - /url: /apple-arcade/
+              - listitem [ref=e331]:
+                - link "Apple Fitness+" [ref=e332] [cursor=pointer]:
+                  - /url: /apple-fitness-plus/
+              - listitem [ref=e333]:
+                - link "Apple News+" [ref=e334] [cursor=pointer]:
+                  - /url: /apple-news/
+              - listitem [ref=e335]:
+                - link "Apple Podcasts" [ref=e336] [cursor=pointer]:
+                  - /url: /apple-podcasts/
+              - listitem [ref=e337]:
+                - link "Apple Books" [ref=e338] [cursor=pointer]:
+                  - /url: /apple-books/
+              - listitem [ref=e339]:
+                - link "App Store" [ref=e340] [cursor=pointer]:
+                  - /url: /app-store/
+        - generic [ref=e341]:
+          - generic:
+            - heading "Apple Store" [level=3] [ref=e342]:
+              - generic [ref=e343]: Apple Store
+            - list [ref=e344]:
+              - listitem [ref=e345]:
+                - link "Find a Store" [ref=e346] [cursor=pointer]:
+                  - /url: /retail/
+              - listitem [ref=e347]:
+                - link "Genius Bar" [ref=e348] [cursor=pointer]:
+                  - /url: /retail/geniusbar/
+              - listitem [ref=e349]:
+                - link "Today at Apple" [ref=e350] [cursor=pointer]:
+                  - /url: /today/
+              - listitem [ref=e351]:
+                - link "Group Reservations" [ref=e352] [cursor=pointer]:
+                  - /url: /today/groups/
+              - listitem [ref=e353]:
+                - link "Apple Camp" [ref=e354] [cursor=pointer]:
+                  - /url: /today/camp/
+              - listitem [ref=e355]:
+                - link "Apple Store App" [ref=e356] [cursor=pointer]:
+                  - /url: https://apps.apple.com/us/app/apple-store/id375380948
+              - listitem [ref=e357]:
+                - link "Certified Refurbished" [ref=e358] [cursor=pointer]:
+                  - /url: /us/shop/goto/special_deals
+              - listitem [ref=e359]:
+                - link "Apple Trade In" [ref=e360] [cursor=pointer]:
+                  - /url: /us/shop/goto/trade_in
+              - listitem [ref=e361]:
+                - link "Financing" [ref=e362] [cursor=pointer]:
+                  - /url: /us/shop/goto/payment_plan
+              - listitem [ref=e363]:
+                - link "Carrier Deals at Apple" [ref=e364] [cursor=pointer]:
+                  - /url: /us/shop/goto/buy_iphone/carrier_offers
+              - listitem [ref=e365]:
+                - link "Order Status" [ref=e366] [cursor=pointer]:
+                  - /url: /us/shop/goto/order/list
+              - listitem [ref=e367]:
+                - link "Shopping Help" [ref=e368] [cursor=pointer]:
+                  - /url: /us/shop/goto/help
+        - generic [ref=e369]:
+          - generic:
+            - heading "For Business" [level=3] [ref=e370]:
+              - generic [ref=e371]: For Business
+            - list [ref=e372]:
+              - listitem [ref=e373]:
+                - link "Apple and Business" [ref=e374] [cursor=pointer]:
+                  - /url: /business/
+              - listitem [ref=e375]:
+                - link "Shop for Business" [ref=e376] [cursor=pointer]:
+                  - /url: /retail/business/
+          - generic:
+            - heading "For Education" [level=3] [ref=e377]:
+              - generic [ref=e378]: For Education
+            - list [ref=e379]:
+              - listitem [ref=e380]:
+                - link "Apple and Education" [ref=e381] [cursor=pointer]:
+                  - /url: /education/
+              - listitem [ref=e382]:
+                - link "Shop for K-12" [ref=e383] [cursor=pointer]:
+                  - /url: /education/k12/how-to-buy/
+              - listitem [ref=e384]:
+                - link "Shop for College" [ref=e385] [cursor=pointer]:
+                  - /url: /us/shop/goto/educationrouting
+          - generic:
+            - heading "For Healthcare" [level=3] [ref=e386]:
+              - generic [ref=e387]: For Healthcare
+            - list [ref=e388]:
+              - listitem [ref=e389]:
+                - link "Apple and Healthcare" [ref=e390] [cursor=pointer]:
+                  - /url: /healthcare/
+          - generic:
+            - heading "For Government" [level=3] [ref=e391]:
+              - generic [ref=e392]: For Government
+            - list [ref=e393]:
+              - listitem [ref=e394]:
+                - link "Apple and Government" [ref=e395] [cursor=pointer]:
+                  - /url: /government/
+              - listitem [ref=e396]:
+                - link "Shop for Veterans and Military" [ref=e397] [cursor=pointer]:
+                  - /url: /us/shop/goto/eppstore/veteransandmilitary
+              - listitem [ref=e398]:
+                - link "Shop for State and Local Employees" [ref=e399] [cursor=pointer]:
+                  - /url: /us_epp_67909/store
+              - listitem [ref=e400]:
+                - link "Shop for Federal Employees" [ref=e401] [cursor=pointer]:
+                  - /url: /us_epp_55499/store
+        - generic [ref=e402]:
+          - generic:
+            - heading "Apple Values" [level=3] [ref=e403]:
+              - generic [ref=e404]: Apple Values
+            - list [ref=e405]:
+              - listitem [ref=e406]:
+                - link "Accessibility" [ref=e407] [cursor=pointer]:
+                  - /url: /accessibility/
+              - listitem [ref=e408]:
+                - link "Education" [ref=e409] [cursor=pointer]:
+                  - /url: /education-initiative/
+              - listitem [ref=e410]:
+                - link "Environment" [ref=e411] [cursor=pointer]:
+                  - /url: /environment/
+              - listitem [ref=e412]:
+                - link "Inclusion and Diversity" [ref=e413] [cursor=pointer]:
+                  - /url: /diversity/
+              - listitem [ref=e414]:
+                - link "Privacy" [ref=e415] [cursor=pointer]:
+                  - /url: /privacy/
+              - listitem [ref=e416]:
+                - link "Racial Equity and Justice" [ref=e417] [cursor=pointer]:
+                  - /url: /racial-equity-justice-initiative/
+              - listitem [ref=e418]:
+                - link "Supply Chain Innovation" [ref=e419] [cursor=pointer]:
+                  - /url: /supply-chain/
+          - generic:
+            - heading "About Apple" [level=3] [ref=e420]:
+              - generic [ref=e421]: About Apple
+            - list [ref=e422]:
+              - listitem [ref=e423]:
+                - link "Newsroom" [ref=e424] [cursor=pointer]:
+                  - /url: /newsroom/
+              - listitem [ref=e425]:
+                - link "Apple Leadership" [ref=e426] [cursor=pointer]:
+                  - /url: /leadership/
+              - listitem [ref=e427]:
+                - link "Career Opportunities" [ref=e428] [cursor=pointer]:
+                  - /url: /careers/us/
+              - listitem [ref=e429]:
+                - link "Investors" [ref=e430] [cursor=pointer]:
+                  - /url: https://investor.apple.com/
+              - listitem [ref=e431]:
+                - link "Ethics & Compliance" [ref=e432] [cursor=pointer]:
+                  - /url: /compliance/
+              - listitem [ref=e433]:
+                - link "Events" [ref=e434] [cursor=pointer]:
+                  - /url: /apple-events/
+              - listitem [ref=e435]:
+                - link "Contact Apple" [ref=e436] [cursor=pointer]:
+                  - /url: /contact/
+      - generic [ref=e437]:
+        - generic [ref=e438]:
+          - text: "More ways to shop:"
+          - link "Find an Apple Store" [ref=e439] [cursor=pointer]:
+            - /url: /retail/
+          - text: or
+          - link "other retailer" [ref=e440] [cursor=pointer]:
+            - /url: https://locate.apple.com/
+          - text: near you.
+          - generic [ref=e441]:
+            - text: Or call
+            - link "1-800-MY-APPLE" [ref=e442] [cursor=pointer]:
+              - /url: tel:1-800-692-7753
+            - text: (1-800-692-7753).
+        - generic [ref=e443]:
+          - generic [ref=e444]:
+            - generic [ref=e445]: Copyright © 2026 Apple Inc. All rights reserved.
+            - list [ref=e446]:
+              - listitem [ref=e447]:
+                - link "Privacy Policy" [ref=e448] [cursor=pointer]:
+                  - /url: /legal/privacy/
+              - listitem [ref=e449]:
+                - link "Terms of Use" [ref=e450] [cursor=pointer]:
+                  - /url: /legal/internet-services/terms/site.html
+              - listitem [ref=e451]:
+                - link "Sales and Refunds" [ref=e452] [cursor=pointer]:
+                  - /url: /us/shop/goto/help/sales_refunds
+              - listitem [ref=e453]:
+                - link "Legal" [ref=e454] [cursor=pointer]:
+                  - /url: /legal/
+              - listitem [ref=e455]:
+                - link "Site Map" [ref=e456] [cursor=pointer]:
+                  - /url: /sitemap/
+          - link "United States. Choose your country or region" [ref=e458] [cursor=pointer]:
+            - /url: /choose-country-region/
+            - text: United States

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITANCODE v2 - Direction B: Apple Minimal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              orange: '#FF6B35',
+              light: '#FAFAFA',
+              gray: '#F5F5F7',
+              dark: '#1D1D1F',
+              blue: '#0071E3',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .section-full {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text-gradient {
+      background: linear-gradient(90deg, #FF6B35 0%, #FF8C42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-text {
+      font-size: clamp(3rem, 8vw, 6rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+    .section-title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease-out forwards;
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    
+    .device-mockup {
+      background: linear-gradient(145deg, #E8E8E8 0%, #C8C8C8 100%);
+      border-radius: 24px;
+      box-shadow: 0 50px 100px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body class="bg-white font-sans text-brand-dark antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-gray-200/50">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="text-lg font-semibold tracking-tight">TITANCODE</div>
+      <div class="hidden md:flex gap-8 text-xs font-medium tracking-wide">
+        <a href="#services" class="hover:text-brand-orange transition-colors">SERVICES</a>
+        <a href="#work" class="hover:text-brand-orange transition-colors">WORK</a>
+        <a href="#about" class="hover:text-brand-orange transition-colors">ABOUT</a>
+        <a href="#contact" class="hover:text-brand-orange transition-colors">CONTACT</a>
+      </div>
+      <button class="bg-brand-blue text-white px-5 py-1.5 rounded-full text-xs font-medium hover:bg-blue-600 transition-colors">
+        Get Started
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="section-full bg-brand-light pt-16">
+    <div class="text-center px-6 max-w-5xl mx-auto">
+      <h1 class="hero-text font-semibold mb-6 fade-up">
+        Built to<br><span class="text-gradient">Endure.</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-600 font-light mb-8 max-w-2xl mx-auto fade-up delay-1">
+        Custom websites and applications that actually work. No templates, no shortcuts.
+      </p>
+      <div class="flex gap-4 justify-center fade-up delay-2">
+        <button class="bg-brand-orange text-white px-8 py-3 rounded-full text-base font-medium hover:bg-orange-600 transition-all hover:scale-105">
+          Start Project
+        </button>
+        <button class="text-brand-blue text-base font-medium hover:underline flex items-center gap-1">
+          Learn more <span class="text-lg">›</span>
+        </button>
+      </div>
+      
+      <!-- Hero Visual -->
+      <div class="mt-16 fade-up delay-3">
+        <div class="device-mockup w-full max-w-4xl mx-auto aspect-[16/10] flex items-center justify-center">
+          <div class="text-center">
+            <div class="text-6xl font-bold text-gray-400 mb-4">&lt;/&gt;</div>
+            <p class="text-gray-500">Your website here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-32 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-20">
+        <h2 class="section-title font-semibold mb-4">What we build.</h2>
+        <p class="text-xl text-gray-600">From scratch. For you.</p>
+      </div>
+
+      <div class="space-y-32">
+        <!-- Service 1 -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1">
+            <div class="text-brand-orange text-sm font-semibold tracking-wide mb-2">WEBSITES</div>
+            <h3 class="text-4xl font-semibold mb-4">Fast. Secure. Yours.</h3>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Every line of code written by hand. No WordPress. No templates. Just pure, optimized code that loads fast and works everywhere.
+            </p>
+            <a href="#" class="text-brand-blue font-medium hover:underline flex items-center gap-1">
+              Learn more <span class="text-lg">›</span>
+            </a>
+          </div>
+          <div class="order-1 md:order-2">
+            <div class="aspect-square bg-brand-gray rounded-3xl flex items-center justify-center">
+              <div class="text-8xl font-light text-gray-300">01</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="aspect-square bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl flex items-center justify-center">
+              <div class="text-8xl font-light text-brand-orange/30">02</div>
+            </div>
+          </div>
+          <div>
+            <div class="text-brand-orange text-sm font-semibold tracking-wide mb-2">AUTOMATION</div>
+            <h3 class="text-4xl font-semibold mb-4">Work smarter.</h3>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Stop doing the same task twice. We build scripts and tools that save hours each week. Data collection, processing, reports — automated.
+            </p>
+            <a href="#" class="text-brand-blue font-medium hover:underline flex items-center gap-1">
+              See how <span class="text-lg">›</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1">
+            <div class="text-brand-orange text-sm font-semibold tracking-wide mb-2">E-COMMERCE</div>
+            <h3 class="text-4xl font-semibold mb-4">Sell more.</h3>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Secure payments, simple checkout, inventory management. Everything you need to sell online, nothing you don't.
+            </p>
+            <a href="#" class="text-brand-blue font-medium hover:underline flex items-center gap-1">
+              Explore <span class="text-lg">›</span>
+            </a>
+          </div>
+          <div class="order-1 md:order-2">
+            <div class="aspect-square bg-brand-gray rounded-3xl flex items-center justify-center">
+              <div class="text-8xl font-light text-gray-300">03</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section id="work" class="py-32 bg-brand-gray">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="section-title font-semibold mb-4">Recent work.</h2>
+        <p class="text-xl text-gray-600">Real results for real businesses.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden group cursor-pointer hover:shadow-2xl transition-shadow">
+          <div class="aspect-[16/10] bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
+            <div class="text-white text-5xl font-bold opacity-50">NanoBid</div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">NanoBid</h3>
+            <p class="text-gray-600">Complete auction platform built from scratch</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden group cursor-pointer hover:shadow-2xl transition-shadow">
+          <div class="aspect-[16/10] bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+            <div class="text-white text-5xl font-bold opacity-50">CareerFlex</div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">CareerFlex</h3>
+            <p class="text-gray-600">AI-powered job search assistant</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden group cursor-pointer hover:shadow-2xl transition-shadow">
+          <div class="aspect-[16/10] bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+            <div class="text-white text-5xl font-bold opacity-50">Kurs8Klasisty</div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">Kurs8Klasisty</h3>
+            <p class="text-gray-600">E-learning platform for English education</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-white rounded-3xl overflow-hidden group cursor-pointer hover:shadow-2xl transition-shadow border-2 border-dashed border-gray-300">
+          <div class="aspect-[16/10] flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-4">+</div>
+              <div class="text-2xl font-semibold text-gray-400">Your Project</div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">Your Project Here</h3>
+            <p class="text-gray-600">Let's build something together</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="section-full bg-brand-dark text-white">
+    <div class="text-center px-6 max-w-4xl mx-auto">
+      <h2 class="text-5xl md:text-7xl font-semibold mb-6">Ready?</h2>
+      <p class="text-xl text-gray-400 mb-10 max-w-xl mx-auto">
+        Let's talk about your project. No sales pitch, just honest advice.
+      </p>
+      <button class="bg-white text-brand-dark px-10 py-4 rounded-full text-lg font-medium hover:bg-gray-200 transition-colors">
+        Get in Touch
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-gray py-12 px-6 text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-brand-dark transition-colors">Privacy</a>
+        <a href="#" class="hover:text-brand-dark transition-colors">Terms</a>
+        <a href="#" class="hover:text-brand-dark transition-colors">Contact</a>
+      </div>
+      <div>© 2025 TITANCODE. Warsaw, Poland.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
