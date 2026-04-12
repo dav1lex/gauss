@@ -21,9 +21,6 @@ export function Navbar({ className }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-[var(--titan-accent-primary)] rounded flex items-center justify-center font-mono font-bold text-primary-foreground text-sm">
-            T
-          </div>
           <span className="text-lg font-semibold tracking-tight">TITANCODE</span>
         </Link>
 
@@ -43,9 +40,6 @@ export function Navbar({ className }: NavbarProps) {
         {/* Right side */}
         <div className="flex items-center gap-4">
           <ThemeSwitcher />
-          <span className="hidden sm:block text-xs font-mono text-muted-foreground">
-            // WARSAW, PL
-          </span>
           <Link
             href="#contact"
             className="bg-foreground text-primary-foreground px-5 py-2 text-sm font-semibold hover:bg-[var(--titan-accent-primary)] transition-colors"

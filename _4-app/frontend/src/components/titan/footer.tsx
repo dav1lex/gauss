@@ -14,9 +14,6 @@ export function Footer({ className }: FooterProps) {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-6 h-6 bg-[var(--titan-accent-primary)] rounded flex items-center justify-center font-mono font-bold text-primary-foreground text-xs">
-              T
-            </div>
             <span className="font-semibold">TITANCODE</span>
           </div>
           
@@ -28,12 +25,11 @@ export function Footer({ className }: FooterProps) {
             <Link href="#" className="hover:text-foreground transition-colors">
               Terms
             </Link>
-            <span className="font-mono text-xs">WARSAW, POLAND</span>
           </div>
           
           {/* Copyright */}
           <div className="text-sm text-muted-foreground">
-            &copy; 2024 TITANCODE. All rights reserved.
+            &copy; {new Date().getFullYear()} TITANCODE. All rights reserved.
           </div>
         </div>
       </div>
