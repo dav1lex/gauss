@@ -3,14 +3,12 @@
     "home": "Start",
     "services": "Usługi",
     "offer": "Oferta",
-    "calculate_estimate": "Wycena",
     "portfolio": "Realizacje",
     "blog": "Blog",
-    "about": "O nas",
     "contact": "Kontakt"
   },
   "header": {
-    "primaryCta": "Darmowa wycena"
+    "primaryCta": "Kontakt"
   },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone",
@@ -27,8 +25,8 @@
     "title": "Usługi: strony internetowe i aplikacje",
     "subtitle": "Projektujemy i wdrażamy strony oraz aplikacje, które działają szybko, stabilnie i są gotowe pod SEO.",
     "viewDetails": "Zobacz szczegóły",
-    "ctaPrimary": "Darmowa wycena",
-    "ctaSecondary": "Kontakt",
+    "ctaPrimary": "Kontakt",
+    "ctaSecondary": "Zobacz szczegóły",
     "startingFrom": "Od",
     "customSolutions": {
       "title": "Tworzymy od podstaw",
@@ -147,128 +145,6 @@
       }
     }
   },
-  "calculateEstimate": {
-    "title": "Ile to będzie kosztować?",
-    "subtitle": "Poznaj realną cenę w 2 minuty. Bez rozmów handlowych - tylko konkretne liczby.",
-    "cta": "Sprawdź cenę",
-    "testPrompt": "Chcesz poznać koszt?",
-    "testDescription": "Odpowiedz na kilka pytań i otrzymaj natychmiastową wycenę.",
-    "testButton": "Oblicz koszt",
-    "seo": {
-      "title": "Kalkulator Wyceny Strony Internetowej | Cennik | TITANCODE",
-      "description": "Skorzystaj z naszego kalkulatora i poznaj przybliżony koszt stworzenia strony internetowej. Wybierz usługi i funkcje, aby zobaczyć szczegółową wycenę. Bez ukrytych opłat.",
-      "keywords": "kalkulator wyceny stron, cennik stron internetowych, koszt strony www, wycena sklepu internetowego"
-    }
-  },
-  "estimatePage": {
-    "mainTitle": "Kalkulator Wyceny Projektu",
-    "mainSubtitle": "Otrzymaj natychmiastową wycenę swojego projektu. Bez rozmów handlowych, tylko liczby.",
-    "step1Title": "1. Wybierz Usługę",
-    "step1Subtitle": "Wybierz pakiet usług, który najlepiej odpowiada Twoim potrzebom.",
-    "step1Button": "Wybierz usługę",
-    "step2Title": "2. Dostosuj i Oblicz",
-    "step2Subtitle": "Dostosuj swój projekt za pomocą dodatkowych opcji.",
-    "step2Button": "Dostosuj i oblicz",
-    "estimateTitle": "Twoja Wycena",
-    "selectedPackage": "Wybrany pakiet",
-    "basePrice": "Cena Bazowa",
-    "totalCost": "Całkowity Koszt",
-    "upfrontPayment": "Pierwsza Wpłata (40%)",
-    "monthlySupportTitle": "Miesięczne Wsparcie",
-    "monthly": "miesiąc",
-    "includedTitle": "Co jest wliczone",
-    "startOver": "Zacznij od nowa",
-    "getQuoteButton": "Otrzymaj Szczegółową Wycenę",
-    "estimateDisclaimerTitle": "To tylko szacunek!",
-    "estimateDisclaimerText": "To jest wstępna kalkulacja. Skontaktuj się z nami, aby uzyskać szczegółową wycenę!",
-    "continueButton": "Przejdź do Dostosowywania",
-    "startingFrom": "Już od",
-    "techStack": "Technologie",
-    "idealFor": "Idealne dla",
-    "timeline": "Czas realizacji",
-    "tiers": {
-      "starter": {
-        "name": "Starter",
-        "description": "Profesjonalna witryna dla freelancerów i małych firm.",
-        "idealFor": "Freelancerzy, małe firmy, marki osobiste.",
-        "techStack": "HTML, CSS, JavaScript",
-        "time": "1-2 tygodnie",
-        "includes": [
-          "Autorski projekt graficzny",
-          "Do 5 podstron",
-          "Responsywność mobilna",
-          "Formularze kontaktowe",
-          "Podstawowa optymalizacja SEO",
-          "30 dni wsparcia technicznego"
-        ]
-      },
-      "custom": {
-        "name": "Business",
-        "description": "Zaawansowana witryna z dodatkowymi funkcjami dla rozwijających się firm.",
-        "idealFor": "Ugruntowane firmy wymagające integracji z zewnętrznymi systemami.",
-        "techStack": "Next.js, TypeScript lub autorskie rozwiązanie",
-        "time": "3-6 tygodni",
-        "includes": [
-          "Wszystko z pakietu Starter",
-          "Do 15 podstron",
-          "Panel zarządzania treścią",
-          "Integracja z Google Analytics",
-          "Połączenia z zewnętrznymi API",
-          "Priorytetowe wsparcie techniczne"
-        ]
-      },
-      "ecommerce": {
-        "name": "E-Commerce",
-        "description": "Kompletny sklep internetowy z bezpiecznymi płatnościami i zarządzaniem magazynem.",
-        "idealFor": "Sklepy internetowe, marki sprzedające bezpośrednio klientom.",
-        "techStack": "Next.js, Shopify lub autorskie rozwiązanie",
-        "time": "5-10 tygodni",
-        "includes": [
-          "Wszystko z pakietu Business",
-          "System zarządzania produktami",
-          "Bezpieczne bramki płatności",
-          "Śledzenie statusu zamówień",
-          "Panele kont klientów"
-        ]
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "description": "Dedykowane rozwiązania dla dużych organizacji o złożonych wymaganiach.",
-        "idealFor": "Duże firmy, korporacje, złożone wymagania biznesowe.",
-        "techStack": "Rozwiązanie dopasowane do potrzeb",
-        "time": "Ustalany indywidualnie",
-        "includes": [
-          "Wszystko z pakietu E-Commerce",
-          "Funkcje dostosowane do potrzeb",
-          "Zaawansowane integracje systemowe",
-          "Zgodność z wymogami bezpieczeństwa",
-          "Dedykowane wsparcie techniczne"
-        ]
-      }
-    },
-    "options": {
-      "hasDesign": "Mam gotowy projekt graficzny",
-      "hasDesign_description": "Oszczędź pieniądze dostarczając kompletny projekt graficzny (Figma, Sketch, itp.), i zdjecia, tresci itp. Wtedy cały proces będzie szybszy i tańszy.",
-      "contentSeoPack": "Pakiet treści i SEO",
-      "contentSeoPack_description": "Profesjonalne teksty na maksymalnie 5 podstron połączone z zaawansowaną optymalizacją SEO dla maksymalnego ruchu organicznego. Czyli, ustawienie w Google Search Console, Google Analytics, Google Tag Manager i inne.",
-      "advancedFeaturesPack": "Pakiet zaawansowanych funkcji",
-      "advancedFeaturesPack_description": "Funkcjonalności tak jak, motyw jasny i ciemny, wielojęzyczność, automatyczne generowanie treści, integracje z zewnętrznymi API. Napisz nam czego potrzebujesz.",
-      "logoDesign": "Projekt logotypu",
-      "logoDesign_description": "Unikalny, profesjonalny logotyp reprezentujący tożsamość Twojej marki.",
-      "constantSupport": "Abonament wsparcia technicznego",
-      "constantSupport_description": "Ciągłe wsparcie techniczne, aktualizacje oraz monitoring wydajności. Ważne: Dla panstwa i tak mamy gwarantowane 30 dni wsparcia technicznego w cenie po oddaniu projektu."
-    },
-    "optionDetails": {
-      "discount": "({value}% rabatu)",
-      "surcharge": "(+{value} PLN)"
-    },
-    "summary": {
-      "hasDesign": "Rabat za gotowy projekt",
-      "contentSeoPack": "Pakiet treści i SEO",
-      "advancedFeaturesPack": "Zaawansowane funkcje",
-      "logoDesign": "Projekt logotypu"
-    }
-  },
   "contact": {
     "title": "Skontaktuj się",
     "subtitle": "Masz pytanie lub pomysł na projekt? Chętnie o tym porozmawiamy.",
@@ -290,139 +166,87 @@
       "email": "info@titancode.pl"
     }
   },
-  "aboutPage": {
-    "hero": {
-      "title": "Tworzymy witryny, które rzeczywiście działają",
-      "subtitle": "Twoja strona internetowa powinna być Twoim najlepszym pracownikiem. Dbamy o to, żeby tak właśnie było.",
-      "seoTitle": "O mnie | TITANCODE",
-      "seoDescription": "Poznaj TITANCODE. Specjalizujemy się w tworzeniu stron internetowych i aplikacji na zamówienie. Zobacz nasz proces i technologie.",
-      "seoKeywords": "o nas, agencja interaktywna warszawa, tworzenie stron internetowych, zespół programistów, filozofia titancode"
-    },
-    "mission": {
-      "title": "Dlaczego dedykowany kod?",
-      "text": "Większość stron internetowych powstaje z gotowych szablonów i wygląda identycznie jak tysiące innych. Założyliśmy TITANCODE, ponieważ wierzymy, że Twój biznes zasługuje na coś wyjątkowego. Każdą linię kodu piszemy ręcznie, specjalnie dla Ciebie. Bez skrótów, bez kompromisów. Po prostu witryny, które działają dokładnie tak, jak tego potrzebujesz."
-    },
-    "process": {
-      "title": "Jak pracujemy",
-      "step1": "Poznanie potrzeb",
-      "step1_desc": "Dokładnie poznajemy Twój biznes i ustalamy, czego rzeczywiście potrzebujesz.",
-      "step2": "Projektowanie",
-      "step2_desc": "Tworzymy projekt, który jest intuicyjny i przyjazny dla Twoich użytkowników.",
-      "step3": "Programowanie",
-      "step3_desc": "Piszemy czysty, solidny kod, który będzie działać nawet gdy Twój biznes się rozwinie.",
-      "step4": "Testowanie",
-      "step4_desc": "Dokładnie testujemy każdą funkcję, aby upewnić się, że wszystko działa bezbłędnie.",
-      "step5": "Uruchomienie",
-      "step5_desc": "Zajmujemy się wszystkimi aspektami technicznymi, abyś mógł skupić się na prowadzeniu biznesu.",
-      "step6": "Wsparcie",
-      "step6_desc": "Jesteśmy dostępni, gdy potrzebujesz wprowadzić zmiany lub coś wymaga naprawy."
-    },
-    "whyUs": {
-      "title": "Dlaczego warto z nami współpracować?",
-      "feature1": "Autorski kod",
-      "feature1_desc": "Żadnych szablonów. Każdy projekt programujemy indywidualnie dla Ciebie.",
-      "feature2": "Rozwiązania na lata",
-      "feature2_desc": "Czysty, przemyślany kod, który pozostanie stabilny wraz z rozwojem Twojego biznesu.",
-      "feature3": "Rzeczywista szybkość",
-      "feature3_desc": "Szybkie witryny, z których Twoi klienci będą chcieli korzystać.",
-      "feature4": "Bezpośredni kontakt",
-      "feature4_desc": "Rozmawiasz bezpośrednio z programistami tworzącymi Twoją stronę.",
-      "feature5": "Sprawdzone technologie",
-      "feature5_desc": "Wykorzystujemy nowoczesne, stabilne rozwiązania, które nie staną się przestarzałe.",
-      "feature6": "Rzeczywiste wsparcie",
-      "feature6_desc": "Potrzebujesz zmian? Coś nie działa? Jesteśmy tutaj, aby pomóc."
-    },
-    "cta": {
-      "title": "Gotowy na start?",
-      "subtitle": "Stwórzmy razem coś, co rzeczywiście pomoże Twojemu biznesowi.",
-      "button": "Skontaktuj się z nami"
-    },
-    "comparison": {
-      "title": "WordPress kontra Kod Dedykowany: Cała Prawda",
-      "subtitle": "Strona na WordPressie z górnej półki często kosztuje tyle samo, co strona pisana na zamówienie. Zobacz, co tak naprawdę kupujesz za swoje pieniądze.",
-      "tabs": {
-        "performance": "Szybkość",
-        "security": "Bezpieczeństwo",
-        "cost": "Całkowity Koszt"
+  "estimatePage": {
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "description": "Profesjonalna witryna dla freelancerów i małych firm.",
+        "includes": [
+          "Autorski projekt graficzny",
+          "Do 5 podstron",
+          "Responsywność mobilna",
+          "Formularze kontaktowe",
+          "Podstawowa optymalizacja SEO",
+          "30 dni wsparcia technicznego"
+        ],
+        "techStack": "HTML, CSS, JavaScript",
+        "time": "1-2 tygodnie"
       },
-      "performance": {
-        "label_wp": "WordPress + Wtyczki",
-        "label_custom": "Kod Dedykowany",
-        "value_wp": "4.2s",
-        "value_custom": "0.8s",
-        "title": "Szybkość ma znaczenie. Ogromne.",
-        "description": "Wolne strony tracą klientów. To proste. My tworzymy z myślą o natychmiastowym ładowaniu, bo każda milisekunda liczy się dla Twojej pozycji w Google i Twoich zysków.",
-        "whatYouGet": "Strona, która działa błyskawicznie, utrzymuje zaangażowanie odwiedzających i jest wyżej w wynikach wyszukiwania."
+      "custom": {
+        "name": "Business",
+        "description": "Zaawansowana witryna z dodatkowymi funkcjami dla rozwijających się firm.",
+        "includes": [
+          "Wszystko z pakietu Starter",
+          "Do 15 podstron",
+          "Panel zarządzania treścią",
+          "Integracja z Google Analytics",
+          "Połączenia z zewnętrznymi API",
+          "Priorytetowe wsparcie techniczne"
+        ],
+        "techStack": "Next.js, TypeScript lub autorskie rozwiązanie",
+        "time": "3-6 tygodni"
       },
-      "security": {
-        "label_wp": "WordPress + Wtyczki",
-        "label_custom": "Kod Dedykowany",
-        "value_wp": "90% więcej ryzyk",
-        "value_custom": "0%",
-        "title": "Nie bądź łatwym celem.",
-        "description": "WordPress to ulubiony plac zabaw hakerów, a wtyczki to jego najsłabszy punkt. Strona na zamówienie nie ma publicznej instrukcji obsługi dla atakujących.",
-        "whatYouGet": "Prawdziwy spokój ducha. Dane Twojej firmy i zaufanie klientów są należycie chronione."
+      "ecommerce": {
+        "name": "E-Commerce",
+        "description": "Kompletny sklep internetowy z bezpiecznymi płatnościami i zarządzaniem magazynem.",
+        "includes": [
+          "Wszystko z pakietu Business",
+          "System zarządzania produktami",
+          "Bezpieczne bramki płatności",
+          "Śledzenie statusu zamówień",
+          "Panele kont klientów"
+        ],
+        "techStack": "Next.js, Shopify lub autorskie rozwiązanie",
+        "time": "5-10 tygodni"
       },
-      "cost": {
-        "label_wp": "WordPress + Wtyczki",
-        "label_custom": "Kod Dedykowany",
-        "value_wp": "5.000+ zł",
-        "value_custom": "5.000 zł",
-        "title": "Ta sama cena, inna wartość.",
-        "description": "Gdy zsumujesz koszty płatnych szablonów, wtyczek i ciągłej opieki, WordPress wcale nie jest taką tanią opcją, na jaką wygląda. Początkowa cena jest często identyczna. Lepij zainwestować w coś, co będzie działać bez problemów przez lata.",
-        "whatYouGet": "Szybsza, bezpieczniejsza i jedyna w swoim rodzaju strona, która jest realnym atutem, a nie obciążeniem."
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Dedykowane rozwiązania dla dużych organizacji o złożonych wymaganiach.",
+        "includes": [
+          "Wszystko z pakietu E-Commerce",
+          "Funkcje dostosowane do potrzeb",
+          "Zaawansowane integracje systemowe",
+          "Zgodność z wymogami bezpieczeństwa",
+          "Dedykowane wsparcie techniczne"
+        ],
+        "techStack": "Rozwiązanie dopasowane do potrzeb",
+        "time": "Ustalany indywidualnie"
       }
-    },
-    "techStack": {
-      "title": "Narzędzia Pracy",
-      "subtitle": "Używamy nowoczesnych technologii klasy produkcyjnej. Oto, co to oznacza dla Ciebie.",
-      "nextjs_desc": "Złoty standard do budowy szybkich, zorientowanych na użytkownika aplikacji internetowych.",
-      "nextjs_benefit": "Twoja strona jest szybka, bezpieczna i uwielbiana przez Google.",
-      "react_desc": "Silnik do budowania dynamicznych, angażujących interfejsów użytkownika.",
-      "react_benefit": "Nowoczesne, płynne doświadczenie dla Twoich klientów.",
-      "typescript_desc": "Wychwytuje błędy, zanim się pojawią, zapewniając niezachwianą niezawodność.",
-      "typescript_benefit": "Twoja aplikacja jest bardziej stabilna i mniej podatna na błędy.",
-      "php_desc": "Kręgosłup internetu, używany do niezawodnej i bezpiecznej logiki serwerowej.",
-      "php_benefit": "Opłacalny i sprawdzony w boju fundament dla Twojego backendu.",
-      "tailwind_desc": "Pozwala na szybką implementację projektu z dokładnością co do piksela.",
-      "tailwind_benefit": "Piękny, spójny design, który możemy szybko aktualizować.",
-      "benefit_title": "Co z tego masz?"
     }
   },
   "faq": {
     "title": "Pytania?",
     "questions": {
       "priceInclude": {
-        "question": "Co zawiera cena?",
-        "answer": "Wszystko, czego potrzebujesz, żeby wejść do internetu: projekt, budowa, testy, hosting, domena i certyfikat SSL na pierwszy rok. Bez ukrytych opłat."
+        "question": "Co zawiera cena?"
       },
       "beginnerStart": {
-        "question": "Jestem nowy w tym. Jak zacząć?",
-        "answer": "Wystarczy wypełnić formularz kontaktowy. Wszystko wyjaśnimy prostym językiem - domeny, hosting, koszty. Pomogliśmy wielu osobom bez doświadczenia wejść do internetu."
+        "question": "Jestem nowy w tym. Jak zacząć?"
       },
       "hostingIncluded": {
-        "question": "Czy hosting jest w cenie?",
-        "answer": "Tak. Hosting jest wliczony w cenę na pierwszy rok. Później to zazwyczaj 200-300 zł rocznie, w zależności od potrzeb."
+        "question": "Czy hosting jest w cenie?"
       },
       "renewalFees": {
-        "question": "Czy są opłaty za odnowienie?",
-        "answer": "Tak, po pierwszym roku płacisz za odnowienie hostingu i domeny. Zazwyczaj 200-300 zł rocznie."
+        "question": "Czy są opłaty za odnowienie?"
       },
       "quality": {
-        "question": "Czy moja strona będzie dobrej jakości?",
-        "answer": "Tak. Wszystkie nasze strony są zoptymalizowane pod kątem szybkości, bezpieczeństwa i działają idealnie na wszystkich urządzeniach. Testujemy wszystko dokładnie przed startem."
+        "question": "Czy moja strona będzie dobrej jakości?"
       },
       "ssl": {
-        "question": "Czy dostanę certyfikat SSL?",
-        "answer": "Tak, wszystkie strony zawierają certyfikaty SSL dla bezpieczeństwa. Twoja strona będzie wyświetlać się jako bezpieczna w przeglądarkach."
+        "question": "Czy dostanę certyfikat SSL?"
       },
       "cms": {
-        "question": "Czy używacie WordPressa?",
-        "answer": "Nie. Budujemy wszystko od zera. Daje Ci dokładnie to, czego potrzebujesz, bez balastu i problemów bezpieczeństwa, które przychodzą z WordPressem."
-      },
-      "customization": {
-        "question": "Czy mogę dostosować pakiety?",
-        "answer": "Tak. Każdy pakiet można dostosować do Twoich konkretnych potrzeb. Napisz do nas, żeby omówić wymagania."
+        "question": "Czy używacie WordPressa?"
       }
     }
   },
@@ -453,131 +277,6 @@
       "title": "Wyniki Wyszukiwania | TITANCODE",
       "description": "Znajdź artykuły, projekty i informacje na temat tworzenia stron internetowych w serwisie TITANCODE.",
       "keywords": "szukaj, znajdź, tworzenie stron, titancode, wyniki"
-    }
-  },
-  "landingWarsaw": {
-    "seo": {
-      "title": "Tworzenie stron internetowych Warszawa | Szybkie strony WWW, SEO i wydajność",
-      "description": "Projektujemy i wdrażamy szybkie, nowoczesne strony internetowe dla firm z Warszawy. Next.js, świetne Core Web Vitals, SEO techniczne, gotowe do pozyskiwania leadów."
-    },
-    "kicker": "Strony internetowe • Warszawa",
-    "h1": "Strony internetowe w Warszawie, które naprawdę sprzedają",
-    "lead": "Jesteśmy zespołem developerskim (TITANCODE). Robimy szybkie strony bez WordPressowych ograniczeń: czyste SEO, świetne Core Web Vitals, stabilna analityka i realne wyniki.",
-    "primaryCta": "Porozmawiajmy o projekcie",
-    "secondaryCta": "Zobacz realizacje",
-    "cards": [
-      {
-        "title": "Wydajność (CWV)",
-        "desc": "Projektujemy pod szybkość: LCP, CLS i INP mają znaczenie. To wpływa na SEO i konwersję."
-      },
-      {
-        "title": "SEO techniczne",
-        "desc": "Kanoniczne adresy, hreflang, sitemap, robots, poprawne nagłówki i struktura. Bez pułapek indeksacji."
-      },
-      {
-        "title": "Konwersja",
-        "desc": "Oferta, CTA, sekcje dowodów i case studies. Strona ma dowozić zapytania, a nie tylko \"ładnie wyglądać\"."
-      }
-    ],
-    "section2": {
-      "title": "Co dostajesz (konkretnie)",
-      "bullets": [
-        "Indywidualny projekt + wdrożenie w Next.js (lub inny stack, jeśli ma sens)",
-        "Wersja PL/EN z poprawnym hreflang i kanonicznymi adresami",
-        "Konfiguracja analityki i zdarzeń (GA4, GTM) + podstawowe mierzenie konwersji",
-        "Checklisty SEO i wydajności przed wdrożeniem"
-      ]
-    },
-    "finalCta": {
-      "title": "Chcesz wycenę?",
-      "desc": "Wypełnij krótki kalkulator i dostaniesz widełki + propozycję zakresu.",
-      "button": "Oblicz wycenę"
-    }
-  },
-  "landingCourse": {
-    "seo": {
-      "title": "Landing page dla kursu online | Lead-gen, płatności i automatyzacje",
-      "description": "Projektujemy landing page pod sprzedaż kursu: szybki, SEO-ready, z analityką, integracją płatności i automatyzacjami. Bez WordPressowych wtyczek i chaosu."
-    },
-    "kicker": "Kurs online • Landing page",
-    "h1": "Landing page dla kursu online, który domyka sprzedaż",
-    "lead": "Zrobimy stronę sprzedażową, która ładuje się błyskawicznie, mierzy konwersje i pozwala skalować kampanie bez technicznego długu.",
-    "primaryCta": "Zamów konsultację",
-    "secondaryCta": "Zobacz usługi",
-    "section1": {
-      "title": "Dlaczego to działa",
-      "desc": "Skupiamy się na jasnym przekazie, wiarygodności i mierzalnych zdarzeniach. Dzięki temu wiesz co poprawiać, a kampanie są tańsze."
-    },
-    "cards": [
-      {
-        "title": "Szybkość + UX",
-        "desc": "Wyniki kampanii zależą od UX. Szybki landing zwiększa jakość ruchu i konwersję."
-      },
-      {
-        "title": "Analityka i zdarzenia",
-        "desc": "GA4/GTM, zdarzenia, cele, mikro-konwersje. Bez strzelania na ślepo."
-      },
-      {
-        "title": "Integracje",
-        "desc": "Płatności, newsletter, CRM, automatyzacje e-maili i webhooki – pod Twój proces."
-      }
-    ],
-    "section2": {
-      "title": "Co możemy wdrożyć",
-      "bullets": [
-        "Sekcje: obietnica, proof, program, bonusy, FAQ, CTA",
-        "Integracja płatności (Stripe/Przelewy24 – zależnie od potrzeb)",
-        "Formularze + automatyzacje (np. MailerLite / HubSpot / własne)",
-        "Wersja PL/EN + SEO techniczne"
-      ]
-    },
-    "finalCta": {
-      "title": "Chcesz to policzyć?",
-      "desc": "Podaj zakres i zobacz widełki + rekomendację najlepszego pakietu.",
-      "button": "Przejdź do kalkulatora"
-    }
-  },
-  "landingAdminPanel": {
-    "seo": {
-      "title": "Panel administracyjny na zamówienie | Aplikacje webowe, dashboardy i integracje",
-      "description": "Budujemy panele administracyjne i aplikacje webowe dopasowane do procesów firmy: dashboardy, role, integracje, automatyzacje. Szybko, bez przepalania budżetu."
-    },
-    "kicker": "Aplikacja webowa • Panel admin",
-    "h1": "Panel administracyjny na zamówienie – bez kompromisów",
-    "lead": "Jeśli Excel i wtyczki przestały wystarczać, czas na własny system: role, logi, integracje i dashboardy dopasowane pod proces.",
-    "primaryCta": "Porozmawiajmy",
-    "secondaryCta": "Zobacz portfolio",
-    "section1": {
-      "title": "Kiedy warto",
-      "desc": "Gdy potrzebujesz kontroli, automatyzacji i jednej prawdy o danych – zamiast kilku narzędzi, które się nie spinają."
-    },
-    "cards": [
-      {
-        "title": "Role i uprawnienia",
-        "desc": "Dostęp per użytkownik/rola, audyt, logi, bezpieczeństwo."
-      },
-      {
-        "title": "Integracje",
-        "desc": "API, webhooki, płatności, CRM, faktury, magazyn. Pod realny proces."
-      },
-      {
-        "title": "Dashboardy",
-        "desc": "Wizualizacje KPI, alerty, raporty – żeby decyzje były oparte o dane."
-      }
-    ],
-    "section2": {
-      "title": "Co dowozimy",
-      "bullets": [
-        "Panel + API + baza danych (architektura pod skalowanie)",
-        "Autoryzacja, role, logowanie zmian (audit trail)",
-        "Integracje i automatyzacje (webhooki, cron, kolejki)",
-        "Wdrożenie + monitoring + plan rozwoju"
-      ]
-    },
-    "finalCta": {
-      "title": "Masz proces do zautomatyzowania?",
-      "desc": "Opisz go w 2–3 zdaniach. Powiemy, jak to ugryźć i ile to realnie kosztuje.",
-      "button": "Napisz do nas"
     }
   }
 }

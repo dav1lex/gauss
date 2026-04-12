@@ -3,14 +3,12 @@
     "home": "Home",
     "services": "Services",
     "offer": "Offer",
-    "calculate_estimate": "Pricing",
     "portfolio": "Portfolio",
     "blog": "Blog",
-    "about": "About",
     "contact": "Contact"
   },
   "header": {
-    "primaryCta": "Get a quote"
+    "primaryCta": "Contact"
   },
   "footer": {
     "rights": "All rights reserved",
@@ -22,8 +20,8 @@
     "title": "What We Build",
     "subtitle": "Every line of code written for you",
     "viewDetails": "See Details",
-    "ctaPrimary": "Get a quote",
-    "ctaSecondary": "Contact",
+    "ctaPrimary": "Contact",
+    "ctaSecondary": "See Details",
     "startingFrom": "From",
     "customSolutions": {
       "title": "Built From Scratch",
@@ -142,131 +140,6 @@
       }
     }
   },
-  "calculateEstimate": {
-    "title": "How Much Will It Cost?",
-    "subtitle": "Get a realistic price in 2 minutes. No sales calls, just numbers.",
-    "cta": "Get My Price",
-    "testPrompt": "Want to know the cost?",
-    "testDescription": "Answer a few questions and get an instant estimate.",
-    "testButton": "Calculate",
-    "seo": {
-      "title": "Website Cost Calculator | Instant Price Estimate | TITANCODE",
-      "description": "Get an instant price estimate for your website with our cost calculator. Select your desired services and features to see a detailed breakdown. No hidden fees.",
-      "keywords": "website cost calculator, price estimate, web development pricing, e-commerce cost, custom website price"
-    }
-  },
-  "estimatePage": {
-    "mainTitle": "Project Cost Calculator",
-    "mainSubtitle": "Get an instant quote for your project. No sales calls, just numbers.",
-    "step1Title": "1. Choose Your Service",
-    "step1Subtitle": "Select the service tier that best fits your project needs.",
-    "step1Button": "Choose Service",
-    "step2Title": "2. Customize & Calculate",
-    "step2Subtitle": "Customize your project with additional options.",
-    "step2Button": "Customize & Calculate",
-    "estimateTitle": "Your Estimate",
-    "selectedPackage": "Selected Package",
-    "basePrice": "Base Price",
-    "totalCost": "Total Cost",
-    "upfrontPayment": "First Payment (40%)",
-    "monthlySupportTitle": "Monthly Support",
-    "monthly": "month",
-    "includedTitle": "What's Included",
-    "startOver": "Start Over",
-    "getQuoteButton": "Get Detailed Quote",
-    "estimateDisclaimerTitle": "Just an Estimate!",
-    "estimateDisclaimerText": "This is a preliminary calculation. Contact us for a detailed quote!",
-    "continueButton": "Continue to Customization",
-    "startingFrom": "Starting from",
-    "techStack": "Technology",
-    "idealFor": "Best For",
-    "timeline": "Timeline",
-    "tiers": {
-      "starter": {
-        "name": "Starter",
-        "description": "A professional website for individuals and small businesses.",
-        "idealFor": "Teachers, trainers, small businesses, personal brands.",
-        "techStack": "HTML, CSS, JavaScript",
-        "time": "1-2 weeks",
-        "includes": [
-          "Custom design",
-          "Up to 5 pages",
-          "Mobile-friendly",
-          "Contact forms",
-          "Basic SEO",
-          "30-day after launch support"
-        ]
-      },
-      "custom": {
-        "name": "Business",
-        "description": "A custom website with advanced features for growing businesses.",
-        "idealFor": "Established businesses, companies needing integrations.",
-        "techStack": "Next.js, TypeScript, or custom",
-        "time": "3-6 weeks",
-        "includes": [
-          "Everything in Starter",
-          "Up to 15 pages",
-          "Content management",
-          "Analytics setup",
-          "API integrations",
-          "Priority support"
-        ]
-      },
-      "ecommerce": {
-        "name": "E-Commerce",
-        "description": "A complete online store with secure payments and inventory.",
-        "idealFor": "Online stores, Digital item retails, Brands.",
-        "techStack": "Next.js, Shopify, or custom",
-        "time": "5-10 weeks",
-        "includes": [
-          "Everything in Business",
-          "Product management",
-          "Secure payments",
-          "Order tracking",
-          "Customer accounts"
-        ]
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "description": "Scalable applications for large organizations with complex functionalities.",
-        "idealFor": "Online auction systems, E-learning portals, accounting systems.",
-        "techStack": "Depends on project requirements",
-        "time": "Depends on complexity / project size",
-        "includes": [
-          "Everything in E-Commerce",
-          "Custom features",
-          "Complex integrations",
-          "Security compliance",
-          "Dedicated support"
-        ]
-      }
-    },
-    "options": {
-      "hasDesign": "I have a design ready",
-      "hasDesign_description": "Save money if you provide a complete design file (Figma, Sketch, or even designs on paper), so that we can precisely create the design you imagine.",
-      "contentSeoPack": "Content & SEO",
-      "contentSeoPack_description": "This option enables blog functionality, and simple admin panel to manage articles. It also includes setting Google Search Console, and detailed keyword research for your website, to receive organic traffic from Google.",
-      "advancedFeaturesPack": "Advanced Features Pack",
-      "advancedFeaturesPack_description": "This can be anything from a functionality in admin panel, or something needs to be automated, to a custom integration with external service. If you have any specific requirements, please let us know.",
-      "logoDesign": "Logo design",
-      "logoDesign_description": "A unique, professional logo to represent your brand identity. Also includes favicon (small icon in browser tab).",
-      "constantSupport": "I need ongoing support",
-      "constantSupport_description": "This is great option, if you are not a technical person, and you want to have peace of mind that your website is always up-to-date and secure. Note: We guarantee 30 days of free support after launch,so this option is included for the next month.",
-      "customOption": "Custom requirement",
-      "customOption_description": "If you have any specific requirements that are not covered by the options above, please let us know. We can customize the package to fit your needs."
-    },
-    "optionDetails": {
-      "discount": "({value}% discount)",
-      "surcharge": "(+{value} PLN)"
-    },
-    "summary": {
-      "hasDesign": "Design Discount",
-      "contentSeoPack": "Content & SEO Pack",
-      "advancedFeaturesPack": "Advanced Features Pack",
-      "logoDesign": "Logo Design",
-      "customOption": "Custom Requirement"
-    }
-  },
   "contact": {
     "title": "Get in Touch",
     "subtitle": "Have a question or a project in mind? We'd love to hear from you.",
@@ -288,104 +161,101 @@
       "email": "info@titancode.pl"
     }
   },
-  "aboutPage": {
-    "hero": {
-      "title": "We Build Websites That Actually Work",
-      "subtitle": "Your website should be your hardest working employee. We make sure it is.",
-      "seoTitle": "About | TITANCODE",
-      "seoDescription": "Meet TITANCODE. We specialize in building custom websites and web apps. See our process and the technologies we use.",
-      "seoKeywords": "about us, web development agency warsaw, custom web development, development team, titancode philosophy"
-    },
-    "mission": {
-      "title": "Why Custom Development?",
-      "text": "Most websites are built from templates and look like everyone else's. We started TITANCODE because we believe your business deserves better. We write every line of code by hand, specifically for your needs. No shortcuts, no compromises. Just websites that work exactly how you need them to."
-    },
-    "process": {
-      "title": "How We Work",
-      "step1": "Discovery",
-      "step1_desc": "We learn about your business and what you actually need.",
-      "step2": "Design",
-      "step2_desc": "We create a design that makes sense for your users.",
-      "step3": "Development",
-      "step3_desc": "We build it with clean code that won't break when you grow.",
-      "step4": "Testing",
-      "step4_desc": "We test everything to make sure it works perfectly.",
-      "step5": "Launch",
-      "step5_desc": "We handle the technical stuff so you can focus on your business.",
-      "step6": "Support",
-      "step6_desc": "We're here when you need changes or something breaks."
-    },
-    "whyUs": {
-      "title": "Why Work With Us?",
-      "feature1": "Custom Code",
-      "feature1_desc": "No templates. Every project is built specifically for you.",
-      "feature2": "Built to Last",
-      "feature2_desc": "Clean code that won't break when your business grows.",
-      "feature3": "Actually Fast",
-      "feature3_desc": "Fast sites that your customers will actually use.",
-      "feature4": "Direct Contact",
-      "feature4_desc": "You talk directly to the people building your site.",
-      "feature5": "Modern Tools",
-      "feature5_desc": "We use proven technologies that won't become obsolete.",
-      "feature6": "Real Support",
-      "feature6_desc": "Need changes? Something broken? We're here to help."
-    },
-    "cta": {
-      "title": "Ready to get started?",
-      "subtitle": "Let's build something that actually works for your business.",
-      "button": "Get in Touch"
-    },
-    "comparison": {
-      "title": "WordPress vs. Custom Code: The Honest Truth",
-      "subtitle": "A high-end WordPress site often costs the same as a custom-built one. Here’s a look at what your money *really* buys you.",
-      "tabs": {
-        "performance": "Performance",
-        "security": "Security",
-        "cost": "Total Cost"
+  "estimatePage": {
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "description": "A professional website for individuals and small businesses.",
+        "includes": [
+          "Custom design",
+          "Up to 5 pages",
+          "Mobile-friendly",
+          "Contact forms",
+          "Basic SEO",
+          "30-day after launch support"
+        ],
+        "techStack": "HTML, CSS, JavaScript",
+        "time": "1-2 weeks"
       },
-      "performance": {
-        "label_wp": "WordPress + Plugins",
-        "label_custom": "Custom Code",
-        "value_wp": "4.2s",
-        "value_custom": "0.8s",
-        "title": "Speed Matters. A Lot.",
-        "description": "Slow websites lose customers. It's that simple. We build for instant loading, because every millisecond counts for your ranking and your revenue.",
-        "whatYouGet": "A site that feels fast, keeps visitors engaged, and ranks higher on Google."
+      "custom": {
+        "name": "Business",
+        "description": "A custom website with advanced features for growing businesses.",
+        "includes": [
+          "Everything in Starter",
+          "Up to 15 pages",
+          "Content management",
+          "Analytics setup",
+          "API integrations",
+          "Priority support"
+        ],
+        "techStack": "Next.js, TypeScript, or custom",
+        "time": "3-6 weeks"
       },
-      "security": {
-        "label_wp": "WordPress + Plugins",
-        "label_custom": "Custom Code",
-        "value_wp": "90% more risk",
-        "value_custom": "0%",
-        "title": "Don't Be an Easy Target.",
-        "description": "WordPress is a hacker's favorite playground, with plugins being the most common weak spot. A custom site has no public blueprint for attackers to follow.",
-        "whatYouGet": "Real peace of mind. Your business data and customer trust are properly protected."
+      "ecommerce": {
+        "name": "E-Commerce",
+        "description": "A complete online store with secure payments and inventory.",
+        "includes": [
+          "Everything in Business",
+          "Product management",
+          "Secure payments",
+          "Order tracking",
+          "Customer accounts"
+        ],
+        "techStack": "Next.js, Shopify, or custom",
+        "time": "5-10 weeks"
       },
-      "cost": {
-        "label_wp": "WordPress + Plugins",
-        "label_custom": "Custom Code",
-        "value_wp": "5.000 PLN",
-        "value_custom": "5.000 PLN",
-        "title": "Same Price, Different Value.",
-        "description": "When you add up the costs of premium themes, plugins, and constant maintenance, WordPress isn't the budget option it seems. The initial price is often the same.",
-        "whatYouGet": "A faster, safer, one-of-a-kind website that's an actual asset, not a liability."
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Scalable applications for large organizations with complex functionalities.",
+        "includes": [
+          "Everything in E-Commerce",
+          "Custom features",
+          "Complex integrations",
+          "Security compliance",
+          "Dedicated support"
+        ],
+        "techStack": "Depends on project requirements",
+        "time": "Depends on complexity / project size"
       }
-    },
-    "techStack": {
-      "title": "The Tools of the Trade",
-      "subtitle": "We use modern, production-grade technology. Here's what that means for you.",
-      "nextjs_desc": "The gold standard for building fast, user-focused web applications.",
-      "nextjs_benefit": "Your site is fast, secure, and loved by Google.",
-      "react_desc": "The engine for building dynamic, engaging user interfaces.",
-      "react_benefit": "A modern, seamless experience for your customers.",
-      "typescript_desc": "Catches errors before they happen, ensuring rock-solid reliability.",
-      "typescript_benefit": "Your application is more stable and less prone to bugs.",
-      "php_desc": "The backbone of the web, used for reliable and secure server logic.",
-      "php_benefit": "A cost-effective and battle-tested foundation for your backend.",
-      "tailwind_desc": "Allows for rapid, pixel-perfect design implementation.",
-      "tailwind_benefit": "A beautiful, consistent design that we can update quickly.",
-      "benefit_title": "What's in it for you?"
     }
+  },
+  "faq": {
+    "title": "Questions?",
+    "questions": {
+      "priceInclude": {
+        "question": "What's included in the price?"
+      },
+      "beginnerStart": {
+        "question": "I'm new to this. How do I start?"
+      },
+      "hostingIncluded": {
+        "question": "Is hosting included?"
+      },
+      "renewalFees": {
+        "question": "Are there renewal fees?"
+      },
+      "quality": {
+        "question": "Will my website be good quality?"
+      },
+      "ssl": {
+        "question": "Do I get an SSL certificate?"
+      },
+      "cms": {
+        "question": "Do you use WordPress?"
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "Questions about your project? We're here to help.",
+    "emailLabel": "Email",
+    "email": "info@titancode.pl",
+    "addressTitle": "Address",
+    "addressLine1": "Warsaw",
+    "addressLine2": "Poland",
+    "seoTitle": "Contact | TITANCODE",
+    "seoDescription": "Contact us to discuss your website or web app and get a free quote.",
+    "seoKeywords": "contact, web development warsaw, website quote, interactive agency contact, phone, email"
   },
   "faq": {
     "title": "Questions?",
@@ -424,18 +294,6 @@
       }
     }
   },
-  "contactPage": {
-    "title": "Contact Us",
-    "subtitle": "Questions about your project? We're here to help.",
-    "emailLabel": "Email",
-    "email": "info@titancode.pl",
-    "addressTitle": "Address",
-    "addressLine1": "Warsaw",
-    "addressLine2": "Poland",
-    "seoTitle": "Contact | TITANCODE",
-    "seoDescription": "Contact us to discuss your website or web app and get a free quote.",
-    "seoKeywords": "contact, web development warsaw, website quote, interactive agency contact, phone, email"
-  },
   "currency": {
     "pln": "PLN"
   },
@@ -451,131 +309,6 @@
       "title": "Search Results | TITANCODE",
       "description": "Find articles, projects, and information about web development on the TITANCODE website.",
       "keywords": "search, find, web development, titancode, results"
-    }
-  },
-  "landingWarsaw": {
-    "seo": {
-      "title": "Website Development Warsaw | Fast websites, SEO & performance",
-      "description": "We build fast, modern websites for Warsaw-based businesses. Next.js, strong Core Web Vitals, technical SEO, built to convert and generate leads."
-    },
-    "kicker": "Websites • Warsaw",
-    "h1": "Websites in Warsaw that actually convert",
-    "lead": "We build fast websites without WordPress limitations: clean technical SEO, strong Core Web Vitals, reliable analytics, real outcomes.",
-    "primaryCta": "Let’s talk",
-    "secondaryCta": "See portfolio",
-    "cards": [
-      {
-        "title": "Performance (CWV)",
-        "desc": "Built for speed: LCP, CLS and INP matter. This impacts SEO and conversions."
-      },
-      {
-        "title": "Technical SEO",
-        "desc": "Canonicals, hreflang, sitemap, robots, correct headings and structure. No indexation traps."
-      },
-      {
-        "title": "Conversion",
-        "desc": "Clear offer, CTAs, proof sections and case studies. The site should bring inquiries, not just look nice."
-      }
-    ],
-    "section2": {
-      "title": "What you get",
-      "bullets": [
-        "Custom design + implementation in Next.js (or another stack if it makes sense)",
-        "PL/EN setup with correct hreflang and self-referencing canonicals",
-        "Analytics + conversion events (GA4, GTM) and baseline conversion tracking",
-        "Pre-launch SEO and performance checklists"
-      ]
-    },
-    "finalCta": {
-      "title": "Want a quote?",
-      "desc": "Use the quick estimator and get a range + suggested scope.",
-      "button": "Calculate estimate"
-    }
-  },
-  "landingCourse": {
-    "seo": {
-      "title": "Landing page for an online course | Lead-gen, payments & automation",
-      "description": "We build course sales pages designed to convert: fast, SEO-ready, with analytics, payments integration and automation. No WordPress plugin chaos."
-    },
-    "kicker": "Online course • Landing page",
-    "h1": "A course landing page that closes sales",
-    "lead": "Let’s build a sales page that loads instantly, tracks conversions, and scales your campaigns without technical debt.",
-    "primaryCta": "Book a consult",
-    "secondaryCta": "See services",
-    "section1": {
-      "title": "Why it works",
-      "desc": "We focus on clarity, credibility and measurable events—so you know what to improve and campaigns get cheaper over time."
-    },
-    "cards": [
-      {
-        "title": "Speed + UX",
-        "desc": "Campaign performance depends on UX. A fast landing improves conversion and traffic quality."
-      },
-      {
-        "title": "Analytics & events",
-        "desc": "GA4/GTM events, goals, micro-conversions—no guessing."
-      },
-      {
-        "title": "Integrations",
-        "desc": "Payments, newsletter, CRM, email automation and webhooks—built around your workflow."
-      }
-    ],
-    "section2": {
-      "title": "What I can implement",
-      "bullets": [
-        "Sections: promise, proof, curriculum, bonuses, FAQ, CTA",
-        "Payments integration (Stripe / local providers depending on needs)",
-        "Forms + automation (MailerLite / HubSpot / custom)",
-        "PL/EN + technical SEO"
-      ]
-    },
-    "finalCta": {
-      "title": "Want to price it?",
-      "desc": "Share the scope and see a range + a recommended tier.",
-      "button": "Open estimator"
-    }
-  },
-  "landingAdminPanel": {
-    "seo": {
-      "title": "Custom admin panel | Web apps, dashboards & integrations",
-      "description": "We build custom admin panels and web apps tailored to your processes: dashboards, roles, integrations, automation. Fast delivery without wasted budget."
-    },
-    "kicker": "Web app • Admin panel",
-    "h1": "A custom admin panel—built for your workflow",
-    "lead": "If spreadsheets and plugins aren’t enough anymore, it’s time for a proper system: roles, logs, integrations and dashboards designed around your process.",
-    "primaryCta": "Let’s talk",
-    "secondaryCta": "See portfolio",
-    "section1": {
-      "title": "When it’s worth it",
-      "desc": "When you need control, automation and a single source of truth—instead of tools that don’t connect."
-    },
-    "cards": [
-      {
-        "title": "Roles & permissions",
-        "desc": "Per-role access, audit logs, traceability and security."
-      },
-      {
-        "title": "Integrations",
-        "desc": "APIs, webhooks, payments, CRM, invoicing, inventory—built for the real workflow."
-      },
-      {
-        "title": "Dashboards",
-        "desc": "KPI visualizations, alerts, reporting—so decisions are data-driven."
-      }
-    ],
-    "section2": {
-      "title": "What I deliver",
-      "bullets": [
-        "Admin panel + API + database (scalable architecture)",
-        "Auth, roles, audit trail",
-        "Integrations and automation (webhooks, cron, queues)",
-        "Deployment + monitoring + growth plan"
-      ]
-    },
-    "finalCta": {
-      "title": "Have a process to automate?",
-      "desc": "Describe it in 2–3 sentences. We’ll tell you the approach and a realistic cost range.",
-      "button": "Message us"
     }
   }
 }
