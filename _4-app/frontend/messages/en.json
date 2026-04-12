@@ -1,0 +1,91 @@
+{
+  "navbar": {
+    "services": "Services",
+    "projects": "Projects", 
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "headline": "We build\nsoftware\nthat performs.",
+    "subheadline": "Warsaw-based custom web development. No templates. No WordPress. Just clean, handcrafted code for ambitious projects.",
+    "ctaStart": "Start a Project",
+    "ctaView": "View Work"
+  },
+  "services": {
+    "title": "What we do",
+    "subtitle": "Full-cycle development from concept to deployment and beyond."
+  },
+  "serviceItems": {
+    "webDev": {
+      "title": "Web Development",
+      "description": "Custom web applications built with modern frameworks. Fast, secure, scalable."
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "Workflow automation, API integrations, and custom tools to streamline your business."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Custom online stores with secure payments, inventory management, and analytics."
+    },
+    "seo": {
+      "title": "SEO",
+      "description": "Technical SEO, performance optimization, and visibility improvements for search engines."
+    },
+    "consulting": {
+      "title": "Consulting",
+      "description": "Technical architecture, tech stack decisions, and development process optimization."
+    },
+    "support": {
+      "title": "Support",
+      "description": "Ongoing maintenance, security updates, performance monitoring, and bug fixes."
+    }
+  },
+  "projects": {
+    "title": "Recent work",
+    "subtitle": "Projects we've shipped for clients who demand excellence."
+  },
+  "projectItems": {
+    "nanobid": {
+      "title": "NanoBid",
+      "description": "Real-time auction platform with live bidding, instant notifications, and secure payments.",
+      "category": "AUCTION PLATFORM"
+    },
+    "careerflex": {
+      "title": "CareerFlex",
+      "description": "AI-powered job matching platform with smart recommendations and application tracking.",
+      "category": "AI JOB SEARCH"
+    },
+    "kurs8klasisty": {
+      "title": "Kurs8Klasisty",
+      "description": "Interactive e-learning platform for 8th graders preparing for exams with progress tracking.",
+      "category": "E-LEARNING"
+    }
+  },
+  "about": {
+    "title": "Engineers who\nship code.",
+    "subtitle": "We're a Warsaw-based team of full-stack developers who believe in the power of clean, maintainable code. No shortcuts. No compromises. Every project gets the attention it deserves.",
+    "techStack": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Python", "AWS", "Docker"]
+  },
+  "stats": {
+    "projects": "50+",
+    "projectsLabel": "Projects delivered",
+    "experience": "5+",
+    "experienceLabel": "Years experience",
+    "custom": "100%",
+    "customLabel": "Custom code",
+    "support": "24/7",
+    "supportLabel": "Support available"
+  },
+  "contact": {
+    "title": "Ready to build\nsomething great?",
+    "subtitle": "Let's talk about your project. We'll get back to you within 24 hours.",
+    "email": "info@titancode.pl"
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "TITANCODE. All rights reserved."
+  }
+}

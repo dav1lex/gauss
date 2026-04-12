@@ -1,0 +1,91 @@
+{
+  "navbar": {
+    "services": "Usługi",
+    "projects": "Projekty", 
+    "about": "O nas",
+    "contact": "Kontakt",
+    "getStarted": "Rozpocznij"
+  },
+  "hero": {
+    "headline": "Tworzymy\noprogramowanie\nktóre działa.",
+    "subheadline": "Warszawska agencja tworząca niestandardowe strony i aplikacje internetowe. Bez szablonów. Bez WordPressa. Tylko czysty, starannie napisany kod dla ambitnych projektów.",
+    "ctaStart": "Zacznij Projekt",
+    "ctaView": "Zobacz Prace"
+  },
+  "services": {
+    "title": "Co robimy",
+    "subtitle": "Kompleksowy rozwój od koncepcji po wdrożenie i dalsze wsparcie."
+  },
+  "serviceItems": {
+    "webDev": {
+      "title": "Tworzenie Stron",
+      "description": "Niestandardowe aplikacje internetowe tworzone w nowoczesnych frameworkach. Szybkie, bezpieczne, skalowalne."
+    },
+    "automation": {
+      "title": "Automatyzacja",
+      "description": "Automatyzacja procesów, integracje API oraz narzędzia niestandardowe do optymalizacji Twojego biznesu."
+    },
+    "ecommerce": {
+      "title": "Sklepy Internetowe",
+      "description": "Niestandardowe sklepy internetowe z bezpiecznymi płatnościami, zarządzaniem magazynem i analityką."
+    },
+    "seo": {
+      "title": "SEO",
+      "description": "Techniczne SEO, optymalizacja wydajności i poprawa widoczności w wyszukiwarkach."
+    },
+    "consulting": {
+      "title": "Doradztwo",
+      "description": "Architektura techniczna, decyzje dotyczące stosu technologicznego i optymalizacja procesu developmentu."
+    },
+    "support": {
+      "title": "Wsparcie",
+      "description": "Bieżące utrzymanie, aktualizacje bezpieczeństwa, monitorowanie wydajności i naprawa błędów."
+    }
+  },
+  "projects": {
+    "title": "Ostatnie prace",
+    "subtitle": "Projekty, które zrealizowaliśmy dla klientów, którzy wymagają doskonałości."
+  },
+  "projectItems": {
+    "nanobid": {
+      "title": "NanoBid",
+      "description": "Platforma aukcyjna w czasie rzeczywistym z live licytacjami, natychmiastowymi powiadomieniami i bezpiecznymi płatnościami.",
+      "category": "PLATFORMA AUKCYJNA"
+    },
+    "careerflex": {
+      "title": "CareerFlex",
+      "description": "Platforma do dopasowywania pracy oparta na AI z inteligentnymi rekomendacjami i śledzeniem aplikacji.",
+      "category": "AI WYSZUKIWANIE PRACY"
+    },
+    "kurs8klasisty": {
+      "title": "Kurs8Klasisty",
+      "description": "Interaktywna platforma e-learningowa dla ósmoklasistów przygotowujących się do egzaminów z śledzeniem postępów.",
+      "category": "E-NAUKA"
+    }
+  },
+  "about": {
+    "title": "Inżynierowie, którzy\ndostarczają kod.",
+    "subtitle": "Jesteśmy warszawskim zespołem full-stack developerów, którzy wierzą w siłę czystego, łatwego w utrzymaniu kodu. Bez skrótów. Bez kompromisów. Każdy projekt dostaje uwagę, na jaką zasługuje.",
+    "techStack": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Python", "AWS", "Docker"]
+  },
+  "stats": {
+    "projects": "50+",
+    "projectsLabel": "Zrealizowanych projektów",
+    "experience": "5+",
+    "experienceLabel": "Lat doświadczenia",
+    "custom": "100%",
+    "customLabel": "Kodu niestandardowego",
+    "support": "24/7",
+    "supportLabel": "Dostępne wsparcie"
+  },
+  "contact": {
+    "title": "Gotowi stworzyć\ncoś wielkiego?",
+    "subtitle": "Porozmawiajmy o Twoim projekcie. Odezwiemy się w ciągu 24 godzin.",
+    "email": "info@titancode.pl"
+  },
+  "footer": {
+    "privacy": "Prywatność",
+    "terms": "Regulamin",
+    "copyright": "TITANCODE. Wszystkie prawa zastrzeżone."
+  }
+}

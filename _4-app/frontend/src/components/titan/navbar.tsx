@@ -3,19 +3,23 @@
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { ThemeSwitcher } from './theme-switcher'
+import { LanguageSwitcher } from './language-switcher'
+import { useTranslate } from '@/hooks/use-translate'
 
 interface NavbarProps {
   className?: string
 }
 
-const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#about', label: 'About' },
-  { href: '#contact', label: 'Contact' },
-]
-
 export function Navbar({ className }: NavbarProps) {
+  const t = useTranslate();
+  
+  const navLinks = [
+    { href: '#services', label: t('navbar.services') },
+    { href: '#projects', label: t('navbar.projects') },
+    { href: '#about', label: t('navbar.about') },
+    { href: '#contact', label: t('navbar.contact') },
+  ]
+
   return (
     <nav className={cn('fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl', className)}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -38,13 +42,14 @@ export function Navbar({ className }: NavbarProps) {
         </div>
 
         {/* Right side */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher />
           <ThemeSwitcher />
           <Link
             href="#contact"
             className="bg-foreground text-primary-foreground px-5 py-2 text-sm font-semibold hover:bg-[var(--titan-accent-primary)] transition-colors"
           >
-            Get Started
+            {t('navbar.getStarted')}
           </Link>
         </div>
       </div>

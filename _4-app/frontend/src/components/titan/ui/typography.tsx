@@ -1,6 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
+import { useTranslate } from '@/hooks/use-translate'
 
 interface SectionLabelProps {
   children: React.ReactNode

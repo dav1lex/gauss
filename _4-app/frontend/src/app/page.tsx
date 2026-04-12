@@ -1,15 +1,6 @@
-import { Navbar, HeroParallax, Services, Projects, About, Contact, Footer } from '@/components/titan'
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <main>
-      <Navbar />
-      <HeroParallax backgroundImage="/images/hero-bg.jpg" />
-      <Services />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </main>
-  )
+  // Redirect to English by default
+  return redirect('/en');
 }
