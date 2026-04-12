@@ -2,6 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import { ThemeSwitcher } from './theme-switcher'
 
 interface NavbarProps {
   className?: string
@@ -41,6 +42,7 @@ export function Navbar({ className }: NavbarProps) {
 
         {/* Right side */}
         <div className="flex items-center gap-4">
+          <ThemeSwitcher />
           <span className="hidden sm:block text-xs font-mono text-muted-foreground">
             // WARSAW, PL
           </span>

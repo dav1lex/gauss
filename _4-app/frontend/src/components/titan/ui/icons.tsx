@@ -1,5 +1,7 @@
 // Icon components for Titan design system
 
+import { cn } from '@/lib/utils'
+
 export const Icons = {
   // Navigation & Actions
   ArrowRight: (props: React.SVGProps<SVGSVGElement>) => (
