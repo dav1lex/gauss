@@ -55,7 +55,7 @@ export function HeroParallax({
       <div className="relative max-w-7xl mx-auto px-6 py-32 w-full">
         <div className="max-w-2xl">
           {/* Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8">
+          <h1 className="hero-animate hero-delay-1 text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8">
             {t('hero.headline')}
           </h1>
           

@@ -1,4 +1,5 @@
 import { ThemeProvider } from "next-themes";
+import { LocaleProvider } from "@/hooks/use-translate";
 
 export default function LocaleLayout({
   children,
@@ -6,8 +7,10 @@ export default function LocaleLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-      {children}
-    </ThemeProvider>
+    <LocaleProvider locale="pl">
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        {children}
+      </ThemeProvider>
+    </LocaleProvider>
   );
 }
