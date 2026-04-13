@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { CodeGradient } from './code-gradient'
@@ -17,6 +17,26 @@ export function HeroParallax({
 }: HeroParallaxProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const t = useTranslate();
+  const [isDark, setIsDark] = useState(false);
+  
+  useEffect(() => {
+    // Detect theme from body class (set by next-themes)
+    const checkTheme = () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      setIsDark(isDark);
+    };
+    
+    checkTheme();
+    
+    // Watch for class changes on html element
+    const observer = new MutationObserver(checkTheme);
+    observer.observe(document.documentElement, { 
+      attributes: true, 
+      attributeFilter: ['class'] 
+    });
+    
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section 
@@ -25,16 +45,29 @@ export function HeroParallax({
     >
       {/* Background Image with Parallax */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-fixed bg-neutral-900"
+        className={cn(
+          'absolute inset-0 bg-cover bg-center bg-fixed',
+          isDark ? 'bg-neutral-900' : 'bg-neutral-200'
+        )}
         style={{ 
           backgroundImage: `url(${backgroundImage})`,
           backgroundAttachment: 'fixed'
         }}
       />
       
-      {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
+      {/* Gradient Overlay - theme aware */}
+      <div className={cn(
+        'absolute inset-0 bg-gradient-to-r',
+        isDark 
+          ? 'from-black/70 via-black/50 to-black/30' 
+          : 'from-black/20 via-black/10 to-transparent'
+      )} />
+      <div className={cn(
+        'absolute inset-0 bg-gradient-to-b',
+        isDark 
+          ? 'from-transparent via-transparent to-black/40' 
+          : 'from-transparent via-transparent to-black/10'
+      )} />
       
       {/* Orange accent glow */}
       <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[var(--titan-accent-primary)]/10 rounded-full blur-3xl" />
@@ -48,7 +81,10 @@ export function HeroParallax({
           </h1>
           
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-white/80 max-w-xl mb-10 leading-relaxed">
+          <p className={cn(
+            'text-lg md:text-xl max-w-xl mb-10 leading-relaxed',
+            isDark ? 'text-white/80' : 'text-foreground/80'
+          )}>
             {t('hero.subheadline')}
           </p>
           
@@ -65,7 +101,10 @@ export function HeroParallax({
             </Link>
             <Link
               href="#projects"
-              className="inline-flex items-center gap-2 border border-white/30 px-8 py-4 text-sm font-medium hover:border-white transition-colors bg-white/10 backdrop-blur-sm text-white"
+              className="inline-flex items-center gap-2 border px-8 py-4 text-sm font-medium transition-colors backdrop-blur-sm',
+                isDark
+                  ? 'border-white/30 hover:border-white bg-white/10 text-white'
+                  : 'border-border hover:border-muted-foreground bg-background/80 text-foreground'"
             >
               {t('hero.ctaView')}
             </Link>
@@ -125,7 +164,10 @@ export function HeroParallaxAnimated({
             </Link>
             <Link
               href="#projects"
-              className="inline-flex items-center gap-2 border border-white/30 px-8 py-4 text-sm font-medium hover:border-white transition-colors bg-white/10 backdrop-blur-sm text-white"
+              className="inline-flex items-center gap-2 border px-8 py-4 text-sm font-medium transition-colors backdrop-blur-sm',
+                isDark
+                  ? 'border-white/30 hover:border-white bg-white/10 text-white'
+                  : 'border-border hover:border-muted-foreground bg-background/80 text-foreground'"
             >
               {t('hero.ctaView')}
             </Link>
