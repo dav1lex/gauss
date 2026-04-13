@@ -127,6 +127,8 @@ useEffect(() => {
 | Navbar component | `src/components/titan/navbar.tsx` |
 | Hooks | `src/hooks/` |
 | Utils | `src/lib/` |
+| Blog content | `content/blog/*.mdx` |
+| Blog utilities | `src/lib/blog.ts` |
 
 ## SEO Requirements
 
@@ -134,6 +136,7 @@ useEffect(() => {
 - Static pre-rendering (no client-side locale detection)
 - Hreflang tags in metadata
 - Language switcher triggers full page navigation (expected for i18n)
+- **Blog posts**: Polish only at `/pl/blog/[slug]`, prerendered static HTML for SEO
 
 ## Testing
 
@@ -148,3 +151,5 @@ No test framework configured yet. Storybook removed (was incompatible with stati
 3. **Tailwind v4**: Uses new `@theme inline` syntax, not `tailwind.config.js`.
 
 4. **OKLCH colors**: All CSS vars use OKLCH format. Browser support is good but check caniuse.com if issues arise.
+
+5. **Blog workflow**: Add MDX files to `content/blog/` → commit → auto-deploy rebuilds static pages

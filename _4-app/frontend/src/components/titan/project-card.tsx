@@ -7,7 +7,7 @@ interface ProjectCardProps {
   title: string
   description: string
   category: string
-  icon: React.ReactNode
+  iconKey: keyof typeof ProjectIcons
   className?: string
 }
 

@@ -28,6 +28,7 @@ export function Navbar({ className }: NavbarProps) {
     { href: '#services', label: t('navbar.services') },
     { href: '#projects', label: t('navbar.projects') },
     { href: '#about', label: t('navbar.about') },
+    { href: '/pl/blog', label: t('navbar.blog') },
     { href: '#contact', label: t('navbar.contact') },
   ]
 

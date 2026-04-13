@@ -1,33 +1,6 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import { ServiceIcons } from './service-card'
-
-interface ServiceCardProps {
-  title: string
-  description: string
-  iconKey: keyof typeof ServiceIcons
-  className?: string
-}
-
-export function ServiceCard({ title, description, iconKey, className }: ServiceCardProps) {
-  const icon = ServiceIcons[iconKey];
-  
-  return (
-    <div
-      className={cn(
-        'p-6 border border-border bg-card cursor-pointer transition-colors hover:border-[var(--titan-accent-primary)]',
-        className
-      )}
-    >
-      <div className="w-12 h-12 border border-border rounded-lg flex items-center justify-center mb-4">
-        {icon}
-      </div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-muted-foreground">{description}</p>
-    </div>
-  )
-}
 
 // Pre-built icons for services
 export const ServiceIcons = {
@@ -61,6 +34,32 @@ export const ServiceIcons = {
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
     </svg>
   ),
+}
+
+interface ServiceCardProps {
+  title: string
+  description: string
+  iconKey: keyof typeof ServiceIcons
+  className?: string
+}
+
+export function ServiceCard({ title, description, iconKey, className }: ServiceCardProps) {
+  const icon = ServiceIcons[iconKey];
+  
+  return (
+    <div
+      className={cn(
+        'p-6 border border-border bg-card cursor-pointer transition-colors hover:border-[var(--titan-accent-primary)]',
+        className
+      )}
+    >
+      <div className="w-12 h-12 border border-border rounded-lg flex items-center justify-center mb-4">
+        {icon}
+      </div>
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-sm text-muted-foreground">{description}</p>
+    </div>
+  )
 }
 
 // Services data

@@ -16,7 +16,7 @@ export function Projects({ className }: ProjectsProps) {
     { key: 'nanobid', icon: 'Wallet' },
     { key: 'careerflex', icon: 'Briefcase' },
     { key: 'kurs8klasisty', icon: 'AcademicCap' }
-  ];
+  ] as const;
 
   return (
     <section id="projects" className={cn('py-24 border-t border-border bg-secondary/30', className)}>

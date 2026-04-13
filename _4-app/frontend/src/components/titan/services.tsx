@@ -19,7 +19,7 @@ export function Services({ className }: ServicesProps) {
     { key: 'seo', icon: 'Search' },
     { key: 'consulting', icon: 'Lightbulb' },
     { key: 'support', icon: 'Support' }
-  ];
+  ] as const;
 
   return (
     <section id="services" className={cn('py-24 border-t border-border bg-background', className)}>
