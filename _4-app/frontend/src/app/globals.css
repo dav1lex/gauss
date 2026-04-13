@@ -156,32 +156,32 @@
   clip-path: inset(0 0 0 0);
 }
 
-/* Hero slide-up animation */
-@keyframes slideUp {
-  from {
+/* Hero cinema reveal - overflow hidden + translate up */
+@keyframes textRevealUp {
+  0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(100%);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.hero-animate {
-  animation: slideUp 0.6s ease-out forwards;
+.text-reveal {
+  display: inline-block;
+  animation: textRevealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   opacity: 0;
 }
 
-.hero-delay-1 { animation-delay: 0.1s; }
-.hero-delay-2 { animation-delay: 0.2s; }
-.hero-delay-3 { animation-delay: 0.3s; }
-.hero-delay-4 { animation-delay: 0.4s; }
+.text-reveal-delay-1 { animation-delay: 0.01s; }
+.text-reveal-delay-2 { animation-delay: 0.2s; }
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .hero-animate {
+  .text-reveal {
     animation: none;
     opacity: 1;
+    transform: none;
   }
 }

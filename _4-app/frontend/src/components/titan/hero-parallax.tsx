@@ -54,9 +54,18 @@ export function HeroParallax({
       {/* Content - Left aligned */}
       <div className="relative max-w-7xl mx-auto px-6 py-32 w-full">
         <div className="max-w-2xl">
-          {/* Headline */}
-          <h1 className="hero-animate hero-delay-1 text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8">
-            {t('hero.headline')}
+          {/* Headline - cinema reveal, split into 2 chunks */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8">
+            <span className="block overflow-hidden">
+              <span className="text-reveal inline-block">
+                Tworzymy oprogramowanie
+              </span>
+            </span>
+            <span className="block overflow-hidden">
+              <span className="text-reveal text-reveal-delay-1 inline-block">
+                które działa.
+              </span>
+            </span>
           </h1>
           
           {/* Subheadline */}
