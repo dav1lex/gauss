@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
+import { useRef } from 'react'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { CodeGradient } from './code-gradient'
@@ -17,26 +17,6 @@ export function HeroParallax({
 }: HeroParallaxProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const t = useTranslate();
-  const [isDark, setIsDark] = useState(false);
-  
-  useEffect(() => {
-    // Detect theme from body class (set by next-themes)
-    const checkTheme = () => {
-      const isDark = document.documentElement.classList.contains('dark');
-      setIsDark(isDark);
-    };
-    
-    checkTheme();
-    
-    // Watch for class changes on html element
-    const observer = new MutationObserver(checkTheme);
-    observer.observe(document.documentElement, { 
-      attributes: true, 
-      attributeFilter: ['class'] 
-    });
-    
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <section 
@@ -45,28 +25,27 @@ export function HeroParallax({
     >
       {/* Background Image with Parallax */}
       <div 
-        className={cn(
-          'absolute inset-0 bg-cover bg-center bg-fixed',
-          isDark ? 'bg-neutral-900' : 'bg-neutral-200'
-        )}
+        className="absolute inset-0 bg-cover bg-center bg-fixed bg-neutral-200 dark:bg-neutral-900"
         style={{ 
           backgroundImage: `url(${backgroundImage})`,
           backgroundAttachment: 'fixed'
         }}
       />
       
-      {/* Gradient Overlay - theme aware */}
+      {/* Gradient Overlay - CSS-only theme detection */}
       <div className={cn(
         'absolute inset-0 bg-gradient-to-r',
-        isDark 
-          ? 'from-black/70 via-black/50 to-black/30' 
-          : 'from-black/20 via-black/10 to-transparent'
+        // Light theme (no .dark class)
+        'from-black/20 via-black/10 to-transparent',
+        // Dark theme (.dark class present)
+        'dark:from-black/70 dark:via-black/50 dark:to-black/30'
       )} />
       <div className={cn(
         'absolute inset-0 bg-gradient-to-b',
-        isDark 
-          ? 'from-transparent via-transparent to-black/40' 
-          : 'from-transparent via-transparent to-black/10'
+        // Light theme
+        'from-transparent via-transparent to-black/10',
+        // Dark theme
+        'dark:from-transparent dark:via-transparent dark:to-black/40'
       )} />
       
       {/* Orange accent glow */}
@@ -83,7 +62,7 @@ export function HeroParallax({
           {/* Subheadline */}
           <p className={cn(
             'text-lg md:text-xl max-w-xl mb-10 leading-relaxed',
-            isDark ? 'text-white/80' : 'text-foreground/80'
+            'text-foreground/80 dark:text-white/80'
           )}>
             {t('hero.subheadline')}
           </p>
@@ -101,10 +80,13 @@ export function HeroParallax({
             </Link>
             <Link
               href="#projects"
-              className="inline-flex items-center gap-2 border px-8 py-4 text-sm font-medium transition-colors backdrop-blur-sm',
-                isDark
-                  ? 'border-white/30 hover:border-white bg-white/10 text-white'
-                  : 'border-border hover:border-muted-foreground bg-background/80 text-foreground'"
+              className={cn(
+                'inline-flex items-center gap-2 border px-8 py-4 text-sm font-medium transition-colors backdrop-blur-sm',
+                // Light theme
+                'border-border hover:border-muted-foreground bg-background/80 text-foreground',
+                // Dark theme
+                'dark:border-white/30 dark:hover:border-white dark:bg-white/10 dark:text-white'
+              )}
             >
               {t('hero.ctaView')}
             </Link>

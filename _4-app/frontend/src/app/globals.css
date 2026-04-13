@@ -146,3 +146,12 @@
     transform: translateY(0);
   }
 }
+
+/* Logo fill animation - clip from top to bottom */
+.clip-fill-empty {
+  clip-path: inset(0 0 100% 0);
+}
+
+.clip-fill-full {
+  clip-path: inset(0 0 0 0);
+}

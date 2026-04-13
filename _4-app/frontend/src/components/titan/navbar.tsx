@@ -65,13 +65,29 @@ export function Navbar({ className }: NavbarProps) {
       )} />
       
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative z-10">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
+        {/* Logo with top-to-bottom fill animation on scroll */}
+        <Link href="/" className="flex items-center gap-3 relative">
           <span className={cn(
-            'text-lg font-semibold tracking-tight transition-colors',
+            'text-lg font-semibold tracking-tight relative',
             getTextStyles(scrolled, true)
           )}>
-            TITANCODE
+            {/* Base layer - accent color (shows when not scrolled) */}
+            <span className={cn(
+              'text-[var(--titan-accent-primary)] transition-opacity duration-300',
+              scrolled ? 'opacity-0' : 'opacity-100'
+            )}>
+              TITANCODE
+            </span>
+            {/* Fill layer - foreground color, clips from top to bottom */}
+            <span 
+              className={cn(
+                'absolute inset-0 text-foreground transition-all duration-500 ease-out',
+                scrolled ? 'clip-fill-full' : 'clip-fill-empty'
+              )}
+              aria-hidden="true"
+            >
+              TITANCODE
+            </span>
           </span>
         </Link>
 
