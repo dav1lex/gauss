@@ -8,44 +8,44 @@
     "getStarted": "Get Started"
   },
   "hero": {
-    "headline": "We build\nsoftware\nthat performs.",
-    "subheadline": "Warsaw-based custom web development. No templates. No WordPress. Just clean, handcrafted code for ambitious projects.",
+    "headline": "Code that pays\nfor itself.",
+    "subheadline": "Warsaw-based agency. Websites and apps that bring customers — not just look pretty.",
     "ctaStart": "Start a Project",
     "ctaView": "View Work"
   },
   "services": {
-    "title": "What we do",
-    "subtitle": "Full-cycle development from concept to deployment and beyond."
+    "title": "What you get",
+    "subtitle": "We don't code for ourselves. We code for your business."
   },
   "serviceItems": {
     "webDev": {
-      "title": "Web Development",
-      "description": "Custom web applications built with modern frameworks. Fast, secure, scalable."
+      "title": "Websites & Apps",
+      "description": "Sell 24/7. No plugins that break."
     },
     "automation": {
       "title": "Automation",
-      "description": "Workflow automation, API integrations, and custom tools to streamline your business."
+      "description": "Hours of work saved weekly. Not months."
     },
     "ecommerce": {
       "title": "E-commerce",
-      "description": "Custom online stores with secure payments, inventory management, and analytics."
+      "description": "Higher conversion than template stores. Payments, inventory, analytics."
     },
     "seo": {
-      "title": "SEO",
-      "description": "Technical SEO, performance optimization, and visibility improvements for search engines."
+      "title": "Technical SEO",
+      "description": "Google visibility that brings customers."
     },
     "consulting": {
       "title": "Consulting",
-      "description": "Technical architecture, tech stack decisions, and development process optimization."
+      "description": "Avoid expensive tech mistakes."
     },
     "support": {
       "title": "Support",
-      "description": "Ongoing maintenance, security updates, performance monitoring, and bug fixes."
+      "description": "When something breaks, we fix it. Fast."
     }
   },
   "projects": {
-    "title": "Recent work",
-    "subtitle": "Projects we've shipped for clients who demand excellence."
+    "title": "Recent Work",
+    "subtitle": "What we actually built."
   },
   "projectItems": {
     "nanobid": {
@@ -65,55 +65,53 @@
     }
   },
   "about": {
-    "title": "Engineers who\nship code.",
-    "subtitle": "We're a Warsaw-based team of full-stack developers who believe in the power of clean, maintainable code. No shortcuts. No compromises. Every project gets the attention it deserves.",
+    "title": "We understand business,\nnot just code.",
+    "subtitle": "Warsaw team that asks about ROI before writing a single line. You get a solution built for your goals — not a portfolio project.",
     "techStack": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Python", "AWS", "Docker"]
   },
   "stats": {
     "projects": "6+",
     "projectsLabel": "Projects delivered",
-    "experience": "2+",
-    "experienceLabel": "Years experience",
     "custom": "100%",
-    "customLabel": "Custom code",
+    "customLabel": "Custom-built code",
     "support": "24/7",
-    "supportLabel": "Support available"
+    "supportLabel": "Technical support"
   },
   "testimonials": {
     "title": "What clients say",
-    "subtitle": "Real feedback from real people.",
-    "fast": "Lightning fast delivery and perfect code. Exactly what I needed.",
-    "precise": "Every detail polished. No room for chance.",
-    "understand": "They understand business, not just code. That's rare.",
+    "subtitle": "No fluff.",
+    "fast": "Lightning fast delivery and code that works. Exactly what I needed.",
+    "precise": "Every detail polished. No weird libraries or plugins.",
+    "understand": "They understand business, not just code. That's rare in this industry.",
     "client1": "Startup Founder",
     "role1": "E-commerce Platform",
     "client2": "Marketing Director",
-    "role2": "Creative Agency",
+    "role2": "Creative Agency", 
     "client3": "CEO",
     "role3": "Tech Company"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Answers to questions we get most often.",
-    "q1": "Why is a custom website better than WordPress?",
-    "a1": "A custom website is code written for your business - faster, more secure, easier to manage. WordPress is a ready-made system with thousands of plugins that slow it down, break, and require constant updates. A custom site works exactly how you want.",
+    "title": "Questions & Answers",
+    "subtitle": "No unnecessary talk.",
+    "q1": "WordPress or custom development?",
+    "a1": "WordPress: cheaper upfront, costly long-term, breaks on updates.\n\nCustom: more upfront, cheaper to maintain, runs for years without issues.\n\nChoice depends on budget and plans.",
     "q2": "How much does a website cost in Warsaw?",
-    "a2": "Price depends on complexity. Simple business site from 8000 PLN, application with business logic from 25000 PLN. Share project details, we'll prepare a quote within 24h.",
+    "a2": "Business site: from 8000 PLN.\n\nApplication with business logic: from 25000 PLN.\n\nShare details, we'll quote within 24h.",
     "q3": "How long does it take to build a website?",
-    "a3": "Business site: 2-4 weeks. Online store or application: 6-12 weeks. Depends on features and feedback speed.",
+    "a3": "Business site: 2-4 weeks.\n\nOnline store or application: 6-12 weeks.\n\nDepends on features and your feedback.",
     "q4": "Will my site be visible on Google?",
-    "a4": "Yes. We write code with SEO in mind - speed, structure, meta tags, mobile-first. We add sitemap and optimize for Core Web Vitals.",
+    "a4": "Yes. We write code with Google in mind — speed, structure, mobile-first, Core Web Vitals.",
     "q5": "What happens after the project ends?",
-    "a5": "You get full documentation, source code, and user manual. We also offer technical support - hosting, security updates, feature development."
+    "a5": "You get full documentation and source code. We also offer hosting and technical support."
   },
   "contact": {
-    "title": "Ready to build\nsomething great?",
-    "subtitle": "Let's talk about your project. We'll get back to you within 24 hours.",
+    "title": "Ready to increase\nyour profit?",
+    "subtitle": "Write to us. We'll get back to you within 24 hours.",
     "email": "info@titancode.pl"
   },
   "footer": {
     "privacy": "Privacy",
-    "terms": "Terms",
+    "terms": "Terms", 
     "copyright": "TITANCODE. All rights reserved."
   }
 }
