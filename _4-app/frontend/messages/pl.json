@@ -70,14 +70,41 @@
     "techStack": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Python", "AWS", "Docker"]
   },
   "stats": {
-    "projects": "50+",
+    "projects": "6+",
     "projectsLabel": "Zrealizowanych projektów",
-    "experience": "5+",
+    "experience": "2+",
     "experienceLabel": "Lat doświadczenia",
     "custom": "100%",
     "customLabel": "Kodu niestandardowego",
     "support": "24/7",
     "supportLabel": "Dostępne wsparcie"
+  },
+  "testimonials": {
+    "title": "Co mówią klienci",
+    "subtitle": "Prawdziwe opinie od prawdziwych ludzi.",
+    "fast": "Błyskawiczna realizacja i perfekcyjny kod. Dokładnie tego potrzebowałem.",
+    "precise": "Każdy szczegół dopracowany. Nie ma miejsca na przypadek.",
+    "understand": "Rozumieją biznes, nie tylko kod. To rzadkość.",
+    "client1": "Włściciel startupu",
+    "role1": "Platforma e-commerce",
+    "client2": "Dyrektor marketingu",
+    "role2": "Agencja kreatywna",
+    "client3": "CEO",
+    "role3": "Firma technologiczna"
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "subtitle": "Odpowiedzi na pytania, które najczęściej dostajemy.",
+    "q1": "Czemu strona dedykowana lepsza niż WordPress?",
+    "a1": "Strona dedykowana to kod napisany pod Twój biznes - szybsza, bezpieczniejsza, łatwiejsza w zarządzaniu. WordPress to gotowy system z tysiącami wtyczek, które spowalniają, psują się i wymagają ciągłych aktualizacji. Dedykowana strona działa tak, jak chcesz.",
+    "q2": "Ile kosztuje strona internetowa Warszawa?",
+    "a2": "Cena zależy od złożoności. Prosta strona firmowa od 8000 PLN, aplikacja z logiką biznesową od 25000 PLN. Podaj szczegóły projektu, przygotujemy wycenę w ciągu 24h.",
+    "q3": "Ile trwa stworzenie strony?",
+    "a3": "Strona firmowa: 2-4 tygodnie. Sklep internetowy lub aplikacja: 6-12 tygodni. Zależy od ilości funkcji i szybkości feedbacku.",
+    "q4": "Czy strona będzie widoczna w Google?",
+    "a4": "Tak. Kod piszemy z myślą o SEO - szybkość, struktura, meta tagi, mobile-first. Dodajemy mapę witryny i optymalizujemy pod Core Web Vitals.",
+    "q5": "Co po zakończeniu projektu?",
+    "a5": "Dostajesz pełną dokumentację, kod źródłowy i instrukcję obsługi. Oferujemy też wsparcie techniczne - hosting, aktualizacje bezpieczeństwa, rozwój funkcji."
   },
   "contact": {
     "title": "Gotowi stworzyć\ncoś wielkiego?",

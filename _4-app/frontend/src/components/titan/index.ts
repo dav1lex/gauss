@@ -12,6 +12,9 @@ export { Contact } from './contact'
 export { Footer } from './footer'
 export { SettingsDropdown } from './settings-dropdown'
 export { ProtectedPhone, ProtectedPhoneSimple } from './protected-phone'
+export { Stats } from './stats'
+export { Testimonials } from './testimonials'
+export { FAQ } from './faq'
 
 // Primitive UI Components
 export * from './ui'

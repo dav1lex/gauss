@@ -70,14 +70,41 @@
     "techStack": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Python", "AWS", "Docker"]
   },
   "stats": {
-    "projects": "50+",
+    "projects": "6+",
     "projectsLabel": "Projects delivered",
-    "experience": "5+",
+    "experience": "2+",
     "experienceLabel": "Years experience",
     "custom": "100%",
     "customLabel": "Custom code",
     "support": "24/7",
     "supportLabel": "Support available"
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "subtitle": "Real feedback from real people.",
+    "fast": "Lightning fast delivery and perfect code. Exactly what I needed.",
+    "precise": "Every detail polished. No room for chance.",
+    "understand": "They understand business, not just code. That's rare.",
+    "client1": "Startup Founder",
+    "role1": "E-commerce Platform",
+    "client2": "Marketing Director",
+    "role2": "Creative Agency",
+    "client3": "CEO",
+    "role3": "Tech Company"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to questions we get most often.",
+    "q1": "Why is a custom website better than WordPress?",
+    "a1": "A custom website is code written for your business - faster, more secure, easier to manage. WordPress is a ready-made system with thousands of plugins that slow it down, break, and require constant updates. A custom site works exactly how you want.",
+    "q2": "How much does a website cost in Warsaw?",
+    "a2": "Price depends on complexity. Simple business site from 8000 PLN, application with business logic from 25000 PLN. Share project details, we'll prepare a quote within 24h.",
+    "q3": "How long does it take to build a website?",
+    "a3": "Business site: 2-4 weeks. Online store or application: 6-12 weeks. Depends on features and feedback speed.",
+    "q4": "Will my site be visible on Google?",
+    "a4": "Yes. We write code with SEO in mind - speed, structure, meta tags, mobile-first. We add sitemap and optimize for Core Web Vitals.",
+    "q5": "What happens after the project ends?",
+    "a5": "You get full documentation, source code, and user manual. We also offer technical support - hosting, security updates, feature development."
   },
   "contact": {
     "title": "Ready to build\nsomething great?",
