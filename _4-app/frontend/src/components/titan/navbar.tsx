@@ -52,14 +52,14 @@ export function Navbar({ className }: NavbarProps) {
     <nav className={cn(
       'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
       scrolled 
-        ? 'border-b border-border bg-background/80 backdrop-blur-xl' 
+        ? 'bg-transparent backdrop-blur-xl' 
         : 'border-transparent bg-transparent',
       className
     )}
     >
       {/* Background fill animation */}
       <div className={cn(
-        'absolute inset-0 bg-background/80 backdrop-blur-xl transition-transform duration-500 ease-out origin-top',
+        'absolute inset-0 bg-card backdrop-blur-xl transition-transform duration-500 ease-out origin-top',
         scrolled ? 'scale-y-100' : 'scale-y-0'
       )} />
       
