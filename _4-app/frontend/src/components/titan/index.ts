@@ -10,6 +10,7 @@ export { Projects } from './projects'
 export { About } from './about'
 export { Contact } from './contact'
 export { Footer } from './footer'
+export { SettingsDropdown } from './settings-dropdown'
 
 // Primitive UI Components
 export * from './ui'

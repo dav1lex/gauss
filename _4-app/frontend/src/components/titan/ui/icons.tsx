@@ -30,6 +30,8 @@ import {
   ChevronDown,
   ChevronUp,
   Eye,
+  Settings,
+  Monitor,
 } from 'lucide-react'
 
 export const Icons = {
@@ -95,6 +97,8 @@ export const Icons = {
   // Theme
   Sun: (props: React.ComponentProps<typeof Sun>) => <Sun {...props} />,
   Moon: (props: React.ComponentProps<typeof Moon>) => <Moon {...props} />,
+  Settings: (props: React.ComponentProps<typeof Settings>) => <Settings {...props} />,
+  Monitor: (props: React.ComponentProps<typeof Monitor>) => <Monitor {...props} />,
   
   // Brand icons - inline SVGs (removed in lucide-react v1)
   Github: (props: React.SVGProps<SVGSVGElement>) => (

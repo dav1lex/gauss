@@ -2,10 +2,10 @@
 
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { ThemeSwitcher } from './theme-switcher'
-import { LanguageSwitcher } from './language-switcher'
+import { SettingsDropdown } from './settings-dropdown'
 import { useTranslate } from '@/hooks/use-translate'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 interface NavbarProps {
   className?: string
@@ -13,7 +13,12 @@ interface NavbarProps {
 
 export function Navbar({ className }: NavbarProps) {
   const t = useTranslate();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  
+  // Check if on blog page
+  const isBlogPage = pathname.includes('/blog');
+  const currentLocale = pathname.split('/')[1] || 'en';
   
   useEffect(() => {
     const handleScroll = () => {
@@ -24,13 +29,17 @@ export function Navbar({ className }: NavbarProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
+  // Build nav links - on blog, hash links go to homepage
   const navLinks = [
-    { href: '#services', label: t('navbar.services') },
-    { href: '#projects', label: t('navbar.projects') },
-    { href: '#about', label: t('navbar.about') },
+    { href: isBlogPage ? `/${currentLocale}#services` : '#services', label: t('navbar.services') },
+    { href: isBlogPage ? `/${currentLocale}#projects` : '#projects', label: t('navbar.projects') },
+    { href: isBlogPage ? `/${currentLocale}#about` : '#about', label: t('navbar.about') },
     { href: '/pl/blog', label: t('navbar.blog') },
-    { href: '#contact', label: t('navbar.contact') },
+    { href: isBlogPage ? `/${currentLocale}#contact` : '#contact', label: t('navbar.contact') },
   ]
+
+  // CTA link also needs to go to homepage on blog
+  const ctaHref = isBlogPage ? `/${currentLocale}#contact` : '#contact';
 
   // Determine text colors based on scroll state
   // Transparent state uses dark text (visible on light hero background)
@@ -106,10 +115,9 @@ export function Navbar({ className }: NavbarProps) {
 
         {/* Right side */}
         <div className="flex items-center gap-2">
-          <LanguageSwitcher />
-          <ThemeSwitcher />
+          <SettingsDropdown />
           <Link
-            href="#contact"
+            href={ctaHref}
             className={cn(
               'px-5 py-2 text-sm font-semibold transition-colors',
               scrolled
