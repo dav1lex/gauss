@@ -11,6 +11,7 @@ export { About } from './about'
 export { Contact } from './contact'
 export { Footer } from './footer'
 export { SettingsDropdown } from './settings-dropdown'
+export { ProtectedPhone, ProtectedPhoneSimple } from './protected-phone'
 
 // Primitive UI Components
 export * from './ui'

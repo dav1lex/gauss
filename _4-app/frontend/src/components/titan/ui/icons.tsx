@@ -32,6 +32,7 @@ import {
   Eye,
   Settings,
   Monitor,
+  Copy,
 } from 'lucide-react'
 
 export const Icons = {
@@ -45,6 +46,7 @@ export const Icons = {
   ChevronUp: (props: React.ComponentProps<typeof ChevronUp>) => <ChevronUp {...props} />,
   Eye: (props: React.ComponentProps<typeof Eye>) => <Eye {...props} />,
   Check: (props: React.ComponentProps<typeof Check>) => <Check {...props} />,
+  Copy: (props: React.ComponentProps<typeof Copy>) => <Copy {...props} />,
   
   // Code & Development
   Code: (props: React.ComponentProps<typeof Code>) => <Code {...props} />,
