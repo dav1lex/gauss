@@ -1,15 +1,18 @@
 'use client'
 
 import { cn } from '@/lib/utils'
+import { ServiceIcons } from './service-card'
 
 interface ServiceCardProps {
   title: string
   description: string
-  icon: React.ReactNode
+  iconKey: keyof typeof ServiceIcons
   className?: string
 }
 
-export function ServiceCard({ title, description, icon, className }: ServiceCardProps) {
+export function ServiceCard({ title, description, iconKey, className }: ServiceCardProps) {
+  const icon = ServiceIcons[iconKey];
+  
   return (
     <div
       className={cn(

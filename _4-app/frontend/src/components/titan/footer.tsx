@@ -17,16 +17,6 @@ export function Footer({ className }: FooterProps) {
             <span className="font-semibold">TITANCODE</span>
           </div>
           
-          {/* Links */}
-          <div className="flex items-center gap-8 text-sm text-muted-foreground">
-            <Link href="#" className="hover:text-foreground transition-colors">
-              Privacy
-            </Link>
-            <Link href="#" className="hover:text-foreground transition-colors">
-              Terms
-            </Link>
-          </div>
-          
           {/* Copyright */}
           <div className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} TITANCODE. All rights reserved.

@@ -11,7 +11,9 @@ interface ProjectCardProps {
   className?: string
 }
 
-export function ProjectCard({ title, description, category, icon, className }: ProjectCardProps) {
+export function ProjectCard({ title, description, category, iconKey, className }: ProjectCardProps) {
+  const icon = ProjectIcons[iconKey];
+  
   return (
     <div
       className={cn(

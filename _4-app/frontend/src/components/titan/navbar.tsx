@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { ThemeSwitcher } from './theme-switcher'
 import { LanguageSwitcher } from './language-switcher'
 import { useTranslate } from '@/hooks/use-translate'
+import { useEffect, useState } from 'react'
 
 interface NavbarProps {
   className?: string
@@ -12,6 +13,16 @@ interface NavbarProps {
 
 export function Navbar({ className }: NavbarProps) {
   const t = useTranslate();
+  const [scrolled, setScrolled] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100);
+    };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const navLinks = [
     { href: '#services', label: t('navbar.services') },
@@ -20,12 +31,41 @@ export function Navbar({ className }: NavbarProps) {
     { href: '#contact', label: t('navbar.contact') },
   ]
 
+  // Determine text colors based on scroll state
+  // Transparent state uses dark text (visible on light hero background)
+  // Scrolled state uses theme-aware colors
+  const getTextStyles = (scrolled: boolean, isLogo = false) => {
+    if (scrolled) {
+      // Scrolled: use theme colors
+      return isLogo 
+        ? 'text-foreground' 
+        : 'text-muted-foreground hover:text-foreground';
+    } else {
+      // Transparent: use dark text for visibility on light hero
+      return isLogo 
+        ? 'text-foreground' 
+        : 'text-foreground/80 hover:text-foreground';
+    }
+  };
+
   return (
-    <nav className={cn('fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl', className)}>
+    <nav className={cn(
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+      scrolled 
+        ? 'border-b border-border bg-background/80 backdrop-blur-xl animate-slideIn' 
+        : 'border-transparent bg-transparent',
+      className
+    )}
+    >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <span className="text-lg font-semibold tracking-tight">TITANCODE</span>
+          <span className={cn(
+            'text-lg font-semibold tracking-tight transition-colors',
+            getTextStyles(scrolled, true)
+          )}>
+            TITANCODE
+          </span>
         </Link>
 
         {/* Navigation Links */}
@@ -34,7 +74,7 @@ export function Navbar({ className }: NavbarProps) {
             <Link
               key={link.href}
               href={link.href}
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className={cn('transition-colors', getTextStyles(scrolled))}
             >
               {link.label}
             </Link>
@@ -47,7 +87,12 @@ export function Navbar({ className }: NavbarProps) {
           <ThemeSwitcher />
           <Link
             href="#contact"
-            className="bg-foreground text-primary-foreground px-5 py-2 text-sm font-semibold hover:bg-[var(--titan-accent-primary)] transition-colors"
+            className={cn(
+              'px-5 py-2 text-sm font-semibold transition-colors',
+              scrolled
+                ? 'bg-foreground text-primary-foreground hover:bg-[var(--titan-accent-primary)]'
+                : 'bg-[var(--titan-accent-primary)] text-primary-foreground hover:bg-[var(--titan-accent-secondary)]'
+            )}
           >
             {t('navbar.getStarted')}
           </Link>
