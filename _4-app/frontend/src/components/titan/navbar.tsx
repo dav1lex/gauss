@@ -6,6 +6,7 @@ import { SettingsDropdown } from './settings-dropdown'
 import { useTranslate } from '@/hooks/use-translate'
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
+import { Menu, X, ChevronRight } from 'lucide-react'
 
 interface NavbarProps {
   className?: string
@@ -15,6 +16,7 @@ export function Navbar({ className }: NavbarProps) {
   const t = useTranslate();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   // Check if on blog page
   const isBlogPage = pathname.includes('/blog');
@@ -29,6 +31,18 @@ export function Navbar({ className }: NavbarProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
+  // Lock body scroll when menu open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+  
   // Build nav links - on blog, hash links go to homepage
   const navLinks = [
     { href: isBlogPage ? `/${currentLocale}#services` : '#services', label: t('navbar.services') },
@@ -42,16 +56,12 @@ export function Navbar({ className }: NavbarProps) {
   const ctaHref = isBlogPage ? `/${currentLocale}#contact` : '#contact';
 
   // Determine text colors based on scroll state
-  // Transparent state uses dark text (visible on light hero background)
-  // Scrolled state uses theme-aware colors
   const getTextStyles = (scrolled: boolean, isLogo = false) => {
     if (scrolled) {
-      // Scrolled: use theme colors
       return isLogo 
         ? 'text-foreground' 
         : 'text-muted-foreground hover:text-foreground';
     } else {
-      // Transparent: use dark text for visibility on light hero
       return isLogo 
         ? 'text-foreground' 
         : 'text-foreground/80 hover:text-foreground';
@@ -59,76 +69,148 @@ export function Navbar({ className }: NavbarProps) {
   };
 
   return (
-    <nav className={cn(
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-      scrolled 
-        ? 'bg-transparent backdrop-blur-xl' 
-        : 'border-transparent bg-transparent',
-      className
-    )}
-    >
-      {/* Background fill animation */}
-      <div className={cn(
-        'absolute inset-0 bg-card backdrop-blur-xl transition-transform duration-500 ease-out origin-top',
-        scrolled ? 'scale-y-100' : 'scale-y-0'
-      )} />
-      
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative z-10">
-        {/* Logo with top-to-bottom fill animation on scroll */}
-        <Link href="/" className="flex items-center gap-3 relative">
-          <span className={cn(
-            'text-lg font-semibold tracking-tight relative',
-            getTextStyles(scrolled, true)
-          )}>
-            {/* Base layer - accent color (shows when not scrolled) */}
+    <>
+      <nav className={cn(
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+        scrolled 
+          ? 'bg-transparent backdrop-blur-xl' 
+          : 'border-transparent bg-transparent',
+        className
+      )}
+      >
+        {/* Background fill animation */}
+        <div className={cn(
+          'absolute inset-0 bg-card backdrop-blur-xl transition-transform duration-500 ease-out origin-top',
+          scrolled ? 'scale-y-100' : 'scale-y-0'
+        )} />
+        
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative z-10">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-3 relative">
             <span className={cn(
-              'text-[var(--titan-accent-primary)] transition-opacity duration-300',
-              scrolled ? 'opacity-0' : 'opacity-100'
+              'text-lg font-semibold tracking-tight relative',
+              getTextStyles(scrolled, true)
             )}>
-              TITANCODE
+              <span className={cn(
+                'text-[var(--titan-accent-primary)] transition-opacity duration-300',
+                scrolled ? 'opacity-0' : 'opacity-100'
+              )}>
+                TITANCODE
+              </span>
+              <span 
+                className={cn(
+                  'absolute inset-0 text-foreground transition-all duration-500 ease-out',
+                  scrolled ? 'clip-fill-full' : 'clip-fill-empty'
+                )}
+                aria-hidden="true"
+              >
+                TITANCODE
+              </span>
             </span>
-            {/* Fill layer - foreground color, clips from top to bottom */}
-            <span 
-              className={cn(
-                'absolute inset-0 text-foreground transition-all duration-500 ease-out',
-                scrolled ? 'clip-fill-full' : 'clip-fill-empty'
-              )}
-              aria-hidden="true"
-            >
-              TITANCODE
-            </span>
-          </span>
-        </Link>
+          </Link>
 
-        {/* Navigation Links */}
-        <div className="hidden md:flex items-center gap-8 text-sm">
-          {navLinks.map((link) => (
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8 text-sm">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn('transition-colors', getTextStyles(scrolled))}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Right side */}
+          <div className="flex items-center gap-2">
+            <SettingsDropdown />
+            {/* Desktop CTA */}
             <Link
-              key={link.href}
-              href={link.href}
-              className={cn('transition-colors', getTextStyles(scrolled))}
+              href={ctaHref}
+              className={cn(
+                'hidden md:inline-flex px-5 py-2 text-sm font-semibold transition-colors',
+                scrolled
+                  ? 'bg-foreground text-primary-foreground hover:bg-[var(--titan-accent-primary)]'
+                  : 'bg-[var(--titan-accent-primary)] text-primary-foreground hover:bg-[var(--titan-accent-secondary)]'
+              )}
             >
-              {link.label}
+              {t('navbar.getStarted')}
             </Link>
-          ))}
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(true)}
+              className={cn(
+                'md:hidden p-2 transition-colors',
+                scrolled ? 'text-foreground' : 'text-foreground'
+              )}
+              aria-label="Open menu"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Drawer */}
+      <div
+        className={cn(
+          'fixed inset-0 z-[999] flex flex-col overflow-hidden bg-background transition-transform duration-300 ease-out md:hidden',
+          mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        )}
+      >
+        {/* Header */}
+        <header className="px-6 py-4 flex justify-between items-center shrink-0 border-b border-border">
+          <Link 
+            href="/" 
+            className="text-lg font-semibold tracking-tight text-foreground"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            TITANCODE
+          </Link>
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className="p-2 text-foreground"
+            aria-label="Close menu"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </header>
+
+        {/* Nav Content */}
+        <div className="flex-1 relative overflow-hidden">
+          <nav className="absolute inset-0 px-6 flex flex-col pt-6 overflow-y-auto pb-24">
+            {navLinks.map((link, index) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={cn(
+                  'flex items-center justify-between py-4 border-b border-border/50',
+                  'text-xl font-medium text-foreground text-left w-full',
+                  'transition-colors hover:text-[var(--titan-accent-primary)]'
+                )}
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                {link.label}
+                <ChevronRight className="w-5 h-5 text-[var(--titan-accent-primary)]" />
+              </Link>
+            ))}
+          </nav>
         </div>
 
-        {/* Right side */}
-        <div className="flex items-center gap-2">
-          <SettingsDropdown />
+        {/* Footer CTA */}
+        <footer className="flex flex-col">
           <Link
             href={ctaHref}
-            className={cn(
-              'px-5 py-2 text-sm font-semibold transition-colors',
-              scrolled
-                ? 'bg-foreground text-primary-foreground hover:bg-[var(--titan-accent-primary)]'
-                : 'bg-[var(--titan-accent-primary)] text-primary-foreground hover:bg-[var(--titan-accent-secondary)]'
-            )}
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-center bg-[var(--titan-accent-primary)] text-primary-foreground py-4 px-6 font-semibold flex items-center justify-between"
           >
             {t('navbar.getStarted')}
+            <ChevronRight className="w-5 h-5" />
           </Link>
-        </div>
+        </footer>
       </div>
-    </nav>
+    </>
   )
 }
