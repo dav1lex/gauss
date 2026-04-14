@@ -80,7 +80,7 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-20 md:py-28 bg-muted/30">
+    <section id="faq" className="py-20 md:py-28 bg-[var(--titan-section-bg)]">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="mb-12">

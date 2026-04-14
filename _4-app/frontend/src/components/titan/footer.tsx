@@ -11,7 +11,7 @@ interface FooterProps {
 
 export function Footer({ className }: FooterProps) {
   return (
-    <footer className={cn('py-12 border-t border-border bg-background', className)}>
+    <footer className={cn('py-12 border-t border-border bg-[var(--titan-section-bg)]', className)}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}

@@ -50,7 +50,7 @@
 
 :root {
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(0.125 0 0); /* #1f1f1f pure black */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -85,6 +85,8 @@
   /* Titan design tokens */
   --titan-accent-primary: oklch(0.577 0.245 27.325); /* Orange #EA580C */
   --titan-accent-secondary: oklch(0.439 0 0); /* Darker orange */
+  --titan-section-bg: oklch(0.9849 0.0204 91.58); /* Light beige #DAD5C7 */
+  --titan-item-bg: oklch(0.9584 0.0588 92.48); /*  #fff1c5 */
 }
 
 .dark {
@@ -123,6 +125,7 @@
   /* Titan design tokens - dark mode */
   --titan-accent-primary: oklch(0.704 0.191 22.216); /* Dark mode orange */
   --titan-accent-secondary: oklch(0.556 0 0); /* Darker orange */
+  --titan-section-bg: transparent; /* No section bg in dark mode */
 }
 
 @layer base {

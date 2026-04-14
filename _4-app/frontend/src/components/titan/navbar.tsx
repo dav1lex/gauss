@@ -17,6 +17,17 @@ export function Navbar({ className }: NavbarProps) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+  
+  // Check if dark mode
+  useEffect(() => {
+    const checkDark = () => setIsDark(document.documentElement.classList.contains('dark'));
+    checkDark();
+    // Watch for theme changes
+    const observer = new MutationObserver(checkDark);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    return () => observer.disconnect();
+  }, []);
   
   // Check if on blog page
   const isBlogPage = pathname.includes('/blog');
@@ -55,17 +66,32 @@ export function Navbar({ className }: NavbarProps) {
   // CTA link also needs to go to homepage on blog
   const ctaHref = isBlogPage ? `/${currentLocale}#contact` : '#contact';
 
-  // Determine text colors based on scroll state
+  // Determine text colors based on scroll state + dark mode
   const getTextStyles = (scrolled: boolean, isLogo = false) => {
-    if (scrolled) {
-      return isLogo 
-        ? 'text-foreground' 
-        : 'text-muted-foreground hover:text-foreground';
-    } else {
-      return isLogo 
-        ? 'text-foreground' 
-        : 'text-foreground/80 hover:text-foreground';
+    // Light mode: white initially, dark after scroll (bg becomes white)
+    if (!isDark) {
+      return scrolled ? 'text-foreground' : 'text-white';
     }
+    // Dark mode: normal, then accent on scroll
+    if (scrolled) {
+      return isLogo ? 'text-[var(--titan-accent-primary)]' : 'text-foreground';
+    }
+    return 'text-foreground';
+  };
+
+  // CTA style: light mode changes on scroll, dark mode accent on scroll
+  const getCtaStyles = () => {
+    if (!isDark) {
+      // Light mode: white initially, orange accent after scroll
+      return scrolled
+        ? 'bg-[var(--titan-accent-primary)] text-primary-foreground hover:bg-[var(--titan-accent-secondary)]'
+        : 'bg-white text-foreground hover:bg-white/90';
+    }
+    // Dark mode: accent only after scroll
+    if (scrolled) {
+      return 'bg-[var(--titan-accent-primary)] text-primary-foreground hover:bg-[var(--titan-accent-secondary)]';
+    }
+    return 'bg-foreground text-primary-foreground hover:bg-foreground/90';
   };
 
   return (
@@ -87,22 +113,20 @@ export function Navbar({ className }: NavbarProps) {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative z-10">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 relative">
-            <span className={cn(
-              'text-lg font-semibold tracking-tight relative',
-              getTextStyles(scrolled, true)
-            )}>
-              <span className={cn(
-                'text-[var(--titan-accent-primary)] transition-opacity duration-300',
-                scrolled ? 'opacity-0' : 'opacity-100'
-              )}>
+            <span className="relative text-lg font-semibold tracking-tight">
+              <span 
+                className={cn(
+                  'text-[var(--titan-accent-primary)] transition-all duration-500',
+                  isDark ? (scrolled ? 'clip-fill-full' : 'clip-fill-empty') : (scrolled ? 'opacity-100' : 'opacity-0')
+                )}
+              >
                 TITANCODE
               </span>
               <span 
                 className={cn(
-                  'absolute inset-0 text-foreground transition-all duration-500 ease-out',
-                  scrolled ? 'clip-fill-full' : 'clip-fill-empty'
+                  'absolute inset-0 transition-all duration-500',
+                  isDark ? (scrolled ? 'clip-fill-empty' : 'clip-fill-full') : (scrolled ? 'opacity-0' : 'opacity-100')
                 )}
-                aria-hidden="true"
               >
                 TITANCODE
               </span>
@@ -130,9 +154,7 @@ export function Navbar({ className }: NavbarProps) {
               href={ctaHref}
               className={cn(
                 'hidden md:inline-flex px-5 py-2 text-sm font-semibold transition-colors',
-                scrolled
-                  ? 'bg-foreground text-primary-foreground hover:bg-[var(--titan-accent-primary)]'
-                  : 'bg-[var(--titan-accent-primary)] text-primary-foreground hover:bg-[var(--titan-accent-secondary)]'
+                getCtaStyles()
               )}
             >
               {t('navbar.getStarted')}

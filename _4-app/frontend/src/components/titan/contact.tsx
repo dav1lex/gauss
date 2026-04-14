@@ -14,7 +14,7 @@ export function Contact({ className }: ContactProps) {
   const t = useTranslate();
   
   return (
-    <section id="contact" className={cn('py-24 border-t border-border bg-secondary/30', className)}>
+    <section id="contact" className={cn('py-24 border-t border-border bg-[var(--titan-section-bg)]', className)}>
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="mb-12">

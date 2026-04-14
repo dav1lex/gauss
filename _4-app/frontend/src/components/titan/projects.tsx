@@ -73,7 +73,7 @@ export function Projects({ className }: ProjectsProps) {
   };
 
   return (
-    <section id="projects" className={cn('py-24 border-t border-border bg-background', className)}>
+    <section id="projects" className={cn('py-24 border-t border-border bg-[var(--titan-section-bg)]', className)}>
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-16">
