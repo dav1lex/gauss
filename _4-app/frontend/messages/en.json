@@ -88,21 +88,6 @@
       "category": "LET'S TALK"
     }
   },
-  "about": {
-    "title": "We understand business,\nnot just code.",
-    "subtitle": "Warsaw team that asks about ROI before writing a single line. You get a solution built for your goals — not a portfolio project.",
-    "techStack": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Python", "AWS", "Docker"]
-  },
-  "stats": {
-    "projects": "6+",
-    "projectsLabel": "Projects delivered",
-    "experience": "5+ years",
-    "experienceLabel": "Industry experience",
-    "custom": "100%",
-    "customLabel": "Custom-built code",
-    "support": "24/7",
-    "supportLabel": "Technical support"
-  },
   "testimonials": {
     "title": "What clients say",
     "subtitle": "No fluff.",

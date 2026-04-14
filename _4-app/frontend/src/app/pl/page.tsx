@@ -1,4 +1,4 @@
-import { Navbar, HeroParallax, Stats, Services, Projects, Testimonials, About, FAQ, Contact, Footer } from '@/components/titan'
+import { Navbar, HeroParallax, Services, Projects, Testimonials, FAQ, Contact, Footer } from '@/components/titan'
 // Import translations at build time
 import translations from '../../../messages/pl.json';
 
@@ -10,11 +10,9 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroParallax backgroundImage="/images/hero-bg.jpg" />
-      <Stats />
       <Services />
       <Projects />
       <Testimonials />
-      <About />
       <FAQ />
       <Contact />
       <Footer />

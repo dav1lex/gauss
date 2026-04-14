@@ -18,7 +18,7 @@ export function Contact({ className }: ContactProps) {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="mb-12">
-          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">07 / CONTACT</span>
+          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">05 / CONTACT</span>
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
             {t('contact.title')}
           </h2>

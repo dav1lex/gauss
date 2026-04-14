@@ -88,21 +88,6 @@
       "category": "NAPISZ DO NAS"
     }
   },
-  "about": {
-    "title": "Rozumiemy biznes,\nnie tylko kod.",
-    "subtitle": "Warszawski zespół, który pyta o ROI zanim napisze linię kodu. Dostajesz rozwiązanie dopasowane do Twoich celów — nie projekt do portfolio.",
-    "techStack": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Python", "AWS", "Docker"]
-  },
-  "stats": {
-    "projects": "6+",
-    "projectsLabel": "Zrealizowanych projektów",
-    "experience": "5+ lat",
-    "experienceLabel": "Doświadczenia w branży",
-    "custom": "100%",
-    "customLabel": "Kodu napisanego od zera",
-    "support": "24/7",
-    "supportLabel": "Wsparcie techniczne"
-  },
   "testimonials": {
     "title": "Co mówią klienci",
     "subtitle": "Bez upiększania.",
