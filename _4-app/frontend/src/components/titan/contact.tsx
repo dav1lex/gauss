@@ -30,7 +30,7 @@ export function Contact({ className }: ContactProps) {
             {/* Email */}
             <Link
               href="mailto:info@titancode.pl"
-              className="inline-flex items-center gap-3 bg-[var(--titan-accent-primary)] text-primary-foreground px-10 py-5 text-lg font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
+              className="inline-flex items-center gap-3 bg-[var(--titan-accent-primary)] text-primary-foreground px-10 py-5 text-lg font-semibold hover:bg-[var(--titan-accent-secondary)] dark:hover:text-white transition-colors"
             >
               <Icons.Mail className="w-5 h-5" />
               {t('contact.email')}

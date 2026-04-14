@@ -80,7 +80,7 @@ export function HeroParallax({
           <div className="flex flex-wrap gap-4">
             <Link
               href="#contact"
-              className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-primary-foreground px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] transition-colors"
+              className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-primary-foreground px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] dark:hover:text-white transition-colors"
             >
               {t('hero.ctaStart')}
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
