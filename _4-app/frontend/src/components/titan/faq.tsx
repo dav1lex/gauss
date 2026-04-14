@@ -84,7 +84,7 @@ export function FAQ() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="mb-12">
-          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">04 / FAQ</span>
+
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t('faq.title')}
           </h2>
