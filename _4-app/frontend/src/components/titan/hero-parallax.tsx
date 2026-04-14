@@ -56,16 +56,16 @@ export function HeroParallax({
         <div className="max-w-2xl">
           {/* Headline - cinema reveal, split into 2 chunks */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8">
-            <span className="block overflow-hidden">
-              <span className="text-reveal inline-block">
-                Tworzymy oprogramowanie
+            {t('hero.headline').split('\n').map((line: string, i: number) => (
+              <span key={i} className="block overflow-hidden">
+                <span className={cn(
+                  'text-reveal inline-block',
+                  i === 1 && 'text-reveal-delay-1'
+                )}>
+                  {line}
+                </span>
               </span>
-            </span>
-            <span className="block overflow-hidden">
-              <span className="text-reveal text-reveal-delay-1 inline-block">
-                które działa.
-              </span>
-            </span>
+            ))}
           </h1>
           
           {/* Subheadline */}

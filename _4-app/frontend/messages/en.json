@@ -15,7 +15,7 @@
   },
   "services": {
     "title": "What you get",
-    "subtitle": "We don't code for ourselves. We code for your business."
+    "subtitle": "You grow. We build."
   },
   "serviceItems": {
     "webDev": {
@@ -72,6 +72,8 @@
   "stats": {
     "projects": "6+",
     "projectsLabel": "Projects delivered",
+    "experience": "5+ years",
+    "experienceLabel": "Industry experience",
     "custom": "100%",
     "customLabel": "Custom-built code",
     "support": "24/7",

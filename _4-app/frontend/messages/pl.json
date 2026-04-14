@@ -15,7 +15,7 @@
   },
   "services": {
     "title": "Co zyskujesz",
-    "subtitle": "Nie kodujemy dla siebie. Kodujemy dla Twojego biznesu."
+    "subtitle": "Ty rośniesz. My budujemy."
   },
   "serviceItems": {
     "webDev": {
@@ -72,6 +72,8 @@
   "stats": {
     "projects": "6+",
     "projectsLabel": "Zrealizowanych projektów",
+    "experience": "5+ lat",
+    "experienceLabel": "Doświadczenia w branży",
     "custom": "100%",
     "customLabel": "Kodu napisanego od zera",
     "support": "24/7",
