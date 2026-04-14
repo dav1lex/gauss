@@ -53,15 +53,39 @@
       "description": "Real-time auction platform with live bidding, instant notifications, and secure payments.",
       "category": "AUCTION PLATFORM"
     },
-    "careerflex": {
-      "title": "CareerFlex",
-      "description": "AI-powered job matching platform with smart recommendations and application tracking.",
-      "category": "AI JOB SEARCH"
-    },
     "kurs8klasisty": {
       "title": "Kurs8Klasisty",
-      "description": "Interactive e-learning platform for 8th graders preparing for exams with progress tracking.",
-      "category": "E-LEARNING"
+      "description": "Polish e-learning platform preparing 8th graders for English exams with online courses and practical guides. Materials aligned with official CKE requirements for maximum exam scores.",
+      "category": "E-LEARNING",
+      "href": "https://kurs8klasisty.pl"
+    },
+    "careerflex": {
+      "title": "CareerFlex",
+      "description": "AI job analyzer matching CVs to job descriptions with instant compatibility scores and tailored CV generation. Chrome extension works on LinkedIn, Indeed and major job platforms with unlimited free analysis.",
+      "category": "AI JOB SEARCH",
+      "href": "https://careerflex.app"
+    },
+    "wiredfor": {
+      "title": "WiredFor",
+      "description": "Business growth platform using Human Design principles to show how you naturally attract clients and make decisions. Personalized scaling strategy based on your unique operational style and energy type.",
+      "category": "AUTOMATION",
+      "href": "https://wiredfor.co"
+    },
+    "entee": {
+      "title": "Entee",
+      "description": "Voice reporting app for field teams to submit audio updates from construction and service job sites. Mobile-first platform replacing paperwork with instant voice reports and team coordination.",
+      "category": "ERP SYSTEM",
+      "href": "https://entee.ai"
+    },
+    "airea": {
+      "title": "AIREA",
+      "description": "AI-powered real estate platform with intelligent property matching and market insights.",
+      "category": "AI REAL ESTATE"
+    },
+    "yourproject": {
+      "title": "Your Project",
+      "description": "Ready to build something great? Let's discuss your next big idea.",
+      "category": "LET'S TALK"
     }
   },
   "about": {
