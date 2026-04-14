@@ -81,19 +81,20 @@ export function FAQ() {
 
   return (
     <section id="faq" className="py-20 md:py-28 bg-muted/30">
-      <div className="max-w-3xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="mb-12">
+          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">06 / FAQ</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t('faq.title')}
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground max-w-xl">
             {t('faq.subtitle')}
           </p>
         </div>
 
         {/* FAQ List */}
-        <div className="bg-card border border-border rounded-lg overflow-hidden">
+        <div className="bg-card border border-border rounded-lg overflow-hidden max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}

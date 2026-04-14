@@ -16,14 +16,16 @@ export function Contact({ className }: ContactProps) {
   return (
     <section id="contact" className={cn('py-24 border-t border-border bg-secondary/30', className)}>
       <div className="max-w-7xl mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">04 / CONTACT</span>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+        {/* Header */}
+        <div className="mb-12">
+          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">07 / CONTACT</span>
+          <h2 className="text-4xl md:text-6xl font-bold mb-4">
             {t('contact.title')}
           </h2>
-          <p className="text-muted-foreground text-lg mb-12">
+          <p className="text-muted-foreground text-lg max-w-xl">
             {t('contact.subtitle')}
           </p>
+        </div>
           
           {/* Contact buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -47,7 +49,6 @@ export function Contact({ className }: ContactProps) {
               />
             </div>
           </div>
-        </div>
       </div>
     </section>
   )

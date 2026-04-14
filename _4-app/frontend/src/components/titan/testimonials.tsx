@@ -3,7 +3,6 @@
 import { useState, useRef } from 'react'
 import { cn } from '@/lib/utils'
 import { useTranslate } from '@/hooks/use-translate'
-import { Quote } from 'lucide-react'
 
 interface TestimonialProps {
   quote: string
@@ -15,14 +14,20 @@ function TestimonialCard({ quote, author, role }: TestimonialProps) {
   return (
     <div className="w-full md:w-1/3 flex-shrink-0 px-3">
       <div className={cn(
-        'bg-card border border-border p-8 relative h-full',
+        'bg-card border border-border p-6 md:p-8 relative h-full flex flex-col',
         'transition-colors duration-300 hover:border-[var(--titan-accent-primary)]/30'
       )}>
-        <Quote className="w-8 h-8 text-[var(--titan-accent-primary)]/20 mb-4" />
-        <blockquote className="text-lg md:text-xl text-foreground mb-6 leading-relaxed">
-          "{quote}"
+        {/* Decorative quotes */}
+        <span className="absolute top-4 left-4 text-6xl text-[var(--titan-accent-primary)]/15 leading-none select-none font-serif">"</span>
+        <span className="absolute bottom-20 md:bottom-24 right-4 text-6xl text-[var(--titan-accent-primary)]/15 leading-none select-none font-serif rotate-180">"</span>
+        
+        {/* Quote text - centered, with padding for decorative quotes */}
+        <blockquote className="text-lg md:text-xl text-foreground flex-1 flex items-center justify-center text-center leading-relaxed px-4">
+          {quote}
         </blockquote>
-        <footer>
+        
+        {/* Author - centered */}
+        <footer className="text-center mt-4">
           <div className="font-semibold text-foreground">{author}</div>
           <div className="text-sm text-muted-foreground">{role}</div>
         </footer>
@@ -93,14 +98,14 @@ export function Testimonials() {
 
   return (
     <section id="testimonials" className="py-24 border-t border-border bg-background">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">TESTIMONIALS</span>
+        <div className="mb-16">
+          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">04 / TESTIMONIALS</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t('testimonials.title')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-xl">
             {t('testimonials.subtitle')}
           </p>
         </div>

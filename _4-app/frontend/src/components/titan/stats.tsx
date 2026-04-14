@@ -31,6 +31,11 @@ export function Stats() {
   return (
     <section id="stats" className="py-20 md:py-28 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="mb-12">
+          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">01 / STATS</span>
+        </div>
+        
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
           <StatItem 
             value={t('stats.projects')} 

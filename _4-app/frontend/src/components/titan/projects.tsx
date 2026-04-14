@@ -74,10 +74,10 @@ export function Projects({ className }: ProjectsProps) {
 
   return (
     <section id="projects" className={cn('py-24 border-t border-border bg-background', className)}>
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-16">
-          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">02 / PORTFOLIO</span>
+          <span className="font-mono text-xs text-[var(--titan-accent-primary)] mb-4 block">03 / PORTFOLIO</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('projects.title')}</h2>
           <p className="text-muted-foreground max-w-xl">
             {t('projects.subtitle')}
