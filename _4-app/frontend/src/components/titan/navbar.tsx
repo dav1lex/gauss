@@ -63,9 +63,6 @@ export function Navbar({ className }: NavbarProps) {
     { href: isBlogPage ? `/${currentLocale}#contact` : '#contact', label: t('navbar.contact') },
   ]
 
-  // CTA link also needs to go to homepage on blog
-  const ctaHref = isBlogPage ? `/${currentLocale}#contact` : '#contact';
-
   // Determine text colors based on scroll state + dark mode
   const getTextStyles = (scrolled: boolean, isLogo = false) => {
     // Light mode: white initially, dark after scroll (bg becomes white)
@@ -77,21 +74,6 @@ export function Navbar({ className }: NavbarProps) {
       return isLogo ? 'text-[var(--titan-accent-primary)]' : 'text-foreground';
     }
     return 'text-foreground';
-  };
-
-  // CTA style: light mode changes on scroll, dark mode accent on scroll
-  const getCtaStyles = () => {
-    if (!isDark) {
-      // Light mode: white initially, orange accent after scroll
-      return scrolled
-        ? 'bg-[var(--titan-accent-primary)] text-primary-foreground hover:bg-[var(--titan-accent-secondary)]'
-        : 'bg-white text-foreground hover:bg-white/90';
-    }
-    // Dark mode: accent only after scroll
-    if (scrolled) {
-      return 'bg-[var(--titan-accent-primary)] text-primary-foreground hover:bg-[var(--titan-accent-secondary)]';
-    }
-    return 'bg-foreground text-primary-foreground hover:bg-foreground/90';
   };
 
   return (
@@ -124,7 +106,7 @@ export function Navbar({ className }: NavbarProps) {
               </span>
               <span 
                 className={cn(
-                  'absolute inset-0 transition-all duration-500',
+                  'absolute inset-0 transition-all duration-500 text-white',
                   isDark ? (scrolled ? 'clip-fill-empty' : 'clip-fill-full') : (scrolled ? 'opacity-0' : 'opacity-100')
                 )}
               >
@@ -149,16 +131,6 @@ export function Navbar({ className }: NavbarProps) {
           {/* Right side */}
           <div className="flex items-center gap-2">
             <SettingsDropdown />
-            {/* Desktop CTA */}
-            <Link
-              href={ctaHref}
-              className={cn(
-                'hidden md:inline-flex px-5 py-2 text-sm font-semibold transition-colors',
-                getCtaStyles()
-              )}
-            >
-              {t('navbar.getStarted')}
-            </Link>
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(true)}
@@ -221,17 +193,7 @@ export function Navbar({ className }: NavbarProps) {
           </nav>
         </div>
 
-        {/* Footer CTA */}
-        <footer className="flex flex-col">
-          <Link
-            href={ctaHref}
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-center bg-[var(--titan-accent-primary)] text-primary-foreground py-4 px-6 font-semibold flex items-center justify-between"
-          >
-            {t('navbar.getStarted')}
-            <ChevronRight className="w-5 h-5" />
-          </Link>
-        </footer>
+
       </div>
     </>
   )

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <HeroParallax backgroundImage="/images/hero-bg.jpg" />
+      <HeroParallax />
       <Services />
       <Projects />
       <Testimonials />

@@ -2,7 +2,7 @@
 export { Badge } from './badge'
 export { CodeGradient } from './code-gradient'
 export { Navbar } from './navbar'
-export { HeroParallax, HeroParallaxAnimated } from './hero-parallax'
+export { HeroParallax } from './hero-parallax'
 export { ServiceCard, ServiceIcons, services } from './service-card'
 export { Services } from './services'
 export { Projects } from './projects'
