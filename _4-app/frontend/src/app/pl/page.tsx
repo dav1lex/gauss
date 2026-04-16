@@ -14,11 +14,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'TITANCODE - Tworzenie Stron Internetowych',
-    description: 'Warszawska agencja tworzenia stron i aplikacji. Bez szablonów. Bez WordPress. Czysty, ręcznie pisany kod dla ambitnych projektów.',
+    description: 'Warszawska agencja webowa. Strony, aplikacje, e-commerce, automatyzacja. Szybka realizacja, odpowiedź w 24h. Bez szablonów, bez WordPress.',
     url: '/pl',
     siteName: 'TITANCODE',
     locale: 'pl_PL',
     type: 'website',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'TITANCODE - Tworzenie Stron Internetowych' }],
   },
 }
 

@@ -14,11 +14,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'TITANCODE - Custom Web Development',
-    description: 'Warsaw-based custom web development. No templates. No WordPress. Just clean, handcrafted code for ambitious projects.',
+    description: 'Warsaw-based custom web development agency. Fast delivery, same-day replies. Websites, apps, e-commerce, SEO. No templates, no WordPress.',
     url: '/en',
     siteName: 'TITANCODE',
     locale: 'en_US',
     type: 'website',
+    images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'TITANCODE - Custom Web Development' }],
   },
 }
 

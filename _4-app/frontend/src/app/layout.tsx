@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'TitanCode',
+  },
+  other: {
+    'apple-mobile-web-app-title': 'TitanCode',
+  },
 };
 
 export const viewport: Viewport = {

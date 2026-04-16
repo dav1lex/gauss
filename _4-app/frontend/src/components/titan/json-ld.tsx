@@ -23,7 +23,7 @@ export function OrganizationSchema({ locale }: OrganizationSchemaProps) {
     '@type': 'Organization',
     name: 'TITANCODE',
     url: baseUrl,
-    logo: `${baseUrl}/logo.png`,
+    logo: `${baseUrl}/images/logo.png`,
     description: locale === 'en' 
       ? 'Warsaw-based custom web development agency. Fast delivery, same-day replies. Websites, apps, e-commerce, SEO.'
       : 'Warszawska agencja webowa. Strony, aplikacje, e-commerce, automatyzacja. Szybka realizacja.',
@@ -108,7 +108,7 @@ export function ArticleSchema({ title, description, slug, date, author, coverIma
       url: baseUrl,
       logo: {
         '@type': 'ImageObject',
-        url: `${baseUrl}/logo.png`,
+        url: `${baseUrl}/images/logo.png`,
       },
     },
     mainEntityOfPage: {
