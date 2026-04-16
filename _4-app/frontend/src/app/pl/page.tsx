@@ -1,7 +1,5 @@
 import { Metadata } from 'next'
-import { Navbar, HeroParallax, Services, Projects, Testimonials, FAQ, Contact, Footer } from '@/components/titan'
-// Import translations at build time
-import translations from '../../../messages/pl.json';
+import { Navbar, HeroParallax, Services, Projects, Testimonials, FAQ, Contact, Footer, OrganizationSchema } from '@/components/titan'
 
 export const metadata: Metadata = {
   title: 'TITANCODE - Tworzenie Stron Internetowych',
@@ -24,20 +22,23 @@ export const metadata: Metadata = {
   },
 }
 
-// Inject translations into components via context or props
-// For now, use the useTranslate hook which reads from URL
-
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <HeroParallax />
-      <Services />
-      <Projects />
-      <Testimonials />
-      <FAQ />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <OrganizationSchema locale="pl" />
+      <a href="#contact" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:border focus:border-border">
+        Przejdź do głównej treści
+      </a>
+      <main id="main">
+        <Navbar />
+        <HeroParallax />
+        <Services />
+        <Projects />
+        <Testimonials />
+        <FAQ />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   )
 }

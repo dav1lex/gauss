@@ -1,29 +1,27 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "next-themes";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "TITANCODE - Custom Web Development",
-  description: "Warsaw-based custom web development. No templates. No WordPress. Just clean, handcrafted code for ambitious projects.",
+  metadataBase: new URL('https://titancode.pl'),
+  title: {
+    default: 'TITANCODE - Custom Web Development',
+    template: '%s | TITANCODE',
+  },
+  description: 'Warsaw-based custom web development. No templates. No WordPress. Just clean, handcrafted code for ambitious projects.',
+  keywords: ['web development', 'custom websites', 'Warsaw', 'Poland', 'e-commerce', 'SEO', 'web design'],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'TITANCODE',
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -31,27 +29,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const theme = localStorage.getItem('theme');
-                if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark');
-                }
-              })()
-            `,
-          }}
-        />
-      </head>
-      <body className={`${plusJakartaSans.variable} ${jetbrainsMono.variable} min-h-full antialiased font-sans`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+  // Root layout for static export - locale layouts define their own html/body
+  return children;
 }

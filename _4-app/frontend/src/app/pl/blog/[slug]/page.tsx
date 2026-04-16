@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { Navbar, Footer } from '@/components/titan'
+import { Navbar, Footer, ArticleSchema } from '@/components/titan'
 import { getPostBySlug, getAllSlugs } from '@/lib/blog'
 import { formatDate } from '@/lib/utils'
 import { MDXRemote } from 'next-mdx-remote/rsc'
@@ -54,6 +54,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <main className="min-h-screen bg-background">
+      <ArticleSchema
+        title={post.title}
+        description={post.description}
+        slug={slug}
+        date={post.date}
+        author={post.author}
+        coverImage={post.coverImage}
+      />
       <Navbar />
       
       <article className="max-w-3xl mx-auto px-6 pt-32 pb-20">
@@ -99,6 +107,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               src={post.coverImage}
               alt={post.title}
               className="w-full h-auto rounded-lg"
+              loading="lazy"
             />
           </div>
         )}

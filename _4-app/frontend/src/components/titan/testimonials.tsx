@@ -114,6 +114,11 @@ export function Testimonials() {
         <div 
           ref={containerRef}
           className="relative overflow-hidden"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowLeft') goPrev();
+            if (e.key === 'ArrowRight') goNext();
+          }}
           onMouseDown={(e) => { e.preventDefault(); handleDragStart(e.clientX); }}
           onMouseMove={(e) => handleDragMove(e.clientX)}
           onMouseUp={handleDragEnd}
@@ -121,6 +126,8 @@ export function Testimonials() {
           onTouchStart={(e) => handleDragStart(e.touches[0].clientX)}
           onTouchMove={(e) => handleDragMove(e.touches[0].clientX)}
           onTouchEnd={handleDragEnd}
+          aria-label="Testimonials carousel"
+          role="region"
         >
           {/* Sliding Track - Shows 3 cards on desktop, 1 on mobile */}
           <div 

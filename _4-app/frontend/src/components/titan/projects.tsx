@@ -88,6 +88,11 @@ export function Projects({ className }: ProjectsProps) {
         <div 
           ref={containerRef}
           className="relative overflow-hidden"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowLeft') goPrev();
+            if (e.key === 'ArrowRight') goNext();
+          }}
           onMouseDown={(e) => { e.preventDefault(); handleDragStart(e.clientX); }}
           onMouseMove={(e) => handleDragMove(e.clientX)}
           onMouseUp={handleDragEnd}
@@ -95,6 +100,8 @@ export function Projects({ className }: ProjectsProps) {
           onTouchStart={(e) => handleDragStart(e.touches[0].clientX)}
           onTouchMove={(e) => handleDragMove(e.touches[0].clientX)}
           onTouchEnd={handleDragEnd}
+          aria-label="Projects carousel"
+          role="region"
         >
           {/* Sliding Track */}
           <div 

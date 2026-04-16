@@ -1,6 +1,15 @@
-import { redirect } from 'next/navigation';
+'use client'
+
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
-  // Redirect to English by default
-  return redirect('/en');
+  const router = useRouter()
+  
+  useEffect(() => {
+    // Redirect to English by default (client-side for static export)
+    router.replace('/en')
+  }, [router])
+  
+  return null
 }
