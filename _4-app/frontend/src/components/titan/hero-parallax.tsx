@@ -61,8 +61,8 @@ export function HeroParallax({ className }: HeroParallaxProps) {
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
-        <div className="max-w-3xl">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8 text-white">
+        <div className="max-w-5xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-relaxed leading-[1.05] mb-8 text-white">
             {t('hero.headline').split('\n').map((line: string, i: number) => (
               <span key={i} className="block  ">
                 <span className={`text-reveal inline-block ${i === 1 ? 'text-reveal-delay-2' : ''}`}>
