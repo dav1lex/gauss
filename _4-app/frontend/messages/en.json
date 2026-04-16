@@ -115,13 +115,13 @@
     "q3": "What about Google and analytics?",
     "a4": "We handle everything: Search Console, analytics, and cookie banners. Your site will be fast, compliant, and ready for traffic from day one.",
     "q4": "What happens after?",
-    "a5": "You get all the code and documentation. You own it. We are available whenever you need to change anything.",
+    "a5": "You get all the code and documentation. <b>You own it.</b> We are available whenever you need to change anything.",
     "q5": "Can I edit the content myself?",
     "a1": "We don't use WordPress. If you need a management panel (CMS), we can add it for an extra fee. But don't worry. We're available to quickly make changes for you.",
     "q7": "Do you invoice?",
     "a7": "Yes. All prices are netto + VAT. You can deduct the tax.",
     "q6": "What about domain and hosting?",
-    "a6": "Domain: You buy it and set nameservers. We will show you how. Hosting: Your choice. Take your own, or we host for free. No hidden fees."
+    "a6": "Domain: You buy it and set nameservers. We will show you how.\n\nHosting: Your choice. Take your own, or we host for free. No hidden fees."
   },
   "contact": {
     "title": "Write to us.\nWe'll reply in 24h.",

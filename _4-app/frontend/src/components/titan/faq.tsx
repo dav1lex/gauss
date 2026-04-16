@@ -45,9 +45,10 @@ function FAQItem({ question, answer, isOpen, onClick, delay = 0 }: FAQItemProps)
           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         )}
       >
-        <div className="px-6 pb-6 text-muted-foreground leading-relaxed">
-          {answer}
-        </div>
+        <div 
+          className="px-6 pb-6 text-muted-foreground leading-relaxed whitespace-pre-wrap"
+          dangerouslySetInnerHTML={{ __html: answer }}
+        />
       </div>
     </div>
   )

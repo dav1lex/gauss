@@ -107,7 +107,7 @@
   },
   "faq": {
     "title": "Pytania i odpowiedzi",
-    "subtitle": "Konkrety. Bez lania wody.",
+    "subtitle": "Krótko i na temat.",
     "q1": "Ile to kosztuje?",
     "a2": "Zależy od zakresu i czasu. Prosta strona lub aplikacja: od 1000 PLN.\n\nWięcej funkcji = więcej czasu = wyższa cena. Daj znać co potrzebujesz. Wycenimy w 24h.",
     "q2": "Ile to trwa?",
@@ -115,13 +115,13 @@
     "q3": "A jak z Google i analityką?",
     "a4": "Konfigurujemy wszystko: Search Console, analitykę i banner cookies. Strona będzie szybka, zgodna z przepisami i gotowa na ruch od pierwszego dnia.",
     "q4": "Co po projekcie?",
-    "a5": "Dostajesz cały kod i dokumentację. Jesteś właścicielem. Jesteśmy dostępni zawsze, gdy chcesz coś zmienić.",
+    "a5": "Dostajesz cały kod i dokumentację. <b>Jesteś właścicielem.</b> Jesteśmy dostępni zawsze, gdy chcesz coś zmienić.",
     "q5": "Czy mogę sam edytować treść?",
     "a1": "Nie używamy WordPressa. Jeśli potrzebujesz panelu zarządzania (CMS), możemy go dodać za dopłatą. Ale spokojnie. Jesteśmy dostępni, żeby szybko wprowadzić zmiany za Ciebie.",
     "q7": "Wystawiacie faktury?",
     "a7": "Tak. Wszystkie ceny to netto + VAT. Możesz odliczyć podatek.",
     "q6": "Co z domeną i hostingiem?",
-    "a6": "Domena: Kupujesz i ustawiasz nameservery. Pokażemy Ci jak. Hosting: Jak chcesz, bierz własny. Albo zostaw. Hostujemy za darmo. Bez ukrytych opłat."
+    "a6": "Domena: Kupujesz i ustawiasz nameservery. Pokażemy Ci jak.\n\nHosting: Jak chcesz, bierz własny. Albo zostań u nas. Hostujemy za darmo. Bez ukrytych opłat."
   },
   "contact": {
     "title": "Napisz do nas.\nOdezwiemy się w 24h.",
