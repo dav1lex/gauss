@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://titancode.pl/pl</loc>
+<xhtml:link rel="alternate" hreflang="pl" href="https://titancode.pl/pl" />
+<xhtml:link rel="alternate" hreflang="en" href="https://titancode.pl/en" />
+<lastmod>2026-04-16T20:13:12.608Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://titancode.pl/en</loc>
+<xhtml:link rel="alternate" hreflang="pl" href="https://titancode.pl/pl" />
+<xhtml:link rel="alternate" hreflang="en" href="https://titancode.pl/en" />
+<lastmod>2026-04-16T20:13:12.608Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://titancode.pl/pl/blog</loc>
+<lastmod>2026-04-16T20:13:12.608Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://titancode.pl/pl/blog/dlaczego-strona-dedykowana-lepsza-niz-wordpress</loc>
+<lastmod>2026-04-16T20:13:12.608Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://titancode.pl/pl/blog/ile-kosztuje-strona-internetowa-warszawa</loc>
+<lastmod>2026-04-16T20:13:12.608Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://titancode.pl/pl/blog/witaj-swiecie</loc>
+<lastmod>2026-04-16T20:13:12.608Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+</urlset>

@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://titancode.pl
+Sitemap: https://titancode.pl/sitemap.xml
