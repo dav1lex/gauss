@@ -53,10 +53,11 @@ export function Contact({ className }: ContactProps) {
               }}
             >
               <Icons.Phone className="w-5 h-5 text-[var(--titan-accent-primary)]" />
-              <ProtectedPhone 
-                part1="+48" 
-                part2="511" 
-                part3="118916" 
+              <ProtectedPhone
+                part1="+48"
+                part2="511"
+                part3="118"
+                part4="916"
                 maskedPrefix="+48 XXX XXX XXX"
               />
             </div>

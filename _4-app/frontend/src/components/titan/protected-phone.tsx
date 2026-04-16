@@ -9,25 +9,27 @@ interface ProtectedPhoneProps {
   maskedPrefix?: string
   // Real number parts (obfuscated)
   part1: string
-  part2: string  
+  part2: string
   part3: string
+  part4?: string
 }
 
-export function ProtectedPhone({ 
+export function ProtectedPhone({
   className,
   maskedPrefix = '+48 XXX XXX XXX',
   part1,
   part2,
-  part3
+  part3,
+  part4
 }: ProtectedPhoneProps) {
   const [revealed, setRevealed] = useState(false)
   const [honeypotClicked, setHoneypotClicked] = useState(false)
   const [hasInteracted, setHasInteracted] = useState(false)
   const honeypotRef = useRef<HTMLButtonElement>(null)
-  
+
   // Full number (only used client-side)
-  const fullNumber = `${part1}${part2}${part3}`
-  const formattedNumber = `${part1} ${part2} ${part3}`
+  const fullNumber = part4 ? `${part1}${part2}${part3}${part4}` : `${part1}${part2}${part3}`
+  const formattedNumber = part4 ? `${part1} ${part2} ${part3} ${part4}` : `${part1} ${part2} ${part3}`
   
   const handleReveal = () => {
     // Check if honeypot was clicked (bot behavior)
@@ -46,7 +48,11 @@ export function ProtectedPhone({
   }
   
   return (
-    <div className={cn('relative inline-flex items-center gap-2', revealed && 'revealed', className)} data-protected-phone>
+    <div 
+      className={cn('relative inline-flex items-center gap-2', revealed && 'revealed', className)} 
+      data-protected-phone
+      onClick={handleReveal}
+    >
       {/* Honeypot - invisible to humans, bots click it */}
       <button
         ref={honeypotRef}
@@ -79,7 +85,6 @@ export function ProtectedPhone({
       ) : (
         // Masked state - whole container clickable
         <div
-          onClick={handleReveal}
           className={cn(
             'flex items-center gap-2 font-mono cursor-pointer',
             'text-muted-foreground hover:text-foreground',
