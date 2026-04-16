@@ -28,7 +28,7 @@
     },
     "ecommerce": {
       "title": "Sklepy Internetowe",
-      "description": "Płatności, magazyn, zamówienia — wszystko działa. Ty tylko pakujesz."
+      "description": "Płatności, magazyn, zamówienia. Wszystko działa. Ty tylko pakujesz."
     },
     "seo": {
       "title": "Pozycjonowanie",
@@ -108,16 +108,18 @@
   "faq": {
     "title": "Pytania i odpowiedzi",
     "subtitle": "Konkrety. Bez lania wody.",
-    "q1": "Ile kosztuje strona?",
-    "a2": "Strona wizytówka: od 8000 PLN.\n\nSklep lub aplikacja: od 25000 PLN.\n\nPodaj co potrzebujesz — wyceniamy w 24h.",
+    "q1": "Ile to kosztuje?",
+    "a2": "Zależy od zakresu i czasu. Prosta aplikacja: od 1000 PLN.\n\nWięcej funkcji = więcej czasu = wyższa cena. Daj znać co potrzebujesz. Wycenimy w 24h.",
     "q2": "Ile to trwa?",
-    "a3": "Strona wizytówka: 2-4 tygodnie.\n\nSklep lub aplikacja: 6-12 tygodni.\n\nZależy od tego jak szybko odpisujesz.",
+    "a3": "Prosta aplikacja: 3-4 dni. Bardziej złożona: dłużej.\n\nZależy od funkcjonalności i jak szybko dostarczysz informacje.",
     "q3": "A jak z Google?",
-    "a4": "Strona będzie szybka i zrozumiała dla Google. To half sukcesu. Content to druga połowa — pomożemy Ci go napisać.",
+    "a4": "Dodajemy sitemap i robots.txt, żeby Google indeksował poprawnie. Podpinamy stronę do Search Console. Szybka, SEO-ready od pierwszego dnia.",
     "q4": "Co po projekcie?",
     "a5": "Dostajesz cały kod i dokumentację. Jesteś właścicielem. Jak chcesz, to zostajemy do wsparcia.",
     "q5": "Wystawiacie faktury?",
-    "a1": "Tak. Wszystkie ceny to netto + VAT. Możesz odliczyć podatek."
+    "a1": "Tak. Wszystkie ceny to netto + VAT. Możesz odliczyć podatek.",
+    "q6": "Co z domeną i hostingiem?",
+    "a6": "Domena: Kupujesz, dajesz nam dostęp. Hosting: Jak chcesz, bierz własny. Albo zostaw. Hostujemy za darmo. Bez ukrytych opłat."
   },
   "contact": {
     "title": "Napisz do nas.\nOdezwiemy się w 24h.",

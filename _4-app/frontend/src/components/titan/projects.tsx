@@ -47,16 +47,33 @@ export function Projects({ className }: ProjectsProps) {
     setCurrentIndex((prev) => Math.max(prev - 1, 0));
   };
 
+  const [startY, setStartY] = useState(0);
+  const [isHorizontalSwipe, setIsHorizontalSwipe] = useState(false);
+
   // Drag handlers
-  const handleDragStart = (clientX: number) => {
+  const handleDragStart = (clientX: number, clientY?: number) => {
     setIsDragging(true);
     setStartX(clientX);
+    if (clientY !== undefined) setStartY(clientY);
     setTranslateX(0);
+    setIsHorizontalSwipe(false);
   };
 
-  const handleDragMove = (clientX: number) => {
+  const handleDragMove = (clientX: number, clientY?: number) => {
     if (!isDragging) return;
-    setTranslateX(clientX - startX);
+    const deltaX = clientX - startX;
+    const deltaY = clientY !== undefined ? clientY - startY : 0;
+    
+    // Detect swipe direction (only on first move)
+    if (!isHorizontalSwipe && clientY !== undefined) {
+      const absX = Math.abs(deltaX);
+      const absY = Math.abs(deltaY);
+      if (absX > absY && absX > 10) {
+        setIsHorizontalSwipe(true);
+      }
+    }
+    
+    setTranslateX(deltaX);
   };
 
   const handleDragEnd = () => {
@@ -70,6 +87,7 @@ export function Projects({ className }: ProjectsProps) {
       setCurrentIndex(currentIndex - 1);
     }
     setTranslateX(0);
+    setIsHorizontalSwipe(false);
   };
 
   return (
@@ -87,7 +105,7 @@ export function Projects({ className }: ProjectsProps) {
         {/* Carousel Container */}
         <div 
           ref={containerRef}
-          className="relative overflow-hidden"
+          className="relative overflow-hidden touch-pan-y"
           tabIndex={0}
           onKeyDown={(e) => {
             if (e.key === 'ArrowLeft') goPrev();
@@ -97,8 +115,8 @@ export function Projects({ className }: ProjectsProps) {
           onMouseMove={(e) => handleDragMove(e.clientX)}
           onMouseUp={handleDragEnd}
           onMouseLeave={() => isDragging && handleDragEnd()}
-          onTouchStart={(e) => handleDragStart(e.touches[0].clientX)}
-          onTouchMove={(e) => handleDragMove(e.touches[0].clientX)}
+          onTouchStart={(e) => handleDragStart(e.touches[0].clientX, e.touches[0].clientY)}
+          onTouchMove={(e) => handleDragMove(e.touches[0].clientX, e.touches[0].clientY)}
           onTouchEnd={handleDragEnd}
           aria-label="Projects carousel"
           role="region"

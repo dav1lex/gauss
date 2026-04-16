@@ -28,7 +28,7 @@
     },
     "ecommerce": {
       "title": "E-commerce",
-      "description": "Payments, inventory, orders — everything works. You just pack and ship."
+      "description": "Payments, inventory, orders. Everything works. You just pack and ship."
     },
     "seo": {
       "title": "SEO",
@@ -108,16 +108,18 @@
   "faq": {
     "title": "Questions & Answers",
     "subtitle": "Straight answers. No fluff.",
-    "q1": "How much does a website cost?",
-    "a2": "Simple website: from 8000 PLN.\n\nShop or app: from 25000 PLN.\n\nTell us what you need — we'll quote in 24h.",
+    "q1": "How much does it cost?",
+    "a2": "Depends on scope and timeline. Simple app: from 1000 PLN.\n\nMore features = more time = higher price. Tell us what you need. We'll quote in 24h.",
     "q2": "How long does it take?",
-    "a3": "Simple website: 2-4 weeks.\n\nShop or app: 6-12 weeks.\n\nDepends on how fast you reply.",
+    "a3": "Simple app: 3-4 days. More complex: longer.\n\nDepends on features and how fast you provide info.",
     "q3": "What about Google?",
-    "a4": "Site will be fast and Google-friendly. That's half the battle. Content is the other half — we'll help you write it.",
+    "a4": "We add sitemap and robots.txt so Google indexes properly. We connect your site to Search Console. Fast, SEO-ready from day one.",
     "q4": "What happens after?",
     "a5": "You get all the code and documentation. You own it. If you want, we stay for support.",
     "q5": "Do you invoice?",
-    "a1": "Yes. All prices are netto + VAT. You can deduct the tax."
+    "a1": "Yes. All prices are netto + VAT. You can deduct the tax.",
+    "q6": "What about domain and hosting?",
+    "a6": "Domain: You buy it, give us access. Hosting: Your choice. Take your own, or we host for free. No hidden fees."
   },
   "contact": {
     "title": "Write to us.\nWe'll reply in 24h.",
