@@ -12,7 +12,7 @@ export { SettingsDropdown } from './settings-dropdown'
 export { ProtectedPhone, ProtectedPhoneSimple } from './protected-phone'
 export { Testimonials } from './testimonials'
 export { FAQ } from './faq'
-export { OrganizationSchema, ArticleSchema } from './json-ld'
+export { OrganizationSchema, ArticleSchema, FAQSchema } from './json-ld'
 
 // Primitive UI Components
 export * from './ui'

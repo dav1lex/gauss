@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 import { useTranslate } from '@/hooks/use-translate'
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
+import { FAQSchema } from './json-ld'
 
 interface FAQItemProps {
   question: string
@@ -81,6 +82,7 @@ export function FAQ() {
 
   return (
     <section id="faq" className="py-20 md:py-28 bg-[var(--titan-section-bg)]">
+      <FAQSchema faqs={faqs} />
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="mb-12">

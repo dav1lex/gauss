@@ -3,7 +3,7 @@ import { Navbar, HeroParallax, Services, Projects, Testimonials, FAQ, Contact, F
 
 export const metadata: Metadata = {
   title: 'TITANCODE - Custom Web Development',
-  description: 'Warsaw-based custom web development. No templates. No WordPress. Just clean, handcrafted code for ambitious projects.',
+  description: 'Warsaw-based custom web development agency. Fast delivery, same-day replies. Websites, apps, e-commerce, SEO. No templates, no WordPress.',
   alternates: {
     canonical: '/en',
     languages: {

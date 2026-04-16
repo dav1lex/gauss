@@ -3,7 +3,7 @@ import { Navbar, HeroParallax, Services, Projects, Testimonials, FAQ, Contact, F
 
 export const metadata: Metadata = {
   title: 'TITANCODE - Tworzenie Stron Internetowych',
-  description: 'Warszawska agencja tworzenia stron i aplikacji. Bez szablonów. Bez WordPress. Czysty, ręcznie pisany kod dla ambitnych projektów.',
+  description: 'Warszawska agencja webowa. Strony, aplikacje, e-commerce, automatyzacja. Szybka realizacja, odpowiedź w 24h. Bez szablonów, bez WordPress.',
   alternates: {
     canonical: '/pl',
     languages: {

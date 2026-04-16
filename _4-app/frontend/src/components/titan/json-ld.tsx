@@ -11,6 +11,10 @@ interface ArticleSchemaProps {
   coverImage?: string
 }
 
+interface FAQSchemaProps {
+  faqs: Array<{ question: string; answer: string }>
+}
+
 export function OrganizationSchema({ locale }: OrganizationSchemaProps) {
   const baseUrl = 'https://titancode.pl'
   
@@ -21,8 +25,8 @@ export function OrganizationSchema({ locale }: OrganizationSchemaProps) {
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
     description: locale === 'en' 
-      ? 'Warsaw-based custom web development. No templates. No WordPress. Just clean, handcrafted code for ambitious projects.'
-      : 'Agencja webowa z Warszawy. Tworzenie stron i aplikacji internetowych. Bez szablonów. Bez WordPress. Czysty kod.',
+      ? 'Warsaw-based custom web development agency. Fast delivery, same-day replies. Websites, apps, e-commerce, SEO.'
+      : 'Warszawska agencja webowa. Strony, aplikacje, e-commerce, automatyzacja. Szybka realizacja.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Warsaw',
@@ -34,7 +38,9 @@ export function OrganizationSchema({ locale }: OrganizationSchemaProps) {
       contactType: 'customer service',
       availableLanguage: ['English', 'Polish'],
     },
-    sameAs: [],
+    sameAs: [
+      'https://github.com/dav1lex',
+    ],
   }
 
   const localBusiness = {
@@ -121,6 +127,30 @@ export function ArticleSchema({ title, description, slug, date, author, coverIma
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }}
+    />
+  )
+}
+
+export function FAQSchema({ faqs }: FAQSchemaProps) {
+  const baseUrl = 'https://titancode.pl'
+
+  const faqPage = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
     />
   )
 }
