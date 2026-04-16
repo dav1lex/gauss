@@ -2,17 +2,17 @@
 // Using lucide-react library (v1 removed brand icons - keeping inline for those)
 
 import { cn } from '@/lib/utils'
-import { 
-  ArrowRight, 
-  Code, 
-  RefreshCcw, 
-  ShoppingCart, 
-  Search, 
-  Lightbulb, 
+import {
+  ArrowRight,
+  Code,
+  RefreshCcw,
+  ShoppingCart,
+  Search,
+  Lightbulb,
   Headphones,
-  Mail, 
-  Wallet, 
-  Briefcase, 
+  Mail,
+  Wallet,
+  Briefcase,
   GraduationCap,
   Menu,
   X,
@@ -33,6 +33,7 @@ import {
   Settings,
   Monitor,
   Copy,
+  Globe,
 } from 'lucide-react'
 
 export const Icons = {
@@ -47,6 +48,7 @@ export const Icons = {
   Eye: (props: React.ComponentProps<typeof Eye>) => <Eye {...props} />,
   Check: (props: React.ComponentProps<typeof Check>) => <Check {...props} />,
   Copy: (props: React.ComponentProps<typeof Copy>) => <Copy {...props} />,
+  Globe: (props: React.ComponentProps<typeof Globe>) => <Globe {...props} />,
   
   // Code & Development
   Code: (props: React.ComponentProps<typeof Code>) => <Code {...props} />,

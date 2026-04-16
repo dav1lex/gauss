@@ -46,7 +46,7 @@ export function ProtectedPhone({
   }
   
   return (
-    <div className={cn('relative inline-flex items-center gap-2', className)}>
+    <div className={cn('relative inline-flex items-center gap-2', revealed && 'revealed', className)} data-protected-phone>
       {/* Honeypot - invisible to humans, bots click it */}
       <button
         ref={honeypotRef}
@@ -77,18 +77,18 @@ export function ProtectedPhone({
           </button>
         </div>
       ) : (
-        // Masked state
-        <button
+        // Masked state - whole container clickable
+        <div
           onClick={handleReveal}
           className={cn(
-            'flex items-center gap-2 font-mono',
+            'flex items-center gap-2 font-mono cursor-pointer',
             'text-muted-foreground hover:text-foreground',
             'transition-colors group'
           )}
         >
           <span>{maskedPrefix}</span>
           <Icons.Eye className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-        </button>
+        </div>
       )}
     </div>
   )

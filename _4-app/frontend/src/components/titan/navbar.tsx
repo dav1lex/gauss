@@ -106,7 +106,7 @@ export function Navbar({ className }: NavbarProps) {
               </span>
               <span 
                 className={cn(
-                  'absolute inset-0 transition-all duration-500 text-white',
+                  'absolute inset-0 transition-all duration-500 text-foreground',
                   isDark ? (scrolled ? 'clip-fill-empty' : 'clip-fill-full') : (scrolled ? 'opacity-0' : 'opacity-100')
                 )}
               >

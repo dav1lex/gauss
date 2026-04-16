@@ -17,12 +17,11 @@ export function Contact({ className }: ContactProps) {
     <section id="contact" className={cn('py-24 border-t border-border bg-[var(--titan-section-bg)]', className)}>
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="mb-12">
-
+        <div className="mb-12 text-center">
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
             {t('contact.title')}
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl">
+          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
             {t('contact.subtitle')}
           </p>
         </div>
@@ -39,7 +38,20 @@ export function Contact({ className }: ContactProps) {
             </Link>
             
             {/* Phone - Protected */}
-            <div className="inline-flex items-center gap-3 border border-border px-10 py-5 text-lg font-medium hover:bg-muted/50 transition-colors">
+            <div 
+              className="inline-flex items-center gap-3 border border-border px-10 py-5 text-lg font-medium hover:bg-muted/50 transition-colors cursor-pointer"
+              onClick={(e) => {
+                // Don't trigger if clicking revealed link/button
+                const target = e.target as HTMLElement;
+                if (target.closest('a') || target.closest('button')) return;
+                
+                // Click the ProtectedPhone to trigger reveal
+                const phoneEl = e.currentTarget.querySelector('[data-protected-phone]') as HTMLElement;
+                if (phoneEl && !phoneEl.classList.contains('revealed')) {
+                  phoneEl.click();
+                }
+              }}
+            >
               <Icons.Phone className="w-5 h-5 text-[var(--titan-accent-primary)]" />
               <ProtectedPhone 
                 part1="+48" 
