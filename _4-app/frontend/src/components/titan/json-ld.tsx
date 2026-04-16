@@ -51,7 +51,6 @@ export function OrganizationSchema({ locale }: OrganizationSchemaProps) {
     '@id': `${baseUrl}/#localbusiness`,
     name: 'TITANCODE',
     url: baseUrl,
-    telephone: '+48-511-118-916',
     email: 'info@titancode.pl',
     address: {
       '@type': 'PostalAddress',
