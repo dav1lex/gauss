@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
+import { useTranslate } from '@/hooks/use-translate'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,6 +15,7 @@ import { Icons } from './ui/icons'
 
 export function SettingsDropdown() {
   const { theme, setTheme } = useTheme()
+  const t = useTranslate()
   const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
 
@@ -66,7 +68,7 @@ export function SettingsDropdown() {
         {!isBlogPage && (
           <>
             <div className="p-2">
-              <div className="text-xs text-muted-foreground mb-2 px-1">Language</div>
+              <div className="text-xs text-muted-foreground mb-2 px-1">{t('settings.language')}</div>
               <div className="flex items-center gap-1 bg-muted/50 rounded-md p-1">
                 <Link
                   href={currentLocale === 'en' ? pathname : newPath}
@@ -100,7 +102,7 @@ export function SettingsDropdown() {
 
         {/* Theme Section - Boxed Layout */}
         <div className="p-2">
-          <div className="text-xs text-muted-foreground mb-2 px-1">Theme</div>
+          <div className="text-xs text-muted-foreground mb-2 px-1">{t('settings.theme')}</div>
           <div className="flex items-center gap-1 bg-muted/50 rounded-md p-1">
             {themes.map(({ value, icon: Icon, label }) => {
               const isActive = theme === value

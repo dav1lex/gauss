@@ -9,7 +9,7 @@
   },
   "hero": {
     "headline": "Code that pays\nfor itself.",
-    "subheadline": "Warsaw-based agency. Websites and apps that bring customers — not just look pretty.",
+    "subheadline": "Warsaw-based agency. Websites and apps that bring customers. Not just look pretty.",
     "ctaStart": "Start a Project",
     "ctaView": "View Work"
   },
@@ -97,7 +97,7 @@
     "roi": "Three months in and we're seeing 40% more conversions. The site paid for itself.",
     "maintenance": "Haven't touched the code in a year. Still runs perfectly with zero maintenance.",
     "scaling": "Handled our Black Friday traffic without breaking. Scaled like it was nothing.",
-    "hosting": "Was paying 400 PLN monthly for shared hosting that kept crashing. They moved us to Cloudflare — now it's free and faster.",
+    "hosting": "Was paying 400 PLN monthly for shared hosting that kept crashing. They moved us to Cloudflare - now it's free and faster.",
     "honest": "Told us we didn't need half the features we asked for. Saved us 15k and the site works better without the bloat.",
     "migration": "Migrated from WordPress without losing a single customer. No downtime. No broken links. Just worked.",
     "client1": "Startup Founder",
@@ -129,7 +129,7 @@
     "q3": "How long does it take to build a website?",
     "a3": "Business site: 2-4 weeks.\n\nOnline store or application: 6-12 weeks.\n\nDepends on features and your feedback.",
     "q4": "Will my site be visible on Google?",
-    "a4": "Yes. We write code with Google in mind — speed, structure, mobile-first, Core Web Vitals.",
+    "a4": "Yes. We write code with Google in mind - speed, structure, mobile-first, Core Web Vitals.",
     "q5": "What happens after the project ends?",
     "a5": "You get full documentation and source code. We also offer hosting and technical support."
   },
@@ -142,5 +142,9 @@
     "privacy": "Privacy",
     "terms": "Terms", 
     "copyright": "TITANCODE. All rights reserved."
+  },
+  "settings": {
+    "language": "Language",
+    "theme": "Theme"
   }
 }

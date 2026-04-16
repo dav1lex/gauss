@@ -92,7 +92,7 @@ export function Navbar({ className }: NavbarProps) {
           scrolled ? 'scale-y-100' : 'scale-y-0'
         )} />
         
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative z-10">
+        <div className="max-w-7xl mx-auto px-12 py-4 flex items-center justify-between relative z-10">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 relative">
             <span className="relative text-lg font-semibold tracking-tight">

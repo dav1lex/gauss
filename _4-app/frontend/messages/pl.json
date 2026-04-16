@@ -9,7 +9,7 @@
   },
   "hero": {
     "headline": "Kod, który zarabia\nna siebie.",
-    "subheadline": "Warszawska agencja. Strony i aplikacje, które przynoszą klientów — nie tylko wyglądają ładnie.",
+    "subheadline": "Warszawska agencja. Strony i aplikacje, które przynoszą klientow - nie tylko wyglądają ładnie.",
     "ctaStart": "Zacznij Projekt",
     "ctaView": "Zobacz Prace"
   },
@@ -97,7 +97,7 @@
     "roi": "Trzy miesiące i mamy 40% więcej konwersji. Strona zarobiła na siebie.",
     "maintenance": "Rok nie ruszałem kodu. Nadal działa idealnie bez żadnej konserwacji.",
     "scaling": "Uciągnęli Black Friday bez awarii. Skalowało się jak nic.",
-    "hosting": "Płaciłem 400 PLN miesięcznie za hosting co ciągle padal. Przenieśli nas na Cloudflare — teraz jest za darmo i działa szybciej.",
+    "hosting": "Płaciłem 400 PLN miesięcznie za hosting co ciągle padal. Przenieśli nas na Cloudflare - teraz jest za darmo i działa szybciej.",
     "honest": "Powiedzieli nam że nie potrzebujemy połowy funkcji które chcieliśmy. Zaoszczędzili nam 15k a strona działa lepiej bez tego całego syfu.",
     "migration": "Przenieśli nas z WordPressa bez utraty ani jednego klienta. Żadnej przerwy. Żadnych błędnych linków. Po prostu zadziałało.",
     "client1": "Właściciel startupu",
@@ -129,7 +129,7 @@
     "q3": "Ile trwa stworzenie strony?",
     "a3": "Strona firmowa: 2-4 tygodnie.\n\nSklep lub aplikacja: 6-12 tygodni.\n\nZależy od funkcji i Twojego feedbacku.",
     "q4": "Czy strona będzie widoczna w Google?",
-    "a4": "Tak. Kod piszemy z myślą o Google — szybkość, struktura, mobile-first, Core Web Vitals.",
+    "a4": "Tak. Kod piszemy z myślą o Google - szybkość, struktura, mobile-first, Core Web Vitals.",
     "q5": "Co po zakończeniu projektu?",
     "a5": "Dostajesz pełną dokumentację i kod źródłowy. Oferujemy też hosting i wsparcie techniczne."
   },
@@ -142,5 +142,9 @@
     "privacy": "Prywatność",
     "terms": "Regulamin", 
     "copyright": "TITANCODE. Wszystkie prawa zastrzeżone."
+  },
+  "settings": {
+    "language": "Język",
+    "theme": "Motyw"
   }
 }

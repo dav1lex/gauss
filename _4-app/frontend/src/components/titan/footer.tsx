@@ -2,7 +2,6 @@
 
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { ProtectedPhoneSimple } from './protected-phone'
 import { Icons } from './ui/icons'
 
 interface FooterProps {
@@ -28,11 +27,6 @@ export function Footer({ className }: FooterProps) {
               <Icons.Mail className="h-4 w-4" />
               info@titancode.pl
             </Link>
-            <ProtectedPhoneSimple 
-              part1="+48" 
-              part2="511" 
-              part3="118916" 
-            />
           </div>
           
           {/* Copyright */}

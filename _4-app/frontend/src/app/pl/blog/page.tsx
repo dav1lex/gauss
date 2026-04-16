@@ -1,7 +1,27 @@
+import { Metadata } from 'next'
 import Link from 'next/link'
 import { Navbar, Footer } from '@/components/titan'
 import { getAllPosts } from '@/lib/blog'
 import { formatDate } from '@/lib/utils'
+
+export const metadata: Metadata = {
+  title: 'Blog | TITANCODE',
+  description: 'Artykuły o tworzeniu stron internetowych, technologiach webowych i projektowaniu.',
+  alternates: {
+    canonical: '/pl/blog',
+    languages: {
+      'pl': '/pl/blog',
+    },
+  },
+  openGraph: {
+    title: 'Blog | TITANCODE',
+    description: 'Artykuły o tworzeniu stron internetowych, technologiach webowych i projektowaniu.',
+    url: '/pl/blog',
+    siteName: 'TITANCODE',
+    locale: 'pl_PL',
+    type: 'website',
+  },
+}
 
 export default function BlogPage() {
   const posts = getAllPosts()

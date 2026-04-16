@@ -26,9 +26,21 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   return {
     title: `${post.title} | TITANCODE Blog`,
     description: post.description,
-    openGraph: post.coverImage ? {
-      images: [post.coverImage],
-    } : undefined,
+    alternates: {
+      canonical: `/pl/blog/${slug}`,
+      languages: {
+        'pl': `/pl/blog/${slug}`,
+      },
+    },
+    openGraph: {
+      title: `${post.title} | TITANCODE Blog`,
+      description: post.description,
+      url: `/pl/blog/${slug}`,
+      siteName: 'TITANCODE',
+      locale: 'pl_PL',
+      type: 'article',
+      ...(post.coverImage && { images: [post.coverImage] }),
+    },
   }
 }
 

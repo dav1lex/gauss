@@ -123,7 +123,7 @@
   --sidebar-ring: oklch(0.556 0 0);
   
   /* Titan design tokens - dark mode */
-  --titan-accent-primary: oklch(0.704 0.191 22.216); /* Dark mode orange */
+  --titan-accent-primary: oklch(0.84 0.1505 79.41); /* Orange #EA580C */
   --titan-accent-secondary: oklch(0.556 0 0); /* Darker orange */
   --titan-section-bg: transparent; /* No section bg in dark mode */
 }
