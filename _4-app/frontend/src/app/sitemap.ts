@@ -14,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 1,
+      alternates: {
+        languages: {
+          'pl': `${baseUrl}/pl`,
+          'en': `${baseUrl}/en`,
+        },
+      },
     },
     // English homepage
     {
@@ -21,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
+      alternates: {
+        languages: {
+          'pl': `${baseUrl}/pl`,
+          'en': `${baseUrl}/en`,
+        },
+      },
     },
     // Polish blog listing
     {

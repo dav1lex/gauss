@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 interface OrganizationSchemaProps {
   locale: 'en' | 'pl'
 }
@@ -72,16 +74,18 @@ export function OrganizationSchema({ locale }: OrganizationSchemaProps) {
   }
 
   return (
-    <>
+    <Head>
       <script
+        key="ld-organization"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
       />
       <script
+        key="ld-localbusiness"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
       />
-    </>
+    </Head>
   )
 }
 
@@ -124,10 +128,13 @@ export function ArticleSchema({ title, description, slug, date, author, coverIma
   }
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }}
-    />
+    <Head>
+      <script
+        key={`ld-article-${slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }}
+      />
+    </Head>
   )
 }
 
@@ -148,9 +155,12 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
   }
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
-    />
+    <Head>
+      <script
+        key="ld-faq"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
+      />
+    </Head>
   )
 }
