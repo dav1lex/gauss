@@ -10,7 +10,7 @@
   "hero": {
     "headline": "Twoja strona.\nZrobiona jak trzeba.",
     "subheadline": "Budujemy szybko. Odpisujemy tego samego dnia. Jak coś obiecamy, to dowozimy. Bez technicznego żargonu.",
-    "ctaStart": "Darmo Wycena",
+    "ctaStart": "Darmowa Wycena",
     "ctaView": "Zobacz Realizacje"
   },
   "services": {
@@ -32,7 +32,7 @@
     },
     "seo": {
       "title": "Pozycjonowanie",
-      "description": "Strona szybka i zrozumiała dla Google. Reszta to内容."
+      "description": "Strona szybka i zrozumiała dla Google. Reszta to treść."
     },
     "consulting": {
       "title": "Doradztwo",
