@@ -3,14 +3,14 @@ import type { Metadata, Viewport } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL('https://titancode.pl'),
   title: {
-    default: 'TITANCODE - Custom Web Development',
+    default: 'TITANCODE - Tworzenie Stron Internetowych',
     template: '%s | TITANCODE',
   },
-  description: 'Warsaw-based custom web development. No templates. No WordPress. Just clean, handcrafted code for ambitious projects.',
-  keywords: ['web development', 'custom websites', 'Warsaw', 'Poland', 'e-commerce', 'SEO', 'web design'],
+  description: 'Warszawska agencja tworzenia stron i aplikacji. Bez szablonów. Bez WordPress. Czysty, ręcznie pisany kod dla ambitnych projektów.',
+  keywords: ['tworzenie stron', 'Warszawa', 'Polska', 'e-commerce', 'SEO', 'web design', 'custom websites'],
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'pl_PL',
     siteName: 'TITANCODE',
   },
   twitter: {

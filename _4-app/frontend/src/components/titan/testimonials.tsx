@@ -7,7 +7,7 @@ import { useTranslate } from '@/hooks/use-translate'
 interface TestimonialProps {
   quote: string
   author: string
-  role: string
+  role?: string
 }
 
 function TestimonialCard({ quote, author, role }: TestimonialProps) {
@@ -29,7 +29,7 @@ function TestimonialCard({ quote, author, role }: TestimonialProps) {
         {/* Author - centered */}
         <footer className="text-center mt-4">
           <div className="font-semibold text-foreground">{author}</div>
-          <div className="text-sm text-muted-foreground">{role}</div>
+          {role && <div className="text-sm text-muted-foreground">{role}</div>}
         </footer>
       </div>
     </div>
@@ -45,15 +45,12 @@ export function Testimonials() {
   const containerRef = useRef<HTMLDivElement>(null);
   
   const testimonials = [
-    { quote: t('testimonials.fast'), author: t('testimonials.client1'), role: t('testimonials.role1') },
-    { quote: t('testimonials.precise'), author: t('testimonials.client2'), role: t('testimonials.role2') },
-    { quote: t('testimonials.understand'), author: t('testimonials.client3'), role: t('testimonials.role3') },
-    { quote: t('testimonials.hosting'), author: t('testimonials.client7'), role: t('testimonials.role7') },
-    { quote: t('testimonials.honest'), author: t('testimonials.client8'), role: t('testimonials.role8') },
-    { quote: t('testimonials.migration'), author: t('testimonials.client9'), role: t('testimonials.role9') },
-    { quote: t('testimonials.roi'), author: t('testimonials.client4'), role: t('testimonials.role4') },
-    { quote: t('testimonials.maintenance'), author: t('testimonials.client5'), role: t('testimonials.role5') },
-    { quote: t('testimonials.scaling'), author: t('testimonials.client6'), role: t('testimonials.role6') }
+    { quote: t('testimonials.fast'), author: t('testimonials.client1') },
+    { quote: t('testimonials.precise'), author: t('testimonials.client2') },
+    { quote: t('testimonials.understand'), author: t('testimonials.client3') },
+    { quote: t('testimonials.hosting'), author: t('testimonials.client4') },
+    { quote: t('testimonials.honest'), author: t('testimonials.client5') },
+    { quote: t('testimonials.migration'), author: t('testimonials.client6') }
   ];
   
   const totalTestimonials = testimonials.length;
@@ -142,7 +139,6 @@ export function Testimonials() {
                 key={index}
                 quote={testimonial.quote}
                 author={testimonial.author}
-                role={testimonial.role}
               />
             ))}
           </div>

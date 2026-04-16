@@ -8,19 +8,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const slugs = getAllSlugs()
 
   return [
-    // English homepage
-    {
-      url: `${baseUrl}/en`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 1,
-    },
-    // Polish homepage
+    // Polish homepage (primary)
     {
       url: `${baseUrl}/pl`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 1,
+    },
+    // English homepage
+    {
+      url: `${baseUrl}/en`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
     },
     // Polish blog listing
     {

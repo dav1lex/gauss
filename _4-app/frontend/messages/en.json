@@ -8,39 +8,39 @@
     "getStarted": "Get Started"
   },
   "hero": {
-    "headline": "Code that pays\nfor itself.",
-    "subheadline": "Warsaw-based agency. Websites and apps that bring customers. Not just look pretty.",
-    "ctaStart": "Start a Project",
-    "ctaView": "View Work"
+    "headline": "Your website.\nDone right.",
+    "subheadline": "We build fast. We reply same day. What we promise, we deliver. No tech jargon.",
+    "ctaStart": "Get Free Quote",
+    "ctaView": "See Our Work"
   },
   "services": {
     "title": "What you get",
-    "subtitle": "You grow. We build."
+    "subtitle": "Fast delivery. Full communication. Zero stress."
   },
   "serviceItems": {
     "webDev": {
       "title": "Websites & Apps",
-      "description": "Sell 24/7. No plugins that break."
+      "description": "Ready in 2-4 weeks. Works from day one. No fixes needed."
     },
     "automation": {
       "title": "Automation",
-      "description": "Hours of work saved weekly. Not months."
+      "description": "What you did manually now happens automatically. You'll see the difference immediately."
     },
     "ecommerce": {
       "title": "E-commerce",
-      "description": "Higher conversion than template stores. Payments, inventory, analytics."
+      "description": "Payments, inventory, orders — everything works. You just pack and ship."
     },
     "seo": {
-      "title": "Technical SEO",
-      "description": "Google visibility that brings customers."
+      "title": "SEO",
+      "description": "Fast site that Google understands. The rest is content."
     },
     "consulting": {
       "title": "Consulting",
-      "description": "Avoid expensive tech mistakes."
+      "description": "We tell you what you need, not what you want to hear. Saves money."
     },
     "support": {
       "title": "Support",
-      "description": "When something breaks, we fix it. Fast."
+      "description": "Have a problem? We reply within an hour. Fixed the same day."
     }
   },
   "projects": {
@@ -95,47 +95,33 @@
     "precise": "Every detail polished. No weird libraries or plugins.",
     "understand": "They understand business, not just code. That's rare in this industry.",
     "roi": "Three months in and we're seeing 40% more conversions. The site paid for itself.",
-    "maintenance": "Haven't touched the code in a year. Still runs perfectly with zero maintenance.",
-    "scaling": "Handled our Black Friday traffic without breaking. Scaled like it was nothing.",
     "hosting": "Was paying 400 PLN monthly for shared hosting that kept crashing. They moved us to Cloudflare - now it's free and faster.",
     "honest": "Told us we didn't need half the features we asked for. Saved us 15k and the site works better without the bloat.",
     "migration": "Migrated from WordPress without losing a single customer. No downtime. No broken links. Just worked.",
-    "client1": "Startup Founder",
-    "role1": "E-commerce Platform",
-    "client2": "Marketing Director",
-    "role2": "Creative Agency", 
-    "client3": "CEO",
-    "role3": "Tech Company",
-    "client4": "Operations Manager",
-    "role4": "Retail Chain",
-    "client5": "CTO",
-    "role5": "SaaS Startup",
-    "client6": "Product Lead",
-    "role6": "Fintech Scale-up",
-    "client7": "Shop Owner",
-    "role7": "Online Store",
-    "client8": "Nonprofit Director",
-    "role8": "NGO",
-    "client9": "E-commerce Founder",
-    "role9": "D2C Brand"
+    "client1": "Online store owner",
+    "client2": "Service business owner",
+    "client3": "Startup founder",
+    "client4": "Marketing agency owner",
+    "client5": "SaaS founder",
+    "client6": "E-commerce owner"
   },
   "faq": {
     "title": "Questions & Answers",
-    "subtitle": "No unnecessary talk.",
-    "q1": "WordPress or custom development?",
-    "a1": "WordPress: cheaper upfront, costly long-term, breaks on updates.\n\nCustom: more upfront, cheaper to maintain, runs for years without issues.\n\nChoice depends on budget and plans.",
-    "q2": "How much does a website cost in Warsaw?",
-    "a2": "Business site: from 8000 PLN.\n\nApplication with business logic: from 25000 PLN.\n\nShare details, we'll quote within 24h.",
-    "q3": "How long does it take to build a website?",
-    "a3": "Business site: 2-4 weeks.\n\nOnline store or application: 6-12 weeks.\n\nDepends on features and your feedback.",
-    "q4": "Will my site be visible on Google?",
-    "a4": "Yes. We write code with Google in mind - speed, structure, mobile-first, Core Web Vitals.",
-    "q5": "What happens after the project ends?",
-    "a5": "You get full documentation and source code. We also offer hosting and technical support."
+    "subtitle": "Straight answers. No fluff.",
+    "q1": "How much does a website cost?",
+    "a2": "Simple website: from 8000 PLN.\n\nShop or app: from 25000 PLN.\n\nTell us what you need — we'll quote in 24h.",
+    "q2": "How long does it take?",
+    "a3": "Simple website: 2-4 weeks.\n\nShop or app: 6-12 weeks.\n\nDepends on how fast you reply.",
+    "q3": "What about Google?",
+    "a4": "Site will be fast and Google-friendly. That's half the battle. Content is the other half — we'll help you write it.",
+    "q4": "What happens after?",
+    "a5": "You get all the code and documentation. You own it. If you want, we stay for support.",
+    "q5": "Do you invoice?",
+    "a1": "Yes. All prices are netto + VAT. You can deduct the tax."
   },
   "contact": {
-    "title": "Ready to increase\nyour profit?",
-    "subtitle": "Write to us. We'll get back to you within 24 hours.",
+    "title": "Write to us.\nWe'll reply in 24h.",
+    "subtitle": "No BS. No empty promises. We tell it like it is.",
     "email": "info@titancode.pl"
   },
   "footer": {

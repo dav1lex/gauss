@@ -7,8 +7,8 @@ export default function Home() {
   const router = useRouter()
   
   useEffect(() => {
-    // Redirect to English by default (client-side for static export)
-    router.replace('/en')
+    // Redirect to Polish by default (primary locale)
+    router.replace('/pl')
   }, [router])
   
   return null
