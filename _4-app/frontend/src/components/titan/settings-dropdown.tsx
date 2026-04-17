@@ -26,12 +26,12 @@ export function SettingsDropdown() {
   // Check if on blog page (blog is PL only)
   const isBlogPage = pathname.includes('/blog')
 
-  // Get current locale from path
-  const currentLocale = pathname.split('/')[1] || 'en'
+  const currentLocale = pathname.startsWith('/en') ? 'en' : 'pl'
   const otherLocale = currentLocale === 'en' ? 'pl' : 'en'
 
-  // Build new path for language switch (not available on blog)
-  const newPath = pathname.replace(/^\/[^\/]+/, `/${otherLocale}`)
+  const newPath = currentLocale === 'en'
+    ? pathname.replace(/^\/en/, '') || '/'
+    : `/en${pathname}`
 
   const themes = [
     { value: 'light', icon: Icons.Sun, label: 'Light' },
