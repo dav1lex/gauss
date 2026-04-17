@@ -90,7 +90,7 @@ export function OrganizationSchema({ locale }: OrganizationSchemaProps) {
 
 export function ArticleSchema({ title, description, slug, date, author, coverImage }: ArticleSchemaProps) {
   const baseUrl = 'https://titancode.pl'
-  const articleUrl = `${baseUrl}/pl/blog/${slug}`
+  const articleUrl = `${baseUrl}/blog/${slug}`
   
   const article = {
     '@context': 'https://schema.org',

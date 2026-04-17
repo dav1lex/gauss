@@ -8,20 +8,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const slugs = getAllSlugs()
 
   return [
-    // Polish homepage (primary)
     {
-      url: `${baseUrl}/pl`,
+      url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 1,
       alternates: {
         languages: {
-          'pl': `${baseUrl}/pl`,
+          'pl': `${baseUrl}/`,
           'en': `${baseUrl}/en`,
+          'x-default': `${baseUrl}/`,
         },
       },
     },
-    // English homepage
     {
       url: `${baseUrl}/en`,
       lastModified: new Date(),
@@ -29,21 +28,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: {
         languages: {
-          'pl': `${baseUrl}/pl`,
+          'pl': `${baseUrl}/`,
           'en': `${baseUrl}/en`,
+          'x-default': `${baseUrl}/`,
         },
       },
     },
-    // Polish blog listing
     {
-      url: `${baseUrl}/pl/blog`,
+      url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
-    // Polish blog posts
     ...slugs.map((slug) => ({
-      url: `${baseUrl}/pl/blog/${slug}`,
+      url: `${baseUrl}/blog/${slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.6,

@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     canonical: '/en',
     languages: {
       'en': '/en',
-      'pl': '/pl',
-      'x-default': '/pl',
+      'pl': '/',
+      'x-default': '/',
     },
   },
   openGraph: {

@@ -21,7 +21,7 @@ function SimpleNavbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
       <div className="max-w-7xl mx-auto px-12 py-4 flex items-center justify-between">
-        <Link href="/pl" className="text-lg font-semibold tracking-tight text-foreground">
+        <Link href="/" className="text-lg font-semibold tracking-tight text-foreground">
           TITANCODE
         </Link>
       </div>
@@ -54,7 +54,7 @@ export default function NotFound() {
             Wygląda na to, że ta strona nie istnieje lub została przeniesiona.
           </p>
           <Link
-            href="/pl"
+            href="/"
             className="mt-8 px-6 py-3 bg-[var(--titan-accent-primary)] text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
           >
             Wróć do strony głównej
