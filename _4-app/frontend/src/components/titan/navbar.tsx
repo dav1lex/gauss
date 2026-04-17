@@ -55,12 +55,14 @@ const currentLocale = pathname.startsWith('/en') ? 'en' : 'pl';
   }, [mobileMenuOpen]);
   
   // Build nav links - on blog, hash links go to homepage
+  const homeBase = isBlogPage ? (currentLocale === 'pl' ? '/' : `/${currentLocale}`) : ''
+  
   const navLinks = [
-    { href: isBlogPage ? `/${currentLocale}#services` : '#services', label: t('navbar.services') },
-    { href: isBlogPage ? `/${currentLocale}#projects` : '#projects', label: t('navbar.projects') },
-    { href: isBlogPage ? `/${currentLocale}#about` : '#about', label: t('navbar.about') },
+    { href: `${homeBase}#services`, label: t('navbar.services') },
+    { href: `${homeBase}#projects`, label: t('navbar.projects') },
+    { href: `${homeBase}#about`, label: t('navbar.about') },
     { href: '/blog', label: t('navbar.blog') },
-    { href: isBlogPage ? `/${currentLocale}#contact` : '#contact', label: t('navbar.contact') },
+    { href: `${homeBase}#contact`, label: t('navbar.contact') },
   ]
 
   // Determine text colors based on scroll state + dark mode
