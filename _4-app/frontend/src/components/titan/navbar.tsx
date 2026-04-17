@@ -31,7 +31,7 @@ export function Navbar({ className }: NavbarProps) {
   
   // Check if on blog page
   const isBlogPage = pathname.includes('/blog');
-  const currentLocale = pathname.split('/')[1] || 'en';
+const currentLocale = pathname.startsWith('/en') ? 'en' : 'pl';
   
   useEffect(() => {
     const handleScroll = () => {
