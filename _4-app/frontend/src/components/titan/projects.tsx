@@ -71,7 +71,7 @@ export function Projects({ className }: ProjectsProps) {
 
               return (
                 <CarouselItem key={key} className="basis-full">
-                  <div className="py-16 border-t border-b border-border/60 min-h-[400px] flex flex-col justify-between">
+                  <div className="py-16 border-t border-b border-border/60 h-[480px] flex flex-col">
                     {isLast ? (
                       <div className="text-center py-12">
                         <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
@@ -91,33 +91,27 @@ export function Projects({ className }: ProjectsProps) {
                         </Link>
                       </div>
                     ) : (
-                      <a
-                        href={hasValidHref ? itemHref : '#'}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex flex-col flex-grow cursor-pointer"
-                        onClick={(e) => !hasValidHref && e.preventDefault()}
-                      >
-                        <h3 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight group-hover:text-[var(--titan-accent-primary)] transition-colors duration-300">
+                      <div className="flex flex-col flex-grow">
+                        <h3 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight">
                           {t(`projectItems.${key}.title`)}
                         </h3>
-                        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mt-8">
+                        <p className="flex-1 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mt-8 mb-8">
                           {t(`projectItems.${key}.description`)}
                         </p>
                         {hasValidHref && (
-                          <div className="mt-auto flex items-center gap-2 text-sm text-muted-foreground group-hover:text-[var(--titan-accent-primary)] transition-colors">
-                            <span className="font-mono">{itemHref.replace('https://', '')}</span>
-                            <svg
-                              className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
+                          <a
+                            href={itemHref}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 bg-[var(--titan-accent-primary)] text-primary-foreground px-8 py-4 text-sm font-semibold hover:bg-[var(--titan-accent-secondary)] dark:hover:text-white transition-colors w-fit"
+                          >
+                            {t('projectItems.visit')}
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
-                          </div>
+                          </a>
                         )}
-                      </a>
+                      </div>
                     )}
                   </div>
                 </CarouselItem>

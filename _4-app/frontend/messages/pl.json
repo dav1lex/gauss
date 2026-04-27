@@ -51,7 +51,8 @@
     "nanobid": {
       "title": "NanoBid",
       "description": "Platforma aukcyjna w czasie rzeczywistym z live licytacjami, natychmiastowymi powiadomieniami i bezpiecznymi płatnościami.",
-      "category": "PLATFORMA AUKCYJNA"
+      "category": "PLATFORMA AUKCYJNA",
+      "href": "https://nanobid.alwaysdata.net/"
     },
     "kurs8klasisty": {
       "title": "Kurs8Klasisty",
@@ -78,15 +79,17 @@
       "href": "https://entee.ai"
     },
     "airea": {
-      "title": "AIREA",
+      "title": "AIREA.WORLD",
       "description": "Platforma nieruchomości oparta na AI z inteligentnym dopasowaniem i analizą rynku.",
-      "category": "AI NIERUCHOMOŚCI"
+      "category": "AI NIERUCHOMOŚCI",
+      "href": "https://airea.world"
     },
     "yourproject": {
       "title": "Twój Projekt",
       "description": "Gotowy zbudować coś wielkiego? Porozmawiajmy o Twoim kolejnym wielkim pomyśle.",
       "category": "NAPISZ DO NAS"
-    }
+    },
+    "visit": "Zobacz stronę"
   },
   "testimonials": {
     "title": "Co mówią klienci",

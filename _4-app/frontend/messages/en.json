@@ -51,7 +51,8 @@
     "nanobid": {
       "title": "NanoBid",
       "description": "Real-time auction platform with live bidding, instant notifications, and secure payments.",
-      "category": "AUCTION PLATFORM"
+      "category": "AUCTION PLATFORM",
+      "href": "https://nanobid.alwaysdata.net/"
     },
     "kurs8klasisty": {
       "title": "Kurs8Klasisty",
@@ -78,15 +79,17 @@
       "href": "https://entee.ai"
     },
     "airea": {
-      "title": "AIREA",
+      "title": "AIREA.WORLD",
       "description": "AI-powered real estate platform with intelligent property matching and market insights.",
-      "category": "AI REAL ESTATE"
+      "category": "AI REAL ESTATE",
+      "href": "https://airea.world"
     },
     "yourproject": {
       "title": "Your Project",
       "description": "Ready to build something great? Let's discuss your next big idea.",
       "category": "LET'S TALK"
-    }
+    },
+    "visit": "Visit Site"
   },
   "testimonials": {
     "title": "What clients say",
