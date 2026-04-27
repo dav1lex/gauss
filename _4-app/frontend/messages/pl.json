@@ -115,18 +115,21 @@
     "q3": "A jak z Google i analityką?",
     "a4": "Konfigurujemy wszystko: Search Console, analitykę i banner cookies. Strona będzie szybka, zgodna z przepisami i gotowa na ruch od pierwszego dnia.",
     "q4": "Co po projekcie?",
-    "a5": "Dostajesz cały kod i dokumentację. <b>Jesteś właścicielem.</b> Jesteśmy dostępni zawsze, gdy chcesz coś zmienić.",
+    "a5": "Dostajesz cały kod i dokumentację. <b>Jesteś właścicielem.</b> My zajmujemy się hostingiem i aktualizacjami. Większość klientów zostaje, bo jesteśmy szybcy i nie chcą zajmować się technicznymi sprawami. Ale nigdy nie jesteś uwięziony — możesz odejść w każdej chwili.",
     "q5": "Czy mogę sam edytować treść?",
     "a1": "Nie używamy WordPressa. Jeśli potrzebujesz panelu zarządzania (CMS), możemy go dodać za dopłatą. Ale spokojnie. Jesteśmy dostępni, żeby szybko wprowadzić zmiany za Ciebie.",
     "q7": "Wystawiacie faktury?",
     "a7": "Tak. Wszystkie ceny to netto + VAT. Możesz odliczyć podatek.",
     "q6": "Co z domeną i hostingiem?",
-    "a6": "Domena: Kupujesz i ustawiasz nameservery. Pokażemy Ci jak.\n\nHosting: Jak chcesz, bierz własny. Albo zostań u nas. Hostujemy za darmo. Bez ukrytych opłat."
+    "a6": "Domena: Kupujesz i ustawiasz nameservery. Pokażemy Ci jak.\n\nHosting: Hostujemy na infrastrukturze klasy enterprise (Cloudflare). W cenie projektu przez pierwszy rok. Później opcjonalny abonament obejmuje hosting, aktualizacje i wsparcie.",
+    "q8": "A jak z późniejszymi zmianami?",
+    "a8": "Po prostu napisz. Bez abonamentu, bez umowy. Odpisujemy w ciągu godziny, a większość zmian robimy tego samego dnia. Jeśli chcesz priorytetowego wsparcia i spokoju, oferujemy miesięczny plan utrzymania z hostingiem, aktualizacjami i poprawkami."
   },
   "contact": {
     "title": "Napisz do nas.\nOdezwiemy się w 24h.",
     "subtitle": "Bez wciskania kitu. Bez obietnic bez pokrycia. Gadamy jak jest.",
-    "email": "info@titancode.pl"
+    "email": "info@titancode.pl",
+    "revealPhone": "Kliknij, aby odkryć"
   },
   "footer": {
     "privacy": "Prywatność",
